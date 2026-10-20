@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/HIBERNIANIRELAND_n15_TB45/X3_790",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_3834d36295dae4fba7fb8012",
+  "case_uid": "83132d886e1a34359c5a69be46ee4891185c7882f92136bd5d854f797b59bc41",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_f757b7aad9ae45118e022e3fe8bdc5a2aea7b2d6fb958ae8228c3efe3f3ead08"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2875,
+      "sha256": "ac5ab86a92e6c20fb4adfbdc36c247b9616612ecf8c3e0a99ec4426882a961f4"
+    },
+    "private/private_truth.json": {
+      "bytes": 395,
+      "sha256": "74b6374d7b1a1504419cdcbd5a7060f5456c87b4eee6215d268f1179d700f5cc"
+    },
+    "private/reference_output.json": {
+      "bytes": 537,
+      "sha256": "0be53eb7d4eeed8c0f2c3fe88fc6fee290454215f73bf19ade54f57e7718b4f4"
+    },
+    "private/root_case.json": {
+      "bytes": 118679,
+      "sha256": "ce37a56bda29726e9c025ed3ef4ad0d61c830d91b51c1dc15aa12c10ae0bd539"
+    },
+    "private/validation.json": {
+      "bytes": 211,
+      "sha256": "8f0a48c47803ba673215382992c2626c2bbb624cbe02fd0fbd41237be6c374f6"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "88d38f07945c707812780f55f2a2ceb23513a30a2525e1410de443c4d6b4b56f"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 6248,
+      "sha256": "0abea5d8aed32bce7b288d94a761ea336d5bbddd46acc9643e15d73cf783d55a"
+    }
+  },
+  "graph_hash": "b1aeea1e81da4e0c32da9e83752b31b14ac7061da71e7fe350fa1425aec0613b",
+  "messages_sha256": "dfc555a6de685d5862258f34caa9afcfdb3b082e3b63aecc7265cfe9e3b0ee45",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "b5770ed8514201d71d2f3726cf0817cff5383f08bd08b508ec28019e45b28014",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "3aa284293b6336ce3fa5407a19434559a92f44e2517435c84846775cb608eb7a",
+    "private_truth": "74b6374d7b1a1504419cdcbd5a7060f5456c87b4eee6215d268f1179d700f5cc",
+    "reference_output": "424d9ed773782d6509590db64ca27a7d210acd673ff7253af348844961e97b7a",
+    "root_case": "fbedce50c0ae74eb21bf452a4fe8ec273d8dd687c5ca70434ee87e2e472f1f8f",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "8f0a48c47803ba673215382992c2626c2bbb624cbe02fd0fbd41237be6c374f6"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/a688e758956c59f7d9aa/public/llm_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_3834d36295dae4fba7fb8012.json",
+    "private_truth": "cases/X3/a688e758956c59f7d9aa/private/private_truth/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_3834d36295dae4fba7fb8012.json",
+    "reference_output": "cases/X3/a688e758956c59f7d9aa/private/reference_output/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_3834d36295dae4fba7fb8012.json",
+    "root_case": "cases/X3/a688e758956c59f7d9aa/private/root_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_3834d36295dae4fba7fb8012.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/a688e758956c59f7d9aa/private/validation/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_3834d36295dae4fba7fb8012.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_45_HIBERNIANIRELAND",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

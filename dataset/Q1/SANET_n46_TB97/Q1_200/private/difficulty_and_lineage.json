@@ -1,0 +1,37 @@
+{
+  "baselines": {
+    "1": {
+      "final_beam_size": 0,
+      "grade": "WRONG_REJECT",
+      "primary": null,
+      "secondary": null
+    },
+    "128": {
+      "final_beam_size": 24,
+      "grade": "CORRECT",
+      "primary": 210,
+      "secondary": 0.7913407448295915
+    },
+    "16": {
+      "final_beam_size": 4,
+      "grade": "SUBOPTIMAL_SECONDARY",
+      "primary": 210,
+      "secondary": 0.7915957885070722
+    }
+  },
+  "case_id": "Q1_200",
+  "difficulty": "HARD_BY_BASELINE",
+  "nodes": 46,
+  "primary": 210,
+  "proof_status": "EXACT_CERTIFIED",
+  "rates": [
+    200,
+    100,
+    100,
+    300
+  ],
+  "requests": 4,
+  "secondary": 0.7913407448295916,
+  "stage2_tied": 24,
+  "status": "CERTIFIED"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "case_count": 200,
+  "strict_reference_replay_correct": 200,
+  "relaxed_reference_replay_correct": 200,
+  "scientific_inputs_unique": 200,
+  "rate_modes": {
+    "PURE_200G": 60,
+    "MIXED_RATES": 140
+  },
+  "proof_status_counts": {
+    "EXACT_CERTIFIED": 195,
+    "INFEASIBLE_CERTIFIED": 5
+  },
+  "topology_distribution": {
+    "10-19": 38,
+    "20-29": 26,
+    "30-39": 32,
+    "40-49": 65,
+    "50-59": 29,
+    "60-69": 10
+  },
+  "pure200g_60node_cases": 4,
+  "retained_cases_byte_identical": 198,
+  "frozen_evaluator_files_byte_identical": 28,
+  "protected_oracle_reject_count": 5,
+  "protected_historical_model_invalid_count": 15,
+  "new_cases_deepseek_evaluation": "NOT_EVALUATED",
+  "new_cases_oracle_certified": 2,
+  "new_cases_hardness_rule": "Both Beams WRONG_REJECT",
+  "new_cases_oracle_proofs_recomputed": true,
+  "source_archive": "G:\\Desktop\\成果\\Q1_200.zip",
+  "source_archive_sha256": "945060842f22cf59c423211c83f7af1ac797c65c85323a63e8aa7c97c67ae933",
+  "paid_API_calls": 0,
+  "replacements": [
+    {
+      "case_id": "Q1_023",
+      "removed_original_case_id": "Q1C_V2_0016",
+      "removed_nodes": 45,
+      "removed_historical_category": "可行但次优",
+      "added_original_case_id": "Q1_GEN_050B638DBC5C571B0FE7",
+      "added_nodes": 60,
+      "beam16": "WRONG_REJECT",
+      "beam128": "WRONG_REJECT",
+      "deepseek_evaluation": "NOT_EVALUATED",
+      "oracle_status": "EXACT_CERTIFIED"
+    },
+    {
+      "case_id": "Q1_127",
+      "removed_original_case_id": "Q1_GEN_EAE266956EBB81434B50",
+      "removed_nodes": 45,
+      "removed_historical_category": "可行但次优",
+      "added_original_case_id": "Q1_GEN_F5DA1C332F618DC0D7A4",
+      "added_nodes": 60,
+      "beam16": "WRONG_REJECT",
+      "beam128": "WRONG_REJECT",
+      "deepseek_evaluation": "NOT_EVALUATED",
+      "oracle_status": "EXACT_CERTIFIED"
+    }
+  ],
+  "packaged_verify": "PASS"
+}

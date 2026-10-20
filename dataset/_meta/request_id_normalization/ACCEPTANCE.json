@@ -1,0 +1,50 @@
+{
+  "scope": "Historical R3 normalization acceptance; current retained eight-task Cases only. Superseded Q1 Cases are not in this release.",
+  "source_record": {
+    "status": "PASS",
+    "request_ID_projection": {
+      "status": "PASS",
+      "cases": 19556,
+      "normalized_cases": 10938,
+      "request_id_references_checked": 35476,
+      "file_hashes_checked": 216680,
+      "public_message_bindings_checked": 19556,
+      "scientific_payload_projection_checks": 56212,
+      "all_request_ids_canonical": true,
+      "non_ID_scientific_changes": 0,
+      "real_model_API_calls": 0,
+      "fresh_oracle_reproof": false,
+      "ZIP_CRC_and_all_member_hashes": "PASS"
+    },
+    "scoring_equivalence": {
+      "status": "PASS",
+      "reference_cases": 280,
+      "by_task": {
+        "Q1": 200,
+        "O1-S": 20,
+        "O1-C": 20,
+        "X2": 20,
+        "X3": 20
+      },
+      "reference_all_strict_relaxed_correct": true,
+      "complete_grade_objects_equal_after_inverse_ID_translation": true,
+      "negative_probes_equal": 27,
+      "model_API_calls": 0,
+      "scientific_scoring_code_modified": false,
+      "fresh_oracle_reproof": false
+    },
+    "native_Inspect_acceptance": {
+      "status": "PASS",
+      "cases": 24,
+      "all_reference_answers_CORRECT": true,
+      "framework": "Inspect AI",
+      "API_calls": 0,
+      "source_scoring_code_changed": false
+    },
+    "fresh_oracle_reproof": false,
+    "historical_results_unchanged": true,
+    "historical_parent_lineage_files_relocated": 761,
+    "historical_parent_lineage_original_bytes_preserved": true
+  },
+  "current_q1_policy": "Preserve latest frozen source identifiers."
+}

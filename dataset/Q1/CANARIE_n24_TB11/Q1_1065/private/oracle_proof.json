@@ -1,0 +1,88 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          40,
+          35,
+          33,
+          7
+        ],
+        "path_node_ids": [
+          10,
+          11,
+          7,
+          6,
+          1
+        ],
+        "request_id": "req_001",
+        "slot_start": 275,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          38,
+          43,
+          35
+        ],
+        "path_node_ids": [
+          9,
+          13,
+          11,
+          7
+        ],
+        "request_id": "req_002",
+        "slot_start": 103,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          38,
+          31,
+          23,
+          24,
+          33
+        ],
+        "path_node_ids": [
+          9,
+          13,
+          5,
+          4,
+          7,
+          6
+        ],
+        "request_id": "req_003",
+        "slot_start": 313,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    56,
+    52,
+    56
+  ],
+  "full_bounded_action_counts": [
+    8,
+    28,
+    24
+  ],
+  "lower_bounds": [
+    16,
+    12,
+    16
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 268,
+  "milp_gap": 0.0,
+  "milp_variables": 60,
+  "primary": 84,
+  "secondary": 0.700584410334051,
+  "stage2_search_nodes": 98,
+  "stage2_tied": 72,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 0.2652,
+  "witness_ub": 84
+}

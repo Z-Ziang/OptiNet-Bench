@@ -1,0 +1,117 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          34
+        ],
+        "path_node_ids": [
+          8,
+          52
+        ],
+        "request_id": "req_001",
+        "slot_start": 140,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      },
+      {
+        "path_link_ids": [
+          50,
+          45,
+          48,
+          17,
+          14,
+          136,
+          154
+        ],
+        "path_node_ids": [
+          12,
+          13,
+          11,
+          58,
+          3,
+          36,
+          49,
+          52
+        ],
+        "request_id": "req_002",
+        "slot_start": 45,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          127,
+          81,
+          82,
+          31,
+          1,
+          2
+        ],
+        "path_node_ids": [
+          49,
+          32,
+          19,
+          40,
+          7,
+          0,
+          52
+        ],
+        "request_id": "req_003",
+        "slot_start": 283,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          127,
+          81,
+          82,
+          31,
+          1,
+          2
+        ],
+        "path_node_ids": [
+          49,
+          32,
+          19,
+          40,
+          7,
+          0,
+          52
+        ],
+        "request_id": "req_004",
+        "slot_start": 290,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    166,
+    170,
+    166,
+    166
+  ],
+  "full_bounded_action_counts": [
+    10,
+    6,
+    79,
+    79
+  ],
+  "lower_bounds": [
+    4,
+    8,
+    4,
+    4
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 436,
+  "milp_gap": 0.0,
+  "milp_variables": 174,
+  "primary": 137,
+  "secondary": 0.673606843094093,
+  "stage2_search_nodes": 7711,
+  "stage2_tied": 6048,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 45.4806,
+  "witness_ub": 182
+}

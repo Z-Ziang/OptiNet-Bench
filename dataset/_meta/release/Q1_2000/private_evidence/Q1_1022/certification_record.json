@@ -1,0 +1,106 @@
+{
+  "accepted_row": {
+    "artifact_dir": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\certified\\f3485b02b2466607391b84b340179d57e4605cd74dbebc6ccad19be290f291ab",
+    "beam128_grade": "SUBOPTIMAL_SECONDARY",
+    "beam16_grade": "SUBOPTIMAL_SECONDARY",
+    "candidate_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\evidence\\inputs\\f3485b02b2466607391b84b340179d57e4605cd74dbebc6ccad19be290f291ab.json.gz",
+    "case_id": "Q1_GEN_F3485B02B2466607391B",
+    "key": [
+      33,
+      "PURE_200G",
+      "LEGACY_V0.2",
+      3,
+      "ACCEPT"
+    ],
+    "model_version": "LEGACY_V0.2",
+    "record_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\evidence\\results\\f3485b02b2466607391b84b340179d57e4605cd74dbebc6ccad19be290f291ab.json.gz",
+    "semantic_sha256": "f3485b02b2466607391b84b340179d57e4605cd74dbebc6ccad19be290f291ab",
+    "source": "SCALED2000_NEW_GENERATION"
+  },
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          2,
+          10,
+          51
+        ],
+        "path_node_ids": [
+          0,
+          2,
+          19,
+          13
+        ],
+        "request_id": "req_001",
+        "slot_start": 262,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          13,
+          10,
+          51,
+          48
+        ],
+        "path_node_ids": [
+          24,
+          2,
+          19,
+          13,
+          16
+        ],
+        "request_id": "req_002",
+        "slot_start": 104,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          75,
+          51,
+          19
+        ],
+        "path_node_ids": [
+          24,
+          19,
+          13,
+          4
+        ],
+        "request_id": "req_003",
+        "slot_start": 189,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "baseline": {
+    "beams": {
+      "128": {
+        "final_beam_size": 128,
+        "grade": "SUBOPTIMAL_SECONDARY",
+        "primary": 70,
+        "secondary": 0.6775188285331089
+      },
+      "16": {
+        "final_beam_size": 16,
+        "grade": "SUBOPTIMAL_SECONDARY",
+        "primary": 70,
+        "secondary": 0.6776508517227291
+      }
+    },
+    "elapsed_seconds": 1.7257,
+    "status": "PASS"
+  },
+  "elapsed_seconds": 5.2807,
+  "proof": {
+    "milp_gap": 0.0,
+    "stage2_complete": true,
+    "stage2_search_nodes": 319,
+    "stage2_tied": 282
+  },
+  "score_replay": {
+    "primary_match": true,
+    "secondary_match": true,
+    "status": "PASS"
+  },
+  "status": "EXACT_CERTIFIED"
+}

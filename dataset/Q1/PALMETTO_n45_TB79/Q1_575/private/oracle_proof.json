@@ -1,0 +1,147 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          90,
+          105,
+          99,
+          87,
+          47,
+          44,
+          41,
+          42,
+          78,
+          83,
+          73,
+          71,
+          69,
+          39
+        ],
+        "path_node_ids": [
+          27,
+          34,
+          32,
+          31,
+          26,
+          12,
+          13,
+          11,
+          21,
+          24,
+          22,
+          20,
+          19,
+          18,
+          10
+        ],
+        "request_id": "req_001",
+        "slot_start": 98,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          29,
+          22,
+          7,
+          1,
+          4
+        ],
+        "path_node_ids": [
+          9,
+          5,
+          6,
+          1,
+          0,
+          12
+        ],
+        "request_id": "req_002",
+        "slot_start": 178,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      },
+      {
+        "path_link_ids": [
+          19,
+          16,
+          26,
+          34,
+          118,
+          120,
+          124,
+          113,
+          15,
+          10
+        ],
+        "path_node_ids": [
+          37,
+          4,
+          5,
+          8,
+          40,
+          41,
+          42,
+          43,
+          36,
+          2,
+          3
+        ],
+        "request_id": "req_003",
+        "slot_start": 219,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          35,
+          27,
+          22,
+          7,
+          8,
+          88
+        ],
+        "path_node_ids": [
+          40,
+          8,
+          5,
+          6,
+          1,
+          27,
+          30
+        ],
+        "request_id": "req_004",
+        "slot_start": 305,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    305,
+    305,
+    309,
+    309
+  ],
+  "full_bounded_action_counts": [
+    22,
+    114,
+    104,
+    1289
+  ],
+  "lower_bounds": [
+    20,
+    20,
+    24,
+    24
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 1562,
+  "milp_gap": 0.0,
+  "milp_variables": 1529,
+  "primary": 182,
+  "secondary": 0.8057114317187609,
+  "stage2_search_nodes": 18,
+  "stage2_tied": 2,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 3.1304,
+  "witness_ub": 373
+}

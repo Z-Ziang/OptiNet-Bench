@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/DARKSTRAND_n28_TB25/X3_450",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_136a2f2227289d47f6d4022d",
+  "case_uid": "cebd60eac1f1a86d176d9c75a16ba28dee93037c912b17b78df09aaebbf33430",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_22c719b6f9e17932dd45b390f037b214825ed329674bc497a0223b604a32c228"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2830,
+      "sha256": "903ccc939a8536e136a15cfd2368131ebd5ed5f6da836cbddc16f8ed6b6ea9dd"
+    },
+    "private/private_truth.json": {
+      "bytes": 394,
+      "sha256": "beb1430bb4a5ef2bb4d3d332518c623391bf111a2f7a880a94509e6a35b66a0f"
+    },
+    "private/reference_output.json": {
+      "bytes": 537,
+      "sha256": "75dee7257bd41b138627686c25c0f9d802278dc283ac49053be18ebddc372f5c"
+    },
+    "private/root_case.json": {
+      "bytes": 229287,
+      "sha256": "ebea6f67a07d6d9f5667f310e1e2bc4dbeb089ded9207ce45f494eba56fbf5e7"
+    },
+    "private/validation.json": {
+      "bytes": 211,
+      "sha256": "d6a4180170553901b44391b36c846b1e4d43fcd99fcf566d99a61a3550026126"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "0b2870185dd27f5c3abcabb8894737a8899d073a6a074a6f1a97bbee6fa21ade"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 12591,
+      "sha256": "b1c5861fab106f655233c492b863e87a6353ef21ac37d0df8cda04850af97dea"
+    }
+  },
+  "graph_hash": "52a7a1cbca44b04366bf2396b0518e6211db2dafa4aa0705d75244b6376f7416",
+  "messages_sha256": "161f2d5d7efe7f383e72d6208e16a4211c9471ac1986c36d2cc64e23ec93bb15",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "7e02c4f904228be3916c230e129dc0fd1da7fb8bb98cb792943b84f2726c664a",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "090f514a9d543ac8bc88a966ccf8d62bfbe46b5b0c57bfb4476d8aee25cfbc8e",
+    "private_truth": "beb1430bb4a5ef2bb4d3d332518c623391bf111a2f7a880a94509e6a35b66a0f",
+    "reference_output": "b087daca04a3ba57c2611ae809d85551a2a586486bb25c13651858b03c0ca078",
+    "root_case": "50a6ebdaaf8c612babb23e4e60dd9179dbda9c5d91d73db0b1e4be834909f83d",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "d6a4180170553901b44391b36c846b1e4d43fcd99fcf566d99a61a3550026126"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/787feb8f50a49363be19/public/llm_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_136a2f2227289d47f6d4022d.json",
+    "private_truth": "cases/X3/787feb8f50a49363be19/private/private_truth/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_136a2f2227289d47f6d4022d.json",
+    "reference_output": "cases/X3/787feb8f50a49363be19/private/reference_output/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_136a2f2227289d47f6d4022d.json",
+    "root_case": "cases/X3/787feb8f50a49363be19/private/root_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_136a2f2227289d47f6d4022d.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/787feb8f50a49363be19/private/validation/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_136a2f2227289d47f6d4022d.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_25_DARKSTRAND",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

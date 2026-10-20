@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "842aa45572889c799172888ac1b66d2b665bb3c3963a71bc3f072221826042a6",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 505,
+        "sha256": "ba6bf70684a832e5303fa9d9d54c54650752d0cad024d07c4c15fa6006872b9f"
+      },
+      "private/reference_output.json": {
+        "bytes": 457,
+        "sha256": "5973d334ff74397b2e9ce08ff592d49e61a0715ddeb3b88c6ffc5b41263d672a"
+      },
+      "private/root_case.json": {
+        "bytes": 2079,
+        "sha256": "2f0268856560589343951d357cbca9086ce513ef4c2df76719f02f969a8d30b8"
+      },
+      "private/truth.json": {
+        "bytes": 617,
+        "sha256": "fb701d2a4ccad8c002f666a39863549e279aaf72cb670a175217e0a943919ae9"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "a2e5ac8071b249b918dde5d7442b03c477f6d18a3da989a26e6b718ba2b03caa"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 2969,
+        "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 349,
+        "sha256": "537f61b7a6469d941c07b1e64594f80c632d046251f031ca4711416ac44825a8"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G1_002395",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_002395",
+    "source_manifest_record": {
+      "case_id": "G1_002395",
+      "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+      "derived_seed": "11163617863625124007",
+      "en_internal_case_path": "cases/G1/G1_002395",
+      "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_002395.json",
+      "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_002395.json",
+      "reference_oracle_sha256": "e2dd8f77c2bc62913ccc2797324f756f373e54b4e1de6392a500ecda319330fa",
+      "root_sha256": "2f0268856560589343951d357cbca9086ce513ef4c2df76719f02f969a8d30b8",
+      "task_type": "G1",
+      "topology_id": "TB_REAL::TOP_95_RNPBRAZIL",
+      "topology_sequence_id": "558",
+      "truth_sha256": "fb701d2a4ccad8c002f666a39863549e279aaf72cb670a175217e0a943919ae9"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "45b2fd61fdcd6b55d77a662fdd9e7539c0190498c84c6507be8773c7746bdba5",
+    "case_dir": "case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395",
+    "case_id": "G1_002395",
+    "case_uid": "842aa45572889c799172888ac1b66d2b665bb3c3963a71bc3f072221826042a6",
+    "cohort": "CALIBRATION_EXPOSED",
+    "evaluation_eligible": true,
+    "input_characters": 3318,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "839f9e1b8c1e2c26814607491ab4e645f1fe260f50a8fff4adff47276f1316d9",
+    "node_count": 10,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "5–10",
+    "seed": "11163617863625124007",
+    "source_category": "real",
+    "task": "G1",
+    "topology_folder": "TB_REAL_TOP_95_RNPBRAZIL_n10",
+    "topology_id": "TB_REAL::TOP_95_RNPBRAZIL",
+    "variant": "EDGE_LIST_TO_ADJACENCY_LIST"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 2969,
+      "output_path": "dataset/G1/RNPBRAZIL_n10_TB95/842aa45572889c79/public/system_prompt.txt",
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395/public/system_prompt.txt"
+    },
+    {
+      "bytes": 349,
+      "output_path": "dataset/G1/RNPBRAZIL_n10_TB95/842aa45572889c79/public/user_prompt.txt",
+      "sha256": "537f61b7a6469d941c07b1e64594f80c632d046251f031ca4711416ac44825a8",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395/public/user_prompt.txt"
+    },
+    {
+      "bytes": 2079,
+      "output_path": "dataset/G1/RNPBRAZIL_n10_TB95/842aa45572889c79/private/root_case.json",
+      "sha256": "2f0268856560589343951d357cbca9086ce513ef4c2df76719f02f969a8d30b8",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395/private/root_case.json"
+    },
+    {
+      "bytes": 457,
+      "output_path": "dataset/G1/RNPBRAZIL_n10_TB95/842aa45572889c79/private/reference_output.json",
+      "sha256": "5973d334ff74397b2e9ce08ff592d49e61a0715ddeb3b88c6ffc5b41263d672a",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G1/RNPBRAZIL_n10_TB95/842aa45572889c79/private/validation.json",
+      "sha256": "a2e5ac8071b249b918dde5d7442b03c477f6d18a3da989a26e6b718ba2b03caa",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395/private/validation.json"
+    },
+    {
+      "bytes": 617,
+      "output_path": "dataset/G1/RNPBRAZIL_n10_TB95/842aa45572889c79/private/truth.json",
+      "sha256": "fb701d2a4ccad8c002f666a39863549e279aaf72cb670a175217e0a943919ae9",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395/private/truth.json"
+    },
+    {
+      "bytes": 505,
+      "output_path": "dataset/G1/RNPBRAZIL_n10_TB95/842aa45572889c79/private/evaluation_reference_output.json",
+      "sha256": "ba6bf70684a832e5303fa9d9d54c54650752d0cad024d07c4c15fa6006872b9f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395",
+  "source_index_record": {
+    "canonical_graph_hash": "45b2fd61fdcd6b55d77a662fdd9e7539c0190498c84c6507be8773c7746bdba5",
+    "case_dir": "case_sets/TB_REAL_TOP_95_RNPBRAZIL_n10/G1/G1_002395",
+    "case_id": "G1_002395",
+    "case_uid": "842aa45572889c799172888ac1b66d2b665bb3c3963a71bc3f072221826042a6",
+    "cohort": "CALIBRATION_EXPOSED",
+    "evaluation_eligible": true,
+    "input_characters": 3318,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "839f9e1b8c1e2c26814607491ab4e645f1fe260f50a8fff4adff47276f1316d9",
+    "node_count": 10,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "5–10",
+    "seed": "11163617863625124007",
+    "source_category": "real",
+    "task": "G1",
+    "topology_folder": "TB_REAL_TOP_95_RNPBRAZIL_n10",
+    "topology_id": "TB_REAL::TOP_95_RNPBRAZIL",
+    "variant": "EDGE_LIST_TO_ADJACENCY_LIST"
+  },
+  "source_key": "gx"
+}

@@ -1,0 +1,25 @@
+{
+  "case_id": "Q1_1800",
+  "topology": "top_TB_REAL%3A%3ATOP_37_GERMANY50",
+  "nodes": 50,
+  "requests": 3,
+  "proof_status": "EXACT_CERTIFIED",
+  "primary": 102,
+  "secondary": 0.7241208633245584,
+  "baselines": {
+    "128": {
+      "final_beam_size": 128,
+      "grade": "CORRECT",
+      "primary": 102,
+      "secondary": 0.7241208633245584
+    },
+    "16": {
+      "final_beam_size": 16,
+      "grade": "SUBOPTIMAL_SECONDARY",
+      "primary": 102,
+      "secondary": 0.7241292492592227
+    }
+  },
+  "source_case_id": "Q1_GEN_2380746BBCBED79BC2DF",
+  "scientific_input_sha256": "2380746bbcbed79bc2df3b4407940e73a131ff3585a2acc85ae2e301cf289b12"
+}

@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "db8c9b6ce1c3f60a72674e10a441bb01d6e09e873835b40d5dbb7b66222b2c0d",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 665,
+        "sha256": "88f44e20504d1ee440a2786a250c6a47e4de3d4c46b75636ed1c1a03931e0943"
+      },
+      "private/reference_output.json": {
+        "bytes": 601,
+        "sha256": "52e56d7f4529ad206454f8fbe5915412d606e55132e29f5e9742b378c4c2f703"
+      },
+      "private/root_case.json": {
+        "bytes": 3174,
+        "sha256": "5bf78d407b9743b8fa98f30dd3f3c9f7c278f0b591c4f0ee84da823f794125aa"
+      },
+      "private/truth.json": {
+        "bytes": 793,
+        "sha256": "074ae037202e8512cf0da3034b4d91094a64dfea9e34f68ce0f38153723b858b"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "66d1232d5c8664292d90284f4a65dcbae43df1fb5e64c879697973eea6ed0531"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 2969,
+        "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 495,
+        "sha256": "ee68536e1793bc3480b6e4611801ec6c8cb2ddcf19490c0b86c1288194bc342b"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G1_000192",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_000192",
+    "source_manifest_record": {
+      "case_id": "G1_000192",
+      "case_variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST",
+      "derived_seed": "5386195256798178920",
+      "en_internal_case_path": "cases/G1/G1_000192",
+      "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_000192.json",
+      "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_000192.json",
+      "reference_oracle_sha256": "eabd805e6fc27e3a6e6cbbdd35f45108e7e5d0b3a4363631568dc0a662110c56",
+      "root_sha256": "5bf78d407b9743b8fa98f30dd3f3c9f7c278f0b591c4f0ee84da823f794125aa",
+      "task_type": "G1",
+      "topology_id": "FLOOR5_GEN_000064",
+      "topology_sequence_id": "64",
+      "truth_sha256": "074ae037202e8512cf0da3034b4d91094a64dfea9e34f68ce0f38153723b858b"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "fa7e22df7ff0cd00426307230fe06c925a34da6be26aa354e5f89ba9f2121def",
+    "case_dir": "case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192",
+    "case_id": "G1_000192",
+    "case_uid": "db8c9b6ce1c3f60a72674e10a441bb01d6e09e873835b40d5dbb7b66222b2c0d",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3464,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "f8b1f9cbb9317fa54a4fd2bd1986ce18647f0ee50c8e874501c0e0f95a0e9b37",
+    "node_count": 10,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "5–10",
+    "seed": "5386195256798178920",
+    "source_category": "floor5_generated",
+    "task": "G1",
+    "topology_folder": "FLOOR5_GEN_000064_n10",
+    "topology_id": "FLOOR5_GEN_000064",
+    "variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 2969,
+      "output_path": "dataset/G1/FLOOR5_GEN_000064_n10/db8c9b6ce1c3f60a/public/system_prompt.txt",
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192/public/system_prompt.txt"
+    },
+    {
+      "bytes": 495,
+      "output_path": "dataset/G1/FLOOR5_GEN_000064_n10/db8c9b6ce1c3f60a/public/user_prompt.txt",
+      "sha256": "ee68536e1793bc3480b6e4611801ec6c8cb2ddcf19490c0b86c1288194bc342b",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192/public/user_prompt.txt"
+    },
+    {
+      "bytes": 3174,
+      "output_path": "dataset/G1/FLOOR5_GEN_000064_n10/db8c9b6ce1c3f60a/private/root_case.json",
+      "sha256": "5bf78d407b9743b8fa98f30dd3f3c9f7c278f0b591c4f0ee84da823f794125aa",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192/private/root_case.json"
+    },
+    {
+      "bytes": 601,
+      "output_path": "dataset/G1/FLOOR5_GEN_000064_n10/db8c9b6ce1c3f60a/private/reference_output.json",
+      "sha256": "52e56d7f4529ad206454f8fbe5915412d606e55132e29f5e9742b378c4c2f703",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G1/FLOOR5_GEN_000064_n10/db8c9b6ce1c3f60a/private/validation.json",
+      "sha256": "66d1232d5c8664292d90284f4a65dcbae43df1fb5e64c879697973eea6ed0531",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192/private/validation.json"
+    },
+    {
+      "bytes": 793,
+      "output_path": "dataset/G1/FLOOR5_GEN_000064_n10/db8c9b6ce1c3f60a/private/truth.json",
+      "sha256": "074ae037202e8512cf0da3034b4d91094a64dfea9e34f68ce0f38153723b858b",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192/private/truth.json"
+    },
+    {
+      "bytes": 665,
+      "output_path": "dataset/G1/FLOOR5_GEN_000064_n10/db8c9b6ce1c3f60a/private/evaluation_reference_output.json",
+      "sha256": "88f44e20504d1ee440a2786a250c6a47e4de3d4c46b75636ed1c1a03931e0943",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192",
+  "source_index_record": {
+    "canonical_graph_hash": "fa7e22df7ff0cd00426307230fe06c925a34da6be26aa354e5f89ba9f2121def",
+    "case_dir": "case_sets/FLOOR5_GEN_000064_n10/G1/G1_000192",
+    "case_id": "G1_000192",
+    "case_uid": "db8c9b6ce1c3f60a72674e10a441bb01d6e09e873835b40d5dbb7b66222b2c0d",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3464,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "f8b1f9cbb9317fa54a4fd2bd1986ce18647f0ee50c8e874501c0e0f95a0e9b37",
+    "node_count": 10,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "5–10",
+    "seed": "5386195256798178920",
+    "source_category": "floor5_generated",
+    "task": "G1",
+    "topology_folder": "FLOOR5_GEN_000064_n10",
+    "topology_id": "FLOOR5_GEN_000064",
+    "variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST"
+  },
+  "source_key": "gx"
+}

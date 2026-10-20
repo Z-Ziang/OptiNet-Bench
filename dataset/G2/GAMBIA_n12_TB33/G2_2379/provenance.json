@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "61eb0d226672b7983e0297635e90ad6b9f5dbc7ae2f56182781a56f30074829f",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 61,
+        "sha256": "a99d1f41a9d170de5bbf2cb4eb178aa4b3df94b7e7eb1770fcf6169373e80df3"
+      },
+      "private/reference_output.json": {
+        "bytes": 58,
+        "sha256": "3af6e59328b37ba90d057e145315fd2b740418e882fcaac496396881ccf6a1dc"
+      },
+      "private/root_case.json": {
+        "bytes": 3343,
+        "sha256": "4ee26a6128fa1640e4cf4db5bba17ea2196f36db6defe95ea0c16d2f22b9d677"
+      },
+      "private/truth.json": {
+        "bytes": 165,
+        "sha256": "a4b4a63ac3955d6f15ddacf319e4e35d96eca59d957b56e5abeed021e97284c0"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "2ce2fbd355f6c4083b6a2859179d000f63ea6cd9ca308ee64eae49f70d72dfc4"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 1861,
+        "sha256": "d8696e906adb933d1e74d014d57b7018e47aff157c4388374c6df53ae22d881a"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 1248,
+        "sha256": "f9b87ed7340505e4687aa99a35e8d25cc4fd21c0d53f89ba8b80ef9e6bc5cbed"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G2_002472",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G2/G2_002472",
+    "source_manifest_record": {
+      "case_id": "G2_002472",
+      "case_variant": "WRONG_DIRECTION",
+      "derived_seed": "5885901383879648152",
+      "en_internal_case_path": "cases/G2/G2_002472",
+      "en_public_benchmark_case_path": "benchmark_case/G2/cases/case_002472.json",
+      "en_public_evaluation_case_path": "evaluation_case/G2/llm/case_002472.json",
+      "reference_oracle_sha256": "395f4398a1a67869c5961b06bbe1dda3fb97ac9ecc00c271d300862c9b867eda",
+      "root_sha256": "4ee26a6128fa1640e4cf4db5bba17ea2196f36db6defe95ea0c16d2f22b9d677",
+      "task_type": "G2",
+      "topology_id": "TB_REAL::TOP_33_GAMBIA",
+      "topology_sequence_id": "495",
+      "truth_sha256": "a4b4a63ac3955d6f15ddacf319e4e35d96eca59d957b56e5abeed021e97284c0"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "d22913ab1f031c573dba2a513c7c441412bc3c1d4fec0e147322aaaa3d3f300e",
+    "case_dir": "case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472",
+    "case_id": "G2_002472",
+    "case_uid": "61eb0d226672b7983e0297635e90ad6b9f5dbc7ae2f56182781a56f30074829f",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3109,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "0b68c6e9df7ef41d544d4efdf429002432bb46cfc6b342efbdf59d471cc96f32",
+    "node_count": 12,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "11–29",
+    "seed": "5885901383879648152",
+    "source_category": "real",
+    "task": "G2",
+    "topology_folder": "TB_REAL_TOP_33_GAMBIA_n12",
+    "topology_id": "TB_REAL::TOP_33_GAMBIA",
+    "variant": "WRONG_DIRECTION"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 1861,
+      "output_path": "dataset/G2/GAMBIA_n12_TB33/61eb0d226672b798/public/system_prompt.txt",
+      "sha256": "d8696e906adb933d1e74d014d57b7018e47aff157c4388374c6df53ae22d881a",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472/public/system_prompt.txt"
+    },
+    {
+      "bytes": 1248,
+      "output_path": "dataset/G2/GAMBIA_n12_TB33/61eb0d226672b798/public/user_prompt.txt",
+      "sha256": "f9b87ed7340505e4687aa99a35e8d25cc4fd21c0d53f89ba8b80ef9e6bc5cbed",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472/public/user_prompt.txt"
+    },
+    {
+      "bytes": 3343,
+      "output_path": "dataset/G2/GAMBIA_n12_TB33/61eb0d226672b798/private/root_case.json",
+      "sha256": "4ee26a6128fa1640e4cf4db5bba17ea2196f36db6defe95ea0c16d2f22b9d677",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472/private/root_case.json"
+    },
+    {
+      "bytes": 58,
+      "output_path": "dataset/G2/GAMBIA_n12_TB33/61eb0d226672b798/private/reference_output.json",
+      "sha256": "3af6e59328b37ba90d057e145315fd2b740418e882fcaac496396881ccf6a1dc",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G2/GAMBIA_n12_TB33/61eb0d226672b798/private/validation.json",
+      "sha256": "2ce2fbd355f6c4083b6a2859179d000f63ea6cd9ca308ee64eae49f70d72dfc4",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472/private/validation.json"
+    },
+    {
+      "bytes": 165,
+      "output_path": "dataset/G2/GAMBIA_n12_TB33/61eb0d226672b798/private/truth.json",
+      "sha256": "a4b4a63ac3955d6f15ddacf319e4e35d96eca59d957b56e5abeed021e97284c0",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472/private/truth.json"
+    },
+    {
+      "bytes": 61,
+      "output_path": "dataset/G2/GAMBIA_n12_TB33/61eb0d226672b798/private/evaluation_reference_output.json",
+      "sha256": "a99d1f41a9d170de5bbf2cb4eb178aa4b3df94b7e7eb1770fcf6169373e80df3",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472",
+  "source_index_record": {
+    "canonical_graph_hash": "d22913ab1f031c573dba2a513c7c441412bc3c1d4fec0e147322aaaa3d3f300e",
+    "case_dir": "case_sets/TB_REAL_TOP_33_GAMBIA_n12/G2/G2_002472",
+    "case_id": "G2_002472",
+    "case_uid": "61eb0d226672b7983e0297635e90ad6b9f5dbc7ae2f56182781a56f30074829f",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3109,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "0b68c6e9df7ef41d544d4efdf429002432bb46cfc6b342efbdf59d471cc96f32",
+    "node_count": 12,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "11–29",
+    "seed": "5885901383879648152",
+    "source_category": "real",
+    "task": "G2",
+    "topology_folder": "TB_REAL_TOP_33_GAMBIA_n12",
+    "topology_id": "TB_REAL::TOP_33_GAMBIA",
+    "variant": "WRONG_DIRECTION"
+  },
+  "source_key": "gx"
+}

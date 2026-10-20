@@ -1,0 +1,76 @@
+{
+  "case_dir": "dataset/G1/METRONA_n33_TB65/G1_2209",
+  "case_id": "G1_002216",
+  "case_uid": "6e6ca300d3634c1e920265c15aa948badf73022c7d205aa53ddea57a29956040",
+  "contract_dir": "contracts/G1/GX1_V5_R1",
+  "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+  "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+  "files": {
+    "metadata.json": {
+      "bytes": 2300,
+      "sha256": "f3b3aa91dac10beabe29b00f96e0b378cf528f8183443e7c027e468420c61897"
+    },
+    "private/evaluation_reference_output.json": {
+      "bytes": 11737,
+      "sha256": "2e463bd8a9ebbe0402438a50ee713780ba02b58a4a1b2b3628d3556b929c2caf"
+    },
+    "private/reference_output.json": {
+      "bytes": 10543,
+      "sha256": "418ab3cefb8bfbf9d86300e9ff83afda8dfc1b65bcaa5520e897d79d89c8625d"
+    },
+    "private/root_case.json": {
+      "bytes": 16504,
+      "sha256": "528b9cab49d3fc301c363642e8111bb7e5bb8830100eff9cade0d88a33b16d9f"
+    },
+    "private/truth.json": {
+      "bytes": 12995,
+      "sha256": "81a939335fe6d799d81653d35591cd904938bb93fc5bdc3548ce15fca485e315"
+    },
+    "private/validation.json": {
+      "bytes": 103,
+      "sha256": "7037851d184a8f014ed8c05b66b5a6205c28aede7740508aedc727cfdb9f1cfe"
+    },
+    "provenance.json": {
+      "bytes": 8153,
+      "sha256": "f0550a0c245d893d6caefd51d276c58f899541ed0d4a7bb1553d44e7fd7d2213"
+    },
+    "public/output_schema.json": {
+      "bytes": 198,
+      "sha256": "c73f84708516a18590eb66b87787a1f8bdc9fb0e8d67ae8467f5355ee0f13faf"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 2969,
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 767,
+      "sha256": "4b657bc5c33dfc4e7316f65e2fa8735461eddb84725c83e8f0ceec627796724b"
+    }
+  },
+  "messages_sha256": "c185933e2644172fef4f9717d357dc19dde5ca747e5a4c8d386e0d6175ca370f",
+  "original_identity_note": "Original source identity is preserved under provenance.json/original_identity. Current files hashes cover only files actually retained here. Scientific IDs and payloads are not newly certified by this repackaging.",
+  "packaging_version": "CLEAN_EIGHT_TASKS_ENGLISH_20261017_R1",
+  "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+  "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+  "source_case_id": "G1_002216",
+  "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+  "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_002216",
+  "source_key": "gx",
+  "source_manifest_record": {
+    "case_id": "G1_002216",
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_MATRIX",
+    "derived_seed": "17527561113327850589",
+    "en_internal_case_path": "cases/G1/G1_002216",
+    "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_002216.json",
+    "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_002216.json",
+    "reference_oracle_sha256": "031a5b16b0ba0cb138fafee96ae20b1f7d5db8042a4b929d8cb29f20e1f810e8",
+    "root_sha256": "528b9cab49d3fc301c363642e8111bb7e5bb8830100eff9cade0d88a33b16d9f",
+    "task_type": "G1",
+    "topology_id": "TB_REAL::TOP_65_METRONA",
+    "topology_sequence_id": "528",
+    "truth_sha256": "81a939335fe6d799d81653d35591cd904938bb93fc5bdc3548ce15fca485e315"
+  },
+  "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+  "task": "G1",
+  "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+}

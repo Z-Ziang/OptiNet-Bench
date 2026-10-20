@@ -1,0 +1,54 @@
+You need to complete a joint spectrum assignment task for concurrent fixed-route service requests in an elastic optical network. You will be given: the current directed network topology, the current spectrum resource state of every directed link, a group of concurrent service request intents awaiting spectrum assignment, and the already fixed transmission path for each request. For each case, determine whether all requests can simultaneously receive feasible spectrum assignments on their fixed paths and all their connections can be established. Output the group's joint spectrum resource assignment decision and plan.
+
+If all services can be established, you must strictly follow the provided fixed path for each service request and assign the same contiguous block of spectrum slots, with a size equal to that request's spectrum-slot demand, on every directed link traversed by that fixed path.
+
+The joint assignment must satisfy all the following conditions:
+1. Each service request may only use the fixed transmission path provided for that request;
+2. For each request, the assigned slot interval must be free on every directed link of its fixed path;
+3. For each request, the starting spectrum-slot index must be identical on every directed link of its fixed path;
+4. For each request, the number of consecutive assigned slots must equal that request's spectrum-slot demand;
+5. If different requests traverse the same directed link, their assigned spectrum-slot intervals on that directed link must not overlap;
+6. All concurrent requests must be handled by joint spectrum assignment. Establish all connections only if every request can simultaneously receive a compliant assignment. If this cannot be done, REJECT the entire group of requests.
+
+Network information:
+Each directed link contains exactly 320 spectrum slots, indexed from 0 to 319.
+[a,b] denotes the contiguous interval from slot a to slot b, inclusive. The complete slot index set of a link is [0,1,2,...,319].
+
+Current network information is presented in the following format:
+Directed link <link_id>: <source_node_id>→<destination_node_id>; free slot intervals: [a,b],[c,d],....
+Here, link_id identifies a directed link; source_node_id→destination_node_id gives its direction. Each [a,b] denotes a contiguous interval of free spectrum slots with both endpoints included. Multiple intervals are separated by commas. If a link has no free slots, write "free slot intervals: none". Each line fully describes that directed link's connectivity and spectrum availability.
+
+A path is represented by both a node array and a directed-link array. For example, path node array [3,7,12,18] and directed-link array [18,41,57] represent 3→7→12→18, where directed link 18 connects 3→7, link 41 connects 7→12, and link 57 connects 12→18. All fixed paths are provided in the case; you do not need to select or output them.
+
+Optimization objective:
+Subject to feasible joint spectrum assignment for all concurrent requests on their fixed paths, prefer the assignment that minimizes network-wide spectrum fragmentation after allocation (minimize spectrum fragmentation).
+
+Output requirements:
+1. The group's resource assignment decision (decision): ACCEPT to establish all connections, or REJECT the group;
+2. When ACCEPT: output allocations containing each request's request_id and assigned starting spectrum-slot index slot_start, with exactly one allocation per request;
+3. When REJECT: allocations must be an empty array.
+Return ONLY one JSON object with exactly the fields shown below, with no explanatory text or markdown:
+{
+  "decision": "",
+  "allocations": [
+    {
+      "request_id": "",
+      "slot_start": 0
+    }
+  ]
+}
+Example for accepted concurrent requests:
+{
+  "decision": "ACCEPT",
+  "allocations": [
+    {"request_id": "r1", "slot_start": 23},
+    {"request_id": "r2", "slot_start": 11},
+    {"request_id": "r3", "slot_start": 47},
+    {"request_id": "r4", "slot_start": 8}
+  ]
+}
+Example for a rejected group:
+{
+  "decision": "REJECT",
+  "allocations": []
+}

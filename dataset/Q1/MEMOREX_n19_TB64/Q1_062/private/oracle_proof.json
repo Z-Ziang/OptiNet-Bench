@@ -1,0 +1,137 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          4,
+          6,
+          12,
+          31,
+          29
+        ],
+        "path_node_ids": [
+          1,
+          2,
+          4,
+          11,
+          10,
+          9
+        ],
+        "request_id": "req_001",
+        "slot_start": 108,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          1,
+          2,
+          8,
+          10,
+          14,
+          16
+        ],
+        "path_node_ids": [
+          1,
+          0,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "request_id": "req_002",
+        "slot_start": 78,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          6,
+          10,
+          14,
+          16,
+          18,
+          26,
+          43,
+          39,
+          40
+        ],
+        "path_node_ids": [
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          16,
+          15,
+          14,
+          18
+        ],
+        "request_id": "req_003",
+        "slot_start": 313,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          4,
+          6,
+          10,
+          14,
+          16,
+          18,
+          22,
+          28,
+          30,
+          34
+        ],
+        "path_node_ids": [
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13
+        ],
+        "request_id": "req_004",
+        "slot_start": 284,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    157,
+    157,
+    153,
+    153
+  ],
+  "full_bounded_action_counts": [
+    78,
+    17,
+    22,
+    22
+  ],
+  "lower_bounds": [
+    20,
+    20,
+    16,
+    16
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 574,
+  "milp_gap": 0.0,
+  "milp_variables": 139,
+  "primary": 195,
+  "secondary": 0.5841691097412526,
+  "stage2_search_nodes": 596,
+  "stage2_tied": 336,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 0.6982,
+  "witness_ub": 209
+}

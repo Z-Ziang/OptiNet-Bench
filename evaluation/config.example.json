@@ -1,0 +1,17 @@
+{
+  "datasets": [
+    "../dataset"
+  ],
+  "model": "openai/REPLACE_WITH_YOUR_SERVED_MODEL_ID",
+  "base_url": "http://127.0.0.1:8000/v1",
+  "model_args": {
+    "responses_api": false
+  },
+  "generation": {
+    "temperature": 0,
+    "max_tokens": 8192,
+    "timeout": 900,
+    "max_retries": 2
+  },
+  "max_samples": 1
+}

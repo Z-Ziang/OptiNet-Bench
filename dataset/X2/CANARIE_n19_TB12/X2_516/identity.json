@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X2/CANARIE_n19_TB12/X2_516",
+  "case_id": "X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_bf541429563dd24db4052d66",
+  "case_uid": "f48c70c31dc211e6bab1cc43db356cd066729225b16dcff36e307739c40c54be",
+  "contract_dir": "contracts/X2/R1_FROZEN",
+  "family_ids": [
+    "F_8646a763c78b626fa786efca5c23b3305dd8ab7617df34807866d75e348e28b4"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2771,
+      "sha256": "fad89a4001d5d35f51c882ebbfbdc2d4cadeca6f922b1abf74ebf605c13eca96"
+    },
+    "private/private_truth.json": {
+      "bytes": 340,
+      "sha256": "0a0ba4ce3923725c22fc4b3cc35ee0303ee74d2afc2a9dfc56967363325cb9bd"
+    },
+    "private/reference_output.json": {
+      "bytes": 181,
+      "sha256": "52055cedf0f841c1268648a1dde3356068ceec9871669b4ebf0d5f50dfedea33"
+    },
+    "private/root_case.json": {
+      "bytes": 192204,
+      "sha256": "1af393ef4fabbbd30e5af91fe9c37ef0bfa5760cdea13ebcf25de69ab562733c"
+    },
+    "private/validation.json": {
+      "bytes": 198,
+      "sha256": "37aa2387e98aee166e97b6ca96dd9acca2153eea9af4f67238c1797eb94999ea"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "1788e6283ebcf0e166db8dc029710b1a3dfec533837bf0ecce963ea3c6bb071c"
+    },
+    "public/output_schema.json": {
+      "bytes": 1468,
+      "sha256": "bcd387baf50e0d3182739b2962fd32c0b86e2bc641fe5b8a956b327fd23a571f"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4072,
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 9568,
+      "sha256": "377dc6a21c6e189d8724ad22291efc6538a8c2bb287a48e55f43557f0b149d67"
+    }
+  },
+  "graph_hash": "687a8489fd5fa7647fe4a3ebf9798e529d6babe8795537c6b197418aa2b579fe",
+  "messages_sha256": "c47fe79dfadd76032835289f6ebc1c5058e516525010c92f0d2e3a3fb2c47d0c",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "96bc35c13424a474cd7c1533f0de07af6ef245bbc2cfc83766c73a32374eee3e",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "876245a285d73769e15d56aafa95cb2c9ab371f729c93492a933d5ee4aa19f1e",
+    "private_truth": "0a0ba4ce3923725c22fc4b3cc35ee0303ee74d2afc2a9dfc56967363325cb9bd",
+    "reference_output": "52055cedf0f841c1268648a1dde3356068ceec9871669b4ebf0d5f50dfedea33",
+    "root_case": "cafd2cbf8cda2f26959a149fae4777ec0fe668d5ec7114b48a8163cf1f0d773c",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+    "validation": "37aa2387e98aee166e97b6ca96dd9acca2153eea9af4f67238c1797eb94999ea"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X2/70f006c4091edf3dbce2/public/llm_case/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_bf541429563dd24db4052d66.json",
+    "private_truth": "cases/X2/70f006c4091edf3dbce2/private/private_truth/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_bf541429563dd24db4052d66.json",
+    "reference_output": "cases/X2/70f006c4091edf3dbce2/private/reference_output/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_bf541429563dd24db4052d66.json",
+    "root_case": "cases/X2/70f006c4091edf3dbce2/private/root_case/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_bf541429563dd24db4052d66.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt",
+    "validation": "cases/X2/70f006c4091edf3dbce2/private/validation/X2_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X2_bf541429563dd24db4052d66.json"
+  },
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_12_CANARIE",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": false,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

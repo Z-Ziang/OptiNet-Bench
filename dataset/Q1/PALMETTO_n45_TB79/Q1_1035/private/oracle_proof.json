@@ -1,0 +1,114 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          35,
+          27,
+          22,
+          7,
+          8,
+          88
+        ],
+        "path_node_ids": [
+          40,
+          8,
+          5,
+          6,
+          1,
+          27,
+          30
+        ],
+        "request_id": "req_001",
+        "slot_start": 305,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      },
+      {
+        "path_link_ids": [
+          33,
+          34,
+          118,
+          120,
+          124,
+          113,
+          57,
+          54,
+          60,
+          62,
+          39,
+          36,
+          45
+        ],
+        "path_node_ids": [
+          9,
+          8,
+          40,
+          41,
+          42,
+          43,
+          36,
+          14,
+          16,
+          17,
+          18,
+          10,
+          13,
+          12
+        ],
+        "request_id": "req_002",
+        "slot_start": 216,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          19,
+          16,
+          22,
+          7,
+          1,
+          2
+        ],
+        "path_node_ids": [
+          37,
+          4,
+          5,
+          6,
+          1,
+          0,
+          3
+        ],
+        "request_id": "req_003",
+        "slot_start": 178,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    158,
+    154,
+    158
+  ],
+  "full_bounded_action_counts": [
+    436,
+    114,
+    58
+  ],
+  "lower_bounds": [
+    24,
+    20,
+    24
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 722,
+  "milp_gap": 0.0,
+  "milp_variables": 608,
+  "primary": 139,
+  "secondary": 0.8057269747295458,
+  "stage2_search_nodes": 19,
+  "stage2_tied": 8,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 1.6037,
+  "witness_ub": 202
+}

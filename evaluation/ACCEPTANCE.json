@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "release": "OPTIRA_20261020_Q1_2000_TASK_DIRECTORY_NAMES_R1",
+  "task_counts": {
+    "G1": 2430,
+    "G2": 2815,
+    "G3": 2247,
+    "O1-C": 1751,
+    "O1-S": 3618,
+    "X1": 1126,
+    "X2": 3618,
+    "X3": 1751,
+    "Q1": 2000
+  },
+  "dataset_cases": 21356,
+  "renamed_cases": 19356,
+  "original_Q1_files_unchanged": 16000,
+  "scientific_payload_files_unchanged": 175726,
+  "before_after_strict_relaxed_grading_identical": 19356,
+  "eight_task_reference_category_counts": {
+    "CORRECT": 19356
+  },
+  "existing_evaluation_python_files_byte_identical": 48,
+  "public_boundary_tests": 7,
+  "all_task_preflight": "PASS",
+  "inspect_offline_pilot_cases": 18,
+  "independent_download_location_check": "PASS",
+  "full_dataset_hash_check": "PASS",
+  "clean_dependency_check": "PASS",
+  "public_hygiene": {
+    "files": 93,
+    "cjk_files": [],
+    "credential_pattern_files": [],
+    "machine_path_files": [],
+    "unexpected_files": [],
+    "cache_files": []
+  },
+  "real_model_API_calls": 0,
+  "dataset_manifest_sha256": "a205054b08b12c85fb1b5bd9492eba31b51f3b2159ce63f0f17b6d6635e6a733",
+  "license_status": "OWNER_CONFIRMED",
+  "code_license": "MIT",
+  "dataset_license": "CC-BY-4.0",
+  "publication_ready": true,
+  "remaining_owner_actions": [],
+  "engineering_acceptance_only": true,
+  "external_standards_certification_claimed": false,
+  "publication": {
+    "repository": "https://github.com/Z-Ziang/OptiNet-Bench",
+    "layout": "expanded evaluation/ and dataset/ directories",
+    "data_delivery": "ordinary Git files plus Git LFS for the large source-provenance record",
+    "LFS_paths": [
+      "dataset/_meta/request_id_normalization/source_provenance.jsonl"
+    ],
+    "version_binding": "Git commit SHA; use git rev-parse HEAD"
+  }
+}

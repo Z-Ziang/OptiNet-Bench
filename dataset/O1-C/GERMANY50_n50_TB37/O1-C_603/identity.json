@@ -1,0 +1,84 @@
+{
+  "case_dir": "dataset/O1-C/GERMANY50_n50_TB37/O1-C_603",
+  "case_id": "O1-C_9bd266b5b72064cf",
+  "case_uid": "9bd266b5b72064cf46a1c3e170bcd902fefff62dd49ecebec339d61c417009f3",
+  "contract_dir": "contracts/O1-C/O1_MINIMAL_FIXED_PATH_V2",
+  "files": {
+    "metadata.json": {
+      "bytes": 2929,
+      "sha256": "47646af1813e9c6f564976e348b1310c1b8ef74b0c973264352d43a2d1cca2d7"
+    },
+    "private/fixed_paths.json": {
+      "bytes": 746,
+      "sha256": "7290d2f5f5a40c4e2df4340b176649d7924c268aa0e217dc71d960698b65fe07"
+    },
+    "private/private_truth.json": {
+      "bytes": 337,
+      "sha256": "efc24b2644bbdd9807a4701be4c97ac88ba72b0856ed03f339fe81828199a8d0"
+    },
+    "private/reference_output.json": {
+      "bytes": 176,
+      "sha256": "163f15a3a9a95e03f48b175dbeb0594fbba48ba1fe51bf51f0813ced2f91adea"
+    },
+    "private/root_case.json": {
+      "bytes": 649519,
+      "sha256": "80512152fb70dd7f2146cc0c3ed0c8b727315869307d4e3eafd35347b2f2e3ce"
+    },
+    "private/source_reference_output.json": {
+      "bytes": 723,
+      "sha256": "1df9f70c28bffc69aa5fb541118cab7d04e815d4ea0ef0ec8b9450b17f0a8a1d"
+    },
+    "private/validation.json": {
+      "bytes": 213,
+      "sha256": "e7a15565a2c0af128478e73fa2139b95303c7d07a52071e98062df523c871e23"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "cd93d579aca21f384f5ad91a94675f5a7950eb3d8b1a8b76f9f069fea98b765b"
+    },
+    "public/output_schema.json": {
+      "bytes": 1355,
+      "sha256": "1843a28abcea50b975bc9479e245de99c8903d986456cf77c00efc5a6283ca19"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4052,
+      "sha256": "6f744769cb54530e311713b529e04d69dffd074d8423d63516afe4f1d6902eb5"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 34681,
+      "sha256": "c62b529bc439b408ef16ffc0852dd40501a390a7d362f9eb5ce9a2a7c2549388"
+    }
+  },
+  "interface_version": "O1_ENGLISH_FIXED_PATH_MINIMAL_JSON_V2",
+  "messages_sha256": "8087e3803eb2e7fd545264548ba6f4053167a93d5baaf220ce409bc284dde00d",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "path_selection": "SOURCE_CERTIFIED_OPTIMUM",
+  "source_archive_sha256": "829592719646cdb14cd4a80f36c14dd856ee92203459cd7b200c96254cc7ea42",
+  "source_case_dir": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset",
+  "source_case_id": "X3_COND_c685fb0cd685b94049dffdb9",
+  "source_case_uid": "9f64f4be8ddc872f6da554f59d6f7069d175ae14b494158ed3c23498f817603f",
+  "source_certification": "EXACT_CERTIFIED",
+  "source_graph_hash": "d99c6a851a7de6f6d7f5b54c672cf185c66d4ed13ea035453e71df9cce31515a",
+  "source_key": "o1_supp",
+  "source_member_paths": {
+    "private_truth.json": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/internal/private/X3/X3_COND_c685fb0cd685b94049dffdb9/private_truth.json",
+    "root_case.json": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/internal/cases/X3/X3_COND_c685fb0cd685b94049dffdb9/root_case.json",
+    "source_case_index.jsonl": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/case_index.jsonl",
+    "source_lineage.json": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/internal/private/X3/X3_COND_c685fb0cd685b94049dffdb9/lineage.json",
+    "source_reference_output.json": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/internal/private/X3/X3_COND_c685fb0cd685b94049dffdb9/reference_output.json",
+    "source_system_prompt.txt": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/evaluation_case/X3/llm_system_prompt.txt",
+    "source_user_prompt.json": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/evaluation_case/X3/llm/case_000001.json",
+    "validation.json": "cases/X3/X3_COND_c685fb0cd685b94049dffdb9/dataset/internal/private/X3/X3_COND_c685fb0cd685b94049dffdb9/validation.json"
+  },
+  "source_reference_sha256": "fb72c6ffaba07db614e6f8343b744a219acff6eb7cdc47c7e9423e3bebe258d0",
+  "source_root_sha256": "f344553a5d5e2b89ec561a7e77902131765ff1a5fcfde8c09b21e6b71b465a54",
+  "source_snapshot_hash": "07aab1277f615def8025a7036c1defe7219918e4c2745b4abdee7ae7ed3138f5",
+  "source_task": "X3",
+  "source_truth_sha256": "efc24b2644bbdd9807a4701be4c97ac88ba72b0856ed03f339fe81828199a8d0",
+  "source_validation_sha256": "e7a15565a2c0af128478e73fa2139b95303c7d07a52071e98062df523c871e23",
+  "task": "O1-C",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "request_id_version": "REQUEST_IDS_R1_20261018",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1"
+}

@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "859d613a5c17f2d43e8db6d6435da6856198bd3290a1537708f6872ed547d389",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 4154,
+        "sha256": "5380f9110b7ed0291f46bbc2ffb7d7a3332c9408d73896990b142b771d845745"
+      },
+      "private/reference_output.json": {
+        "bytes": 3762,
+        "sha256": "5e017a34e1d4b1e639a37e0cfc4a66447e8cf04308cd0e68ea978c8eaaeed892"
+      },
+      "private/root_case.json": {
+        "bytes": 54775,
+        "sha256": "0587c7d891f08eb2111d209f2b859ccbdf83f307fcd90e86a728936a68e5c907"
+      },
+      "private/truth.json": {
+        "bytes": 4610,
+        "sha256": "3bb9946094f17fe5812e70bdc4ce0373be52e5f055fa28ee61ed7fe65aba1833"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "95625ed88cc8f85eb54db09cfe41ab8f28d61602d5a7021b1b3279202aacb653"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 2969,
+        "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 10575,
+        "sha256": "b368acde0503ce266670a1990ac52b719c6eac67e50d240fdcf7c4c496f8333e"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G1_001086",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_001086",
+    "source_manifest_record": {
+      "case_id": "G1_001086",
+      "case_variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST",
+      "derived_seed": "10304883399469929666",
+      "en_internal_case_path": "cases/G1/G1_001086",
+      "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_001086.json",
+      "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_001086.json",
+      "reference_oracle_sha256": "6587fdbb84a99a613e0feece073798a00131e08f214a283d883d5897a8153907",
+      "root_sha256": "0587c7d891f08eb2111d209f2b859ccbdf83f307fcd90e86a728936a68e5c907",
+      "task_type": "G1",
+      "topology_id": "GABRIEL_CONTROLLED_N070_005",
+      "topology_sequence_id": "221",
+      "truth_sha256": "3bb9946094f17fe5812e70bdc4ce0373be52e5f055fa28ee61ed7fe65aba1833"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "ada367d2cb364e5f16c54b8cd0eb28deba727e483a6cf5d8d3b722e0ca8c20c1",
+    "case_dir": "case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086",
+    "case_id": "G1_001086",
+    "case_uid": "859d613a5c17f2d43e8db6d6435da6856198bd3290a1537708f6872ed547d389",
+    "cohort": "CALIBRATION_EXPOSED",
+    "evaluation_eligible": true,
+    "input_characters": 13544,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "7d213d9fa98c215d66cdf2662d1a753183692813b984ef574ccb3cbd15c5946c",
+    "node_count": 70,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "60–100",
+    "seed": "10304883399469929666",
+    "source_category": "controlled_gabriel_reference_extension",
+    "task": "G1",
+    "topology_folder": "GABRIEL_CONTROLLED_N070_005_n70",
+    "topology_id": "GABRIEL_CONTROLLED_N070_005",
+    "variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 2969,
+      "output_path": "dataset/G1/GABRIEL_CONTROLLED_N070_005_n70/859d613a5c17f2d4/public/system_prompt.txt",
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086/public/system_prompt.txt"
+    },
+    {
+      "bytes": 10575,
+      "output_path": "dataset/G1/GABRIEL_CONTROLLED_N070_005_n70/859d613a5c17f2d4/public/user_prompt.txt",
+      "sha256": "b368acde0503ce266670a1990ac52b719c6eac67e50d240fdcf7c4c496f8333e",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086/public/user_prompt.txt"
+    },
+    {
+      "bytes": 54775,
+      "output_path": "dataset/G1/GABRIEL_CONTROLLED_N070_005_n70/859d613a5c17f2d4/private/root_case.json",
+      "sha256": "0587c7d891f08eb2111d209f2b859ccbdf83f307fcd90e86a728936a68e5c907",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086/private/root_case.json"
+    },
+    {
+      "bytes": 3762,
+      "output_path": "dataset/G1/GABRIEL_CONTROLLED_N070_005_n70/859d613a5c17f2d4/private/reference_output.json",
+      "sha256": "5e017a34e1d4b1e639a37e0cfc4a66447e8cf04308cd0e68ea978c8eaaeed892",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G1/GABRIEL_CONTROLLED_N070_005_n70/859d613a5c17f2d4/private/validation.json",
+      "sha256": "95625ed88cc8f85eb54db09cfe41ab8f28d61602d5a7021b1b3279202aacb653",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086/private/validation.json"
+    },
+    {
+      "bytes": 4610,
+      "output_path": "dataset/G1/GABRIEL_CONTROLLED_N070_005_n70/859d613a5c17f2d4/private/truth.json",
+      "sha256": "3bb9946094f17fe5812e70bdc4ce0373be52e5f055fa28ee61ed7fe65aba1833",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086/private/truth.json"
+    },
+    {
+      "bytes": 4154,
+      "output_path": "dataset/G1/GABRIEL_CONTROLLED_N070_005_n70/859d613a5c17f2d4/private/evaluation_reference_output.json",
+      "sha256": "5380f9110b7ed0291f46bbc2ffb7d7a3332c9408d73896990b142b771d845745",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086",
+  "source_index_record": {
+    "canonical_graph_hash": "ada367d2cb364e5f16c54b8cd0eb28deba727e483a6cf5d8d3b722e0ca8c20c1",
+    "case_dir": "case_sets/GABRIEL_CONTROLLED_N070_005_n70/G1/G1_001086",
+    "case_id": "G1_001086",
+    "case_uid": "859d613a5c17f2d43e8db6d6435da6856198bd3290a1537708f6872ed547d389",
+    "cohort": "CALIBRATION_EXPOSED",
+    "evaluation_eligible": true,
+    "input_characters": 13544,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "7d213d9fa98c215d66cdf2662d1a753183692813b984ef574ccb3cbd15c5946c",
+    "node_count": 70,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "60–100",
+    "seed": "10304883399469929666",
+    "source_category": "controlled_gabriel_reference_extension",
+    "task": "G1",
+    "topology_folder": "GABRIEL_CONTROLLED_N070_005_n70",
+    "topology_id": "GABRIEL_CONTROLLED_N070_005",
+    "variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST"
+  },
+  "source_key": "gx"
+}

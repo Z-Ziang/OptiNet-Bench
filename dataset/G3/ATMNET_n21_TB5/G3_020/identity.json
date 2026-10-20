@@ -1,0 +1,76 @@
+{
+  "case_dir": "dataset/G3/ATMNET_n21_TB5/G3_020",
+  "case_id": "G3_002091",
+  "case_uid": "eb64059bc24c2a7ceedb94088325924fe5d360cfc597a5ff08936875919a3681",
+  "contract_dir": "contracts/G3/GX1_V5_R1",
+  "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+  "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+  "files": {
+    "metadata.json": {
+      "bytes": 2261,
+      "sha256": "28373e430dfb2007b14539b2d40855be19915e340c7824db322784d482b1a485"
+    },
+    "private/evaluation_reference_output.json": {
+      "bytes": 577,
+      "sha256": "749cad52d4c4f5b805e9b3106766b261dd82f6b6510f8dc3b6509adc0db06836"
+    },
+    "private/reference_output.json": {
+      "bytes": 537,
+      "sha256": "e64db81ebd65c01912c235288c53d10131fec857a28704e59d0264fd91c405af"
+    },
+    "private/root_case.json": {
+      "bytes": 6476,
+      "sha256": "adf82793214604d75473930145592db6fee3a118f8f86f93e2db5d0afc2e4cc8"
+    },
+    "private/truth.json": {
+      "bytes": 1250,
+      "sha256": "cd93ca742c7e9eb78d3fa12e43faeebb9074d0fe71fcbe3d19123b25392c06ca"
+    },
+    "private/validation.json": {
+      "bytes": 103,
+      "sha256": "95008c0d9f99ce6b7ab9300942a77506fec35ceef0d72e600ad0d55d6aa0cd51"
+    },
+    "provenance.json": {
+      "bytes": 8064,
+      "sha256": "8d8cc42eb521ae19861331adaf4bf9c62bd86bb3e0d828b67bcef5f0497f3a84"
+    },
+    "public/output_schema.json": {
+      "bytes": 187,
+      "sha256": "cc2efdb4336357ab43c259ac06f50df6b80c009819a74036a9d68b1c18ea00fd"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 1618,
+      "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 2234,
+      "sha256": "56f3d330663059bd34fa6cb0a1856733ebcc597f12f0acc6af53fb84a44a9064"
+    }
+  },
+  "messages_sha256": "779a5c33e1d0f398eaeed7f75ebb16ab9b235ee34b862a499529b4f455656035",
+  "original_identity_note": "Original source identity is preserved under provenance.json/original_identity. Current files hashes cover only files actually retained here. Scientific IDs and payloads are not newly certified by this repackaging.",
+  "packaging_version": "CLEAN_EIGHT_TASKS_ENGLISH_20261017_R1",
+  "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+  "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+  "source_case_id": "G3_002091",
+  "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+  "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G3/G3_002091",
+  "source_key": "gx",
+  "source_manifest_record": {
+    "case_id": "G3_002091",
+    "case_variant": "HOP_COUNT__shared_true",
+    "derived_seed": "11337093341006507480",
+    "en_internal_case_path": "cases/G3/G3_002091",
+    "en_public_benchmark_case_path": "benchmark_case/G3/cases/case_002087.json",
+    "en_public_evaluation_case_path": "evaluation_case/G3/llm/case_002087.json",
+    "reference_oracle_sha256": "fe3cd31d6f79136612d66bf971963d7d5fb831ec39fdad8c02bdbfb48466c2d4",
+    "root_sha256": "adf82793214604d75473930145592db6fee3a118f8f86f93e2db5d0afc2e4cc8",
+    "task_type": "G3",
+    "topology_id": "TB_REAL::TOP_5_ATMNET",
+    "topology_sequence_id": "523",
+    "truth_sha256": "cd93ca742c7e9eb78d3fa12e43faeebb9074d0fe71fcbe3d19123b25392c06ca"
+  },
+  "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+  "task": "G3",
+  "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+}

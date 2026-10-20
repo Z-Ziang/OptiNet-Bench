@@ -1,0 +1,155 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          33,
+          34,
+          118,
+          120,
+          124,
+          113,
+          57,
+          54,
+          60,
+          62,
+          39,
+          36,
+          45
+        ],
+        "path_node_ids": [
+          9,
+          8,
+          40,
+          41,
+          42,
+          43,
+          36,
+          14,
+          16,
+          17,
+          18,
+          10,
+          13,
+          12
+        ],
+        "request_id": "req_001",
+        "slot_start": 216,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          19,
+          16,
+          22,
+          7,
+          1,
+          2
+        ],
+        "path_node_ids": [
+          37,
+          4,
+          5,
+          6,
+          1,
+          0,
+          3
+        ],
+        "request_id": "req_002",
+        "slot_start": 178,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          90,
+          105,
+          99,
+          87,
+          47,
+          44,
+          41,
+          42,
+          78,
+          83,
+          73,
+          71,
+          69,
+          39
+        ],
+        "path_node_ids": [
+          27,
+          34,
+          32,
+          31,
+          26,
+          12,
+          13,
+          11,
+          21,
+          24,
+          22,
+          20,
+          19,
+          18,
+          10
+        ],
+        "request_id": "req_003",
+        "slot_start": 98,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          35,
+          27,
+          22,
+          7,
+          8,
+          88
+        ],
+        "path_node_ids": [
+          40,
+          8,
+          5,
+          6,
+          1,
+          27,
+          30
+        ],
+        "request_id": "req_004",
+        "slot_start": 305,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    229,
+    233,
+    229,
+    233
+  ],
+  "full_bounded_action_counts": [
+    58,
+    104,
+    22,
+    436
+  ],
+  "lower_bounds": [
+    20,
+    24,
+    20,
+    24
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 1113,
+  "milp_gap": 0.0,
+  "milp_variables": 620,
+  "primary": 237,
+  "secondary": 0.8071581054360781,
+  "stage2_search_nodes": 42,
+  "stage2_tied": 16,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 2.2035,
+  "witness_ub": 297
+}

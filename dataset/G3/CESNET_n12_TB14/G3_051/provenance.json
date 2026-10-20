@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "7eed67cb86039c723b73cc241330d5358550c9d4414a5eecd236b4da80faa2a7",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 472,
+        "sha256": "99041914b92f9049b37c1740ecf4125867d4d2329c0a4252e3a87694185c4d91"
+      },
+      "private/reference_output.json": {
+        "bytes": 441,
+        "sha256": "b69a136282869df95211b89724def2c920499c2911d0b74dc50fde6283ee71bd"
+      },
+      "private/root_case.json": {
+        "bytes": 5614,
+        "sha256": "dfba60f9e81e84f138424215b83ceed6ca49664b58da7cb34192eb98b851528f"
+      },
+      "private/truth.json": {
+        "bytes": 1047,
+        "sha256": "ecfa1fd15b4a76f4b206eab63b0c967ec05079ee7ada50eab47d617d8f8e2546"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "9e8b84595351ebc4c455adf76caa59a812f534856c1d70eadd832a78724f9194"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 1618,
+        "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 1946,
+        "sha256": "f9b6edff7c3ba94e84d96c278c976a293dce23dcc9f2391bfa53324f183b2a6a"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G3_001899",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G3/G3_001899",
+    "source_manifest_record": {
+      "case_id": "G3_001899",
+      "case_variant": "HOP_COUNT__shared_true",
+      "derived_seed": "14505654322848064840",
+      "en_internal_case_path": "cases/G3/G3_001899",
+      "en_public_benchmark_case_path": "benchmark_case/G3/cases/case_001895.json",
+      "en_public_evaluation_case_path": "evaluation_case/G3/llm/case_001895.json",
+      "reference_oracle_sha256": "a1deba43b3576c3267ce67089323a99fb862e1a1013738c93559177e2e4ccc92",
+      "root_sha256": "dfba60f9e81e84f138424215b83ceed6ca49664b58da7cb34192eb98b851528f",
+      "task_type": "G3",
+      "topology_id": "TB_REAL::TOP_14_CESNET",
+      "topology_sequence_id": "475",
+      "truth_sha256": "ecfa1fd15b4a76f4b206eab63b0c967ec05079ee7ada50eab47d617d8f8e2546"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "d39782b33deae82d93f917ce89ee331f8548509bb333eeef9fb8e8a83270daa1",
+    "case_dir": "case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899",
+    "case_id": "G3_001899",
+    "case_uid": "7eed67cb86039c723b73cc241330d5358550c9d4414a5eecd236b4da80faa2a7",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3564,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "07a5ecda7d620defdfe98cbc4f361e6fef66ccc602c97626bc85aab8396ff273",
+    "node_count": 12,
+    "path_cost_metric": "HOP_COUNT",
+    "scale": "11–29",
+    "seed": "14505654322848064840",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_14_CESNET_n12",
+    "topology_id": "TB_REAL::TOP_14_CESNET",
+    "variant": "HOP_COUNT__shared_true"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 1618,
+      "output_path": "dataset/G3/CESNET_n12_TB14/7eed67cb86039c72/public/system_prompt.txt",
+      "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899/public/system_prompt.txt"
+    },
+    {
+      "bytes": 1946,
+      "output_path": "dataset/G3/CESNET_n12_TB14/7eed67cb86039c72/public/user_prompt.txt",
+      "sha256": "f9b6edff7c3ba94e84d96c278c976a293dce23dcc9f2391bfa53324f183b2a6a",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899/public/user_prompt.txt"
+    },
+    {
+      "bytes": 5614,
+      "output_path": "dataset/G3/CESNET_n12_TB14/7eed67cb86039c72/private/root_case.json",
+      "sha256": "dfba60f9e81e84f138424215b83ceed6ca49664b58da7cb34192eb98b851528f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899/private/root_case.json"
+    },
+    {
+      "bytes": 441,
+      "output_path": "dataset/G3/CESNET_n12_TB14/7eed67cb86039c72/private/reference_output.json",
+      "sha256": "b69a136282869df95211b89724def2c920499c2911d0b74dc50fde6283ee71bd",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G3/CESNET_n12_TB14/7eed67cb86039c72/private/validation.json",
+      "sha256": "9e8b84595351ebc4c455adf76caa59a812f534856c1d70eadd832a78724f9194",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899/private/validation.json"
+    },
+    {
+      "bytes": 1047,
+      "output_path": "dataset/G3/CESNET_n12_TB14/7eed67cb86039c72/private/truth.json",
+      "sha256": "ecfa1fd15b4a76f4b206eab63b0c967ec05079ee7ada50eab47d617d8f8e2546",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899/private/truth.json"
+    },
+    {
+      "bytes": 472,
+      "output_path": "dataset/G3/CESNET_n12_TB14/7eed67cb86039c72/private/evaluation_reference_output.json",
+      "sha256": "99041914b92f9049b37c1740ecf4125867d4d2329c0a4252e3a87694185c4d91",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899",
+  "source_index_record": {
+    "canonical_graph_hash": "d39782b33deae82d93f917ce89ee331f8548509bb333eeef9fb8e8a83270daa1",
+    "case_dir": "case_sets/TB_REAL_TOP_14_CESNET_n12/G3/G3_001899",
+    "case_id": "G3_001899",
+    "case_uid": "7eed67cb86039c723b73cc241330d5358550c9d4414a5eecd236b4da80faa2a7",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3564,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "07a5ecda7d620defdfe98cbc4f361e6fef66ccc602c97626bc85aab8396ff273",
+    "node_count": 12,
+    "path_cost_metric": "HOP_COUNT",
+    "scale": "11–29",
+    "seed": "14505654322848064840",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_14_CESNET_n12",
+    "topology_id": "TB_REAL::TOP_14_CESNET",
+    "variant": "HOP_COUNT__shared_true"
+  },
+  "source_key": "gx"
+}

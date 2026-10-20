@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "967e0e7520ef178f2db6b903c0bca790c6373d7e48c5e2468bf107724516ee9c",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 1285,
+        "sha256": "a8746e08d190774f2779abb2cb73dca595adfb9ff1d56ebff130173e3c5dace3"
+      },
+      "private/reference_output.json": {
+        "bytes": 1163,
+        "sha256": "2e356f60d728313c41e488eb8a19f3d41a69117e9f3a6609a826c462bec7830a"
+      },
+      "private/root_case.json": {
+        "bytes": 10742,
+        "sha256": "6739b6ffec953a58ac1bcd90a0407800986c256271ad814f005758a96a2946bb"
+      },
+      "private/truth.json": {
+        "bytes": 1471,
+        "sha256": "52edc7fb4cda55eef8eabece013410bc84316b9a68dbed2cb4359d4ea85032b8"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "3542f4cfbf660b9b81b356536eb677dee7d02d3c4f97083e984dccfae4e82c89"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 2969,
+        "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 2007,
+        "sha256": "abee9ca9f9b4809495f981d274feb6eb70b07972d476b0a3ce36258cd41b9662"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G1_001974",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_001974",
+    "source_manifest_record": {
+      "case_id": "G1_001974",
+      "case_variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST",
+      "derived_seed": "3304911463738268779",
+      "en_internal_case_path": "cases/G1/G1_001974",
+      "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_001974.json",
+      "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_001974.json",
+      "reference_oracle_sha256": "58efa326096f15ee0dd8aff3caffcd8814d8a839c51e4d9de3849fc11b50d10d",
+      "root_sha256": "6739b6ffec953a58ac1bcd90a0407800986c256271ad814f005758a96a2946bb",
+      "task_type": "G1",
+      "topology_id": "TB_REAL::TOP_25_DARKSTRAND",
+      "topology_sequence_id": "487",
+      "truth_sha256": "52edc7fb4cda55eef8eabece013410bc84316b9a68dbed2cb4359d4ea85032b8"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "91c61ff3efdd8f4b0f742c1e717a43d74820ef95dbf8813e410cca972d46cfc4",
+    "case_dir": "case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974",
+    "case_id": "G1_001974",
+    "case_uid": "967e0e7520ef178f2db6b903c0bca790c6373d7e48c5e2468bf107724516ee9c",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 4976,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "0cb55a426a92f75736160923c1ed0c547677b72cd71ed0593b653f47a2a88a16",
+    "node_count": 28,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "11–29",
+    "seed": "3304911463738268779",
+    "source_category": "real",
+    "task": "G1",
+    "topology_folder": "TB_REAL_TOP_25_DARKSTRAND_n28",
+    "topology_id": "TB_REAL::TOP_25_DARKSTRAND",
+    "variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 2969,
+      "output_path": "dataset/G1/DARKSTRAND_n28_TB25/967e0e7520ef178f/public/system_prompt.txt",
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974/public/system_prompt.txt"
+    },
+    {
+      "bytes": 2007,
+      "output_path": "dataset/G1/DARKSTRAND_n28_TB25/967e0e7520ef178f/public/user_prompt.txt",
+      "sha256": "abee9ca9f9b4809495f981d274feb6eb70b07972d476b0a3ce36258cd41b9662",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974/public/user_prompt.txt"
+    },
+    {
+      "bytes": 10742,
+      "output_path": "dataset/G1/DARKSTRAND_n28_TB25/967e0e7520ef178f/private/root_case.json",
+      "sha256": "6739b6ffec953a58ac1bcd90a0407800986c256271ad814f005758a96a2946bb",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974/private/root_case.json"
+    },
+    {
+      "bytes": 1163,
+      "output_path": "dataset/G1/DARKSTRAND_n28_TB25/967e0e7520ef178f/private/reference_output.json",
+      "sha256": "2e356f60d728313c41e488eb8a19f3d41a69117e9f3a6609a826c462bec7830a",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G1/DARKSTRAND_n28_TB25/967e0e7520ef178f/private/validation.json",
+      "sha256": "3542f4cfbf660b9b81b356536eb677dee7d02d3c4f97083e984dccfae4e82c89",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974/private/validation.json"
+    },
+    {
+      "bytes": 1471,
+      "output_path": "dataset/G1/DARKSTRAND_n28_TB25/967e0e7520ef178f/private/truth.json",
+      "sha256": "52edc7fb4cda55eef8eabece013410bc84316b9a68dbed2cb4359d4ea85032b8",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974/private/truth.json"
+    },
+    {
+      "bytes": 1285,
+      "output_path": "dataset/G1/DARKSTRAND_n28_TB25/967e0e7520ef178f/private/evaluation_reference_output.json",
+      "sha256": "a8746e08d190774f2779abb2cb73dca595adfb9ff1d56ebff130173e3c5dace3",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974",
+  "source_index_record": {
+    "canonical_graph_hash": "91c61ff3efdd8f4b0f742c1e717a43d74820ef95dbf8813e410cca972d46cfc4",
+    "case_dir": "case_sets/TB_REAL_TOP_25_DARKSTRAND_n28/G1/G1_001974",
+    "case_id": "G1_001974",
+    "case_uid": "967e0e7520ef178f2db6b903c0bca790c6373d7e48c5e2468bf107724516ee9c",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 4976,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "0cb55a426a92f75736160923c1ed0c547677b72cd71ed0593b653f47a2a88a16",
+    "node_count": 28,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "11–29",
+    "seed": "3304911463738268779",
+    "source_category": "real",
+    "task": "G1",
+    "topology_folder": "TB_REAL_TOP_25_DARKSTRAND_n28",
+    "topology_id": "TB_REAL::TOP_25_DARKSTRAND",
+    "variant": "ADJACENCY_MATRIX_TO_ADJACENCY_LIST"
+  },
+  "source_key": "gx"
+}

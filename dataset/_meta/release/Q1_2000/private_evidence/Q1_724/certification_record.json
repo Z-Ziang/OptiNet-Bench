@@ -1,0 +1,110 @@
+{
+  "accepted_row": {
+    "artifact_dir": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to1000_20261019\\certified\\e1d6ddd83cd4e6eb230aa0e317dd6b4b3361096d7d35a2a97b1b3b6070947cb5",
+    "beam128_grade": "CORRECT",
+    "beam16_grade": "SUBOPTIMAL_SECONDARY",
+    "candidate_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to1000_20261019\\evidence\\inputs\\e1d6ddd83cd4e6eb230aa0e317dd6b4b3361096d7d35a2a97b1b3b6070947cb5.json.gz",
+    "case_id": "Q1_GEN_E1D6DDD83CD4E6EB230A",
+    "key": [
+      19,
+      "MIXED_RATES",
+      "MIXED_V0.3",
+      3,
+      "ACCEPT"
+    ],
+    "model_version": "MIXED_V0.3",
+    "record_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to1000_20261019\\evidence\\results\\e1d6ddd83cd4e6eb230aa0e317dd6b4b3361096d7d35a2a97b1b3b6070947cb5.json.gz",
+    "semantic_sha256": "e1d6ddd83cd4e6eb230aa0e317dd6b4b3361096d7d35a2a97b1b3b6070947cb5",
+    "source": "SCALED1000_NEW_GENERATION"
+  },
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          34,
+          11
+        ],
+        "path_node_ids": [
+          11,
+          15,
+          2
+        ],
+        "request_id": "req_001",
+        "slot_start": 240,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          33,
+          34,
+          11,
+          3,
+          6
+        ],
+        "path_node_ids": [
+          12,
+          11,
+          15,
+          2,
+          0,
+          6
+        ],
+        "request_id": "req_002",
+        "slot_start": 159,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      },
+      {
+        "path_link_ids": [
+          33,
+          34,
+          11,
+          3,
+          0
+        ],
+        "path_node_ids": [
+          12,
+          11,
+          15,
+          2,
+          0,
+          1
+        ],
+        "request_id": "req_003",
+        "slot_start": 294,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "baseline": {
+    "beams": {
+      "128": {
+        "final_beam_size": 49,
+        "grade": "CORRECT",
+        "primary": 68,
+        "secondary": 0.5852671754231852
+      },
+      "16": {
+        "final_beam_size": 10,
+        "grade": "SUBOPTIMAL_SECONDARY",
+        "primary": 68,
+        "secondary": 0.5854669615097396
+      }
+    },
+    "elapsed_seconds": 1.0044,
+    "status": "PASS"
+  },
+  "elapsed_seconds": 3.9772,
+  "proof": {
+    "milp_gap": 0.0,
+    "stage2_complete": true,
+    "stage2_search_nodes": 84,
+    "stage2_tied": 68
+  },
+  "score_replay": {
+    "primary_match": true,
+    "secondary_match": true,
+    "status": "PASS"
+  },
+  "status": "EXACT_CERTIFIED"
+}

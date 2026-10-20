@@ -1,0 +1,44 @@
+Q1 benchmark (mixed-rate): three or four 100/200/300 Gbit/s requests to be allocated together. For each request choose ONLY a transponder whose rate_gbps equals that request rate.
+Requests:
+  req_001: 7 -> 5, 300 Gbit/s
+  req_002: 4 -> 5, 100 Gbit/s
+  req_003: 4 -> 5, 200 Gbit/s
+  req_004: 7 -> 5, 200 Gbit/s
+Transponder choices (research mapping; the slots below include one additional project-defined guard slot):
+  100G_QPSK_28GBd: rate_gbps=100; modulation=QPSK; baud_rate=28 GBd; contiguous_slots=4; min_OSNR=15.0 dB; max_chromatic_dispersion=40000.0 ps/nm
+  100G_QPSK_32GBd: rate_gbps=100; modulation=QPSK; baud_rate=32 GBd; contiguous_slots=4; min_OSNR=13.0 dB; max_chromatic_dispersion=10000.0 ps/nm
+  200G_16QAM_32GBd: rate_gbps=200; modulation=16QAM; baud_rate=32 GBd; contiguous_slots=4; min_OSNR=22.0 dB; max_chromatic_dispersion=10000.0 ps/nm
+  200G_8QAM_45GBd: rate_gbps=200; modulation=8QAM; baud_rate=45 GBd; contiguous_slots=5; min_OSNR=16.0 dB; max_chromatic_dispersion=20000.0 ps/nm
+  200G_QPSK_60GBd: rate_gbps=200; modulation=QPSK; baud_rate=60 GBd; contiguous_slots=7; min_OSNR=16.0 dB; max_chromatic_dispersion=50000.0 ps/nm
+  300G_8QAM_60GBd: rate_gbps=300; modulation=8QAM; baud_rate=60 GBd; contiguous_slots=7; min_OSNR=21.0 dB; max_chromatic_dispersion=40000.0 ps/nm
+Physical model: ASE-only ideal span power compensation; CD is additive and OSNR is computed from summed ASE noise.
+Every link length L is divided into ceil(L/80) equal spans; each span has attenuation 0.2 dB/km and lumped amplifier with ideal gain to restore signal attenuation, noise figure NF=5 dB.
+Take lambda=1547 nm, h=6.62607015e-34 J s, c=299792458 m/s, B_ref=12.5e9 Hz, signal launch/reference power=0 dBm, QoT margin=0 dB.
+For each span G=10^(0.2*span_km/10), ASE_power=10^(5/10)*h*c/(1547e-9)*(G-1)*12.5e9. Total ASE sums over all spans. OSNR_dB=10*log10(1e-3/ASE_total).
+Accumulated CD=17 ps/(nm km) times total path length_km; both OSNR and CD must pass the selected transponder profile.
+NLI and incumbent QoT interactions are excluded in this research physical model.
+There are 320 slots on every directed link, indexed 0..319. Each link line below lists all and only free contiguous slot intervals (inclusive bounds).
+Directed links:
+  directed link 0: 0->1; length_km=345.300000; free=[[0, 248], [285, 319]]
+  directed link 1: 1->0; length_km=345.300000; free=[[0, 91], [128, 319]]
+  directed link 2: 0->4; length_km=133.545000; free=[[0, 57], [94, 319]]
+  directed link 3: 4->0; length_km=133.545000; free=[[0, 116], [153, 319]]
+  directed link 4: 1->2; length_km=251.850000; free=[[0, 120], [157, 319]]
+  directed link 5: 2->1; length_km=251.850000; free=[[0, 118], [155, 319]]
+  directed link 6: 2->3; length_km=130.575000; free=[[0, 156], [193, 319]]
+  directed link 7: 3->2; length_km=130.575000; free=[[0, 65], [102, 319]]
+  directed link 8: 3->6; length_km=225.450000; free=[[0, 82], [119, 319]]
+  directed link 9: 6->3; length_km=225.450000; free=[[0, 48], [85, 319]]
+  directed link 10: 4->5; length_km=48.915000; free=[[42, 50]]
+  directed link 11: 5->4; length_km=48.915000; free=[[0, 80], [117, 319]]
+  directed link 12: 4->7; length_km=135.795000; free=[[0, 179], [216, 319]]
+  directed link 13: 7->4; length_km=135.795000; free=[[42, 46]]
+  directed link 14: 5->6; length_km=85.575000; free=[[0, 87], [124, 319]]
+  directed link 15: 6->5; length_km=85.575000; free=[[139, 149]]
+  directed link 16: 6->9; length_km=119.655000; free=[[0, 112], [149, 319]]
+  directed link 17: 9->6; length_km=119.655000; free=[[139, 149]]
+  directed link 18: 7->8; length_km=197.100000; free=[[139, 149]]
+  directed link 19: 8->7; length_km=197.100000; free=[[0, 30], [67, 319]]
+  directed link 20: 8->9; length_km=199.200000; free=[[139, 149]]
+  directed link 21: 9->8; length_km=199.200000; free=[[0, 108], [145, 319]]
+Optimize in strict priority: first minimize the total allocated slot-hop cost; then, among allocations tied on the primary objective, minimize the resulting network-wide spectrum fragmentation. Output exactly one JSON object.

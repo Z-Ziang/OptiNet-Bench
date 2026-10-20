@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/CLARANET_n15_TB15/X3_219",
+  "case_id": "X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_e4d6192e8d0458d3df3f",
+  "case_uid": "d7bc1cacd9cd03f62d5de69d045f6ee4dbe729f516e7f15eef4b3d3030a8942d",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_b02f5e3d97801a1833c52fc000f642fa868e64e70e012ed54d0ffb7547e0b5d8"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2757,
+      "sha256": "cb6877280cfd868f6363cb96fb8b06a452dc3fb4a23beee23dccabe774209d5d"
+    },
+    "private/private_truth.json": {
+      "bytes": 377,
+      "sha256": "9553c5fdd1b41e4ed3de261919c2151bc4a5f90d33444a4131be5bbc83e0d14f"
+    },
+    "private/reference_output.json": {
+      "bytes": 472,
+      "sha256": "df1b87040bc4bee664c286e250de8181c96462688ff13d6e7a2a678ad9e71fda"
+    },
+    "private/root_case.json": {
+      "bytes": 133368,
+      "sha256": "0127a6086570ca0dfa55aaec7f0fae2bdc128c969d7cc4d1571a068c3849dd9c"
+    },
+    "private/validation.json": {
+      "bytes": 213,
+      "sha256": "5a5cc98df1e1f0cc028a4d08cf46e0c50dbb23091264b11dbf508a84f36f9d03"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "387055a2b12e9010e0a26f9910d47803b662fdf247a10b82c3c33422b6e5242a"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 7067,
+      "sha256": "5cbaaa304c13496986fdedef9a67e852ad8a86c8ac82053c58a833db26ef099c"
+    }
+  },
+  "graph_hash": "296219d6d55ca425cdf9018ee591bc4b7f891710a843151db3debcb14d53626e",
+  "messages_sha256": "7081d0e7442bfe9bd16bdb1a0938e6d2d3029e6b30ce5a61df95cf9629964ef6",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "d0ea49195161e4fb03af1dface01fb9adfe06ed93c295358b5e174eb5bc6f13c",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "85646472f3f3cd1fabb2a5d6f2d576863c121b23716ce84c93c7dabe3f18c7ba",
+    "private_truth": "9553c5fdd1b41e4ed3de261919c2151bc4a5f90d33444a4131be5bbc83e0d14f",
+    "reference_output": "094841bab1fbf44431bbfd1af69a255c7a754a4ebe2a2b2808d3b0ef5a42ce84",
+    "root_case": "3613304233cbe303a41bca8558d288a9f5d58050107d6ad97492d9f939c5cef9",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "5a5cc98df1e1f0cc028a4d08cf46e0c50dbb23091264b11dbf508a84f36f9d03"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/3596c0e0cf186ce67f35/public/llm_case/X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_e4d6192e8d0458d3df3f.json",
+    "private_truth": "cases/X3/3596c0e0cf186ce67f35/private/private_truth/X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_e4d6192e8d0458d3df3f.json",
+    "reference_output": "cases/X3/3596c0e0cf186ce67f35/private/reference_output/X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_e4d6192e8d0458d3df3f.json",
+    "root_case": "cases/X3/3596c0e0cf186ce67f35/private/root_case/X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_e4d6192e8d0458d3df3f.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/3596c0e0cf186ce67f35/private/validation/X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_e4d6192e8d0458d3df3f.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_15_CLARANET",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

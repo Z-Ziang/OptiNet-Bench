@@ -1,0 +1,93 @@
+{
+  "case_dir": "dataset/X2/JPN12_n12_TB56/X2_1959",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ef16231c59dca3e829b9",
+  "case_uid": "e9d6f98526ff41b5ae40642f6d4bf947b14afbfadedb8d478615e71453e1787c",
+  "contract_dir": "contracts/X2/R1_FROZEN",
+  "family_ids": [
+    "F_1e6104f10261705eaa5a9b1b5e522c96fed7e68fda20410adc5b751785261af9",
+    "F_d83f3f2e171be982131e5c6eefeafb7a8d2b3705874aafc0a69e7566a2ec6877"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2793,
+      "sha256": "753aacd6cc48832d4fbd65fdca2773942809e8eefe0ea6bf8b0fc948286ced22"
+    },
+    "private/private_truth.json": {
+      "bytes": 327,
+      "sha256": "e9d888d6391b119308c90a00eb81e4f004b31747bd10f6be4218c734f39523fa"
+    },
+    "private/reference_output.json": {
+      "bytes": 150,
+      "sha256": "285466284b4711697aa09765ecf2a7b462f72c45dc169749d4955b466e6c4c49"
+    },
+    "private/root_case.json": {
+      "bytes": 125805,
+      "sha256": "5ea75068625536ebd17f30ac966ec9197083a887ce3be330ac6a5a383b20198a"
+    },
+    "private/validation.json": {
+      "bytes": 199,
+      "sha256": "b1b7dd0e495fee94a875bc66d6b7f1295139e05a5b86abdd776249319b6b2cdb"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "42fb72a787910a6a1a1e5ccb15975e00495f4303abd33e146b408b119161e83e"
+    },
+    "public/output_schema.json": {
+      "bytes": 1468,
+      "sha256": "bcd387baf50e0d3182739b2962fd32c0b86e2bc641fe5b8a956b327fd23a571f"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4072,
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 6400,
+      "sha256": "e9b7961f8994fc51dc894b0b81bbdfd7a51c364ce85fe3088c2fc5b6fc4e4b0f"
+    }
+  },
+  "graph_hash": "bb5da7e739225f870feaa15bc0faaa7cfb896d922a7cd0f3d7771206e0ed3bf1",
+  "messages_sha256": "27c1afcb1d765678f7e2baaf973eb2798773ae0d6d745117acfb1e8aaea93da5",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "478337e7258ec6475356aec3303ec9d1452df72e1348cdda860f209f639c3df6",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "fa0f3d610f0b9ac999f811d5344b96280814b3711a1cf5787ea934ec478a0ed4",
+    "private_truth": "e9d888d6391b119308c90a00eb81e4f004b31747bd10f6be4218c734f39523fa",
+    "reference_output": "285466284b4711697aa09765ecf2a7b462f72c45dc169749d4955b466e6c4c49",
+    "root_case": "c7eaf201d0b01790340e8a468a749a9ddca35ed63a76c45f91f95da641c7d008",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+    "validation": "b1b7dd0e495fee94a875bc66d6b7f1295139e05a5b86abdd776249319b6b2cdb"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X2/2770e05af8d2ac5470ef/public/llm_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ef16231c59dca3e829b9.json",
+    "private_truth": "cases/X2/2770e05af8d2ac5470ef/private/private_truth/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ef16231c59dca3e829b9.json",
+    "reference_output": "cases/X2/2770e05af8d2ac5470ef/private/reference_output/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ef16231c59dca3e829b9.json",
+    "root_case": "cases/X2/2770e05af8d2ac5470ef/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ef16231c59dca3e829b9.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt",
+    "validation": "cases/X2/2770e05af8d2ac5470ef/private/validation/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ef16231c59dca3e829b9.json"
+  },
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_56_JPN12",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": false,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

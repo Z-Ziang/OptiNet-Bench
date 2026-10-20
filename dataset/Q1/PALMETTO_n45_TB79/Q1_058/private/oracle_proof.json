@@ -1,0 +1,123 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          96,
+          19,
+          16,
+          28
+        ],
+        "path_node_ids": [
+          29,
+          37,
+          4,
+          5,
+          9
+        ],
+        "request_id": "req_001",
+        "slot_start": 188,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          118,
+          122,
+          113,
+          57,
+          49,
+          45,
+          46,
+          85
+        ],
+        "path_node_ids": [
+          40,
+          41,
+          43,
+          36,
+          14,
+          13,
+          12,
+          26,
+          25
+        ],
+        "request_id": "req_002",
+        "slot_start": 301,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          35,
+          27,
+          22,
+          7,
+          8,
+          88
+        ],
+        "path_node_ids": [
+          40,
+          8,
+          5,
+          6,
+          1,
+          27,
+          30
+        ],
+        "request_id": "req_003",
+        "slot_start": 149,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      },
+      {
+        "path_link_ids": [
+          29,
+          22,
+          7,
+          1,
+          4
+        ],
+        "path_node_ids": [
+          9,
+          5,
+          6,
+          1,
+          0,
+          12
+        ],
+        "request_id": "req_004",
+        "slot_start": 295,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    31,
+    47,
+    39,
+    35
+  ],
+  "full_bounded_action_counts": [
+    154,
+    86,
+    13,
+    1
+  ],
+  "lower_bounds": [
+    16,
+    32,
+    24,
+    20
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 927,
+  "milp_gap": 0.0,
+  "milp_variables": 254,
+  "primary": 107,
+  "secondary": 0.7994842471801731,
+  "stage2_search_nodes": 454,
+  "stage2_tied": 444,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 2.8012,
+  "witness_ub": 107
+}

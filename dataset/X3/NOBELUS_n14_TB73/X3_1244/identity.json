@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/NOBELUS_n14_TB73/X3_1244",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_e61be11797065ca9b6c4d9a5",
+  "case_uid": "b5f3aba53c21f921949dc0f821cf766db7163b8bcee0b65b9b9fc41be2a40fcf",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_d6e0aa2229a129857181141d18f03acb5c920d8be425708be24c317adbd19cb0"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2796,
+      "sha256": "0683584166e8d940940ac1e3f39948fdba887a1a4eeb913823e66a9daf05c527"
+    },
+    "private/private_truth.json": {
+      "bytes": 405,
+      "sha256": "60f54b05e70abd2790771c76924ca292794d576633a38f4a5c91a76aaa40d580"
+    },
+    "private/reference_output.json": {
+      "bytes": 469,
+      "sha256": "3cb87bc3345e27971d7b5752263e3af495605c77203f64124c5d631a7fb8286f"
+    },
+    "private/root_case.json": {
+      "bytes": 155484,
+      "sha256": "722a1d050772621d3e65b475edd728eff00cb4015e7e4a78cd0c4d374964ddb8"
+    },
+    "private/validation.json": {
+      "bytes": 212,
+      "sha256": "345fdb38af89d8a8c71d1109714dfa7b50d2a69ac3861ec9eae4a58c2348cc99"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "a7949fbf20b7bd86100b9919268b6abd740b8c73a8851f01d639c42cb94ffb2f"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 7456,
+      "sha256": "4da1134668a3e9751e1e8b50468ef7fd7e4625d98a2f44a088d507f427a5e1be"
+    }
+  },
+  "graph_hash": "ccbbcda9322bad05bc5dc634d691fd17444f2c716c9fbfd36b1ff1b103494f74",
+  "messages_sha256": "3c1bd4f0fb1e3f56cfa7694097d8c3bcd84631f3cba6beb63147bf100fc8f542",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "4d1c5293e41a83e2a2085a6f0f423f2381a480b8aaeb74816df6e6a0d4e040fc",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "bdf635f8c97e081970450c2bf1959b8e105cb606c4c36e0a41e03de4780efb1f",
+    "private_truth": "60f54b05e70abd2790771c76924ca292794d576633a38f4a5c91a76aaa40d580",
+    "reference_output": "3c3ec730d8ec5303c4f79613227503c24913100602e299afea462ae20a47490f",
+    "root_case": "df67a6a09249679157281bc17d8c0cec480250c62649e84353eea19c902f0acf",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "345fdb38af89d8a8c71d1109714dfa7b50d2a69ac3861ec9eae4a58c2348cc99"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/ba1c02a7de655b8249b0/public/llm_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_e61be11797065ca9b6c4d9a5.json",
+    "private_truth": "cases/X3/ba1c02a7de655b8249b0/private/private_truth/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_e61be11797065ca9b6c4d9a5.json",
+    "reference_output": "cases/X3/ba1c02a7de655b8249b0/private/reference_output/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_e61be11797065ca9b6c4d9a5.json",
+    "root_case": "cases/X3/ba1c02a7de655b8249b0/private/root_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_e61be11797065ca9b6c4d9a5.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/ba1c02a7de655b8249b0/private/validation/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_e61be11797065ca9b6c4d9a5.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_73_NOBELUS",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

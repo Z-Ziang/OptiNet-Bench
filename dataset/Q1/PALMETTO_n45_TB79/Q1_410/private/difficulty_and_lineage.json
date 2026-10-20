@@ -1,0 +1,25 @@
+{
+  "case_id": "Q1_410",
+  "topology": "top_TB_REAL%3A%3ATOP_79_PALMETTO",
+  "nodes": 45,
+  "requests": 5,
+  "proof_status": "EXACT_CERTIFIED",
+  "primary": 127,
+  "secondary": 0.8001009240204336,
+  "baselines": {
+    "128": {
+      "final_beam_size": 128,
+      "grade": "CORRECT",
+      "primary": 127,
+      "secondary": 0.8001009240204334
+    },
+    "16": {
+      "final_beam_size": 16,
+      "grade": "SUBOPTIMAL_SECONDARY",
+      "primary": 127,
+      "secondary": 0.8002204130527106
+    }
+  },
+  "source_case_id": "Q1_GEN_49DD2DBEDCFBDFBE0288",
+  "scientific_input_sha256": "49dd2dbedcfbdfbe0288411bcff31e016cd4d37815df99d6ec28c68b8b586c2a"
+}

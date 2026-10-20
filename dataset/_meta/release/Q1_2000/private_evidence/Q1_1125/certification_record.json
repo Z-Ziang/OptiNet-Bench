@@ -1,0 +1,104 @@
+{
+  "accepted_row": {
+    "artifact_dir": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\certified\\b71da9c099ed9ff31fcf9676cbb34750f49dbee38ffb286e2c3582895aa0d775",
+    "beam128_grade": "CORRECT",
+    "beam16_grade": "SUBOPTIMAL_SECONDARY",
+    "candidate_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\evidence\\inputs\\b71da9c099ed9ff31fcf9676cbb34750f49dbee38ffb286e2c3582895aa0d775.json.gz",
+    "case_id": "Q1_GEN_B71DA9C099ED9FF31FCF",
+    "key": [
+      33,
+      "MIXED_RATES",
+      "MIXED_V0.3",
+      3,
+      "ACCEPT"
+    ],
+    "model_version": "MIXED_V0.3",
+    "record_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\evidence\\results\\b71da9c099ed9ff31fcf9676cbb34750f49dbee38ffb286e2c3582895aa0d775.json.gz",
+    "semantic_sha256": "b71da9c099ed9ff31fcf9676cbb34750f49dbee38ffb286e2c3582895aa0d775",
+    "source": "SCALED2000_NEW_GENERATION"
+  },
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          2,
+          10,
+          51
+        ],
+        "path_node_ids": [
+          0,
+          2,
+          19,
+          13
+        ],
+        "request_id": "req_001",
+        "slot_start": 104,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          75,
+          51,
+          48
+        ],
+        "path_node_ids": [
+          24,
+          19,
+          13,
+          16
+        ],
+        "request_id": "req_002",
+        "slot_start": 112,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          75,
+          51,
+          19
+        ],
+        "path_node_ids": [
+          24,
+          19,
+          13,
+          4
+        ],
+        "request_id": "req_003",
+        "slot_start": 189,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "baseline": {
+    "beams": {
+      "128": {
+        "final_beam_size": 128,
+        "grade": "CORRECT",
+        "primary": 54,
+        "secondary": 0.6767657466158138
+      },
+      "16": {
+        "final_beam_size": 16,
+        "grade": "SUBOPTIMAL_SECONDARY",
+        "primary": 54,
+        "secondary": 0.67686521969425
+      }
+    },
+    "elapsed_seconds": 0.8944,
+    "status": "PASS"
+  },
+  "elapsed_seconds": 3.59,
+  "proof": {
+    "milp_gap": 0.0,
+    "stage2_complete": true,
+    "stage2_search_nodes": 113,
+    "stage2_tied": 88
+  },
+  "score_replay": {
+    "primary_match": true,
+    "secondary_match": true,
+    "status": "PASS"
+  },
+  "status": "EXACT_CERTIFIED"
+}

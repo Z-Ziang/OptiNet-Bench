@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/PIONIERL3_n27_TB81/X3_1408",
+  "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_554a13d8184e8095768e715c",
+  "case_uid": "f2a01d5857b4aff6e143ddb1abb21ddbe79a2547c3587585deaf8c49121a622a",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_6bd7d910e6f25f729e2a560162369ed2c10889510eeddfa9e22ecb2b57a97914"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2820,
+      "sha256": "101f23335df03fa1364941205dc07153a5f651a9d16729aa534ca076d6e43938"
+    },
+    "private/private_truth.json": {
+      "bytes": 385,
+      "sha256": "d2ae223bcf487b0c2493f573868781a2cfcbe3c3c7abc58458b58dc3cf696670"
+    },
+    "private/reference_output.json": {
+      "bytes": 581,
+      "sha256": "41179121ee046b6ec4fde18192cfcd7d12bf45d93eea53982746bdd31075ec30"
+    },
+    "private/root_case.json": {
+      "bytes": 236633,
+      "sha256": "f8676167dbfb0d616242a251573ca8792ac26d4f9d5b59caeb91b732f6ed1b6b"
+    },
+    "private/validation.json": {
+      "bytes": 211,
+      "sha256": "995907dbe9536f13da8c7dbe03ceaa71cecb1df9a38baf852e75a9f41c69a739"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "a6f6ef5919bbbc53cbc072f57e92d745ca9a1442f56e477e55747f4a8dc6b3b2"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 12288,
+      "sha256": "80ac0b6a0818e43ea704d86922268a1eacb51da9abffc76b88a42d298239c649"
+    }
+  },
+  "graph_hash": "0286da2a6e5e629031994f16e1dea64aab215a1a630c4abf0ea6b8f4cef27223",
+  "messages_sha256": "819faf7e409f4a77ab23b7759d537060bc991973e64df34d090d7d25c72cab18",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "db3c1f76c870d565446764a6a443ddd9f833d79c875e67ddba9d6f99d30c4482",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "87a7075f229fdc1f93100a8e404a9bf6fcb8ae2cee2a3be03d10085c7ad32023",
+    "private_truth": "d2ae223bcf487b0c2493f573868781a2cfcbe3c3c7abc58458b58dc3cf696670",
+    "reference_output": "c784c3dfec7ce41c37b67709139d27e2afd5f6a7ccb5e3bd60d6b7bd23d9a594",
+    "root_case": "ed0d722dc310ac5eef61ab91782933abf22e33e2aaa41190dc9af57274c6ec5c",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "995907dbe9536f13da8c7dbe03ceaa71cecb1df9a38baf852e75a9f41c69a739"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/bb283fea70ea565e0a0c/public/llm_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_554a13d8184e8095768e715c.json",
+    "private_truth": "cases/X3/bb283fea70ea565e0a0c/private/private_truth/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_554a13d8184e8095768e715c.json",
+    "reference_output": "cases/X3/bb283fea70ea565e0a0c/private/reference_output/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_554a13d8184e8095768e715c.json",
+    "root_case": "cases/X3/bb283fea70ea565e0a0c/private/root_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_554a13d8184e8095768e715c.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/bb283fea70ea565e0a0c/private/validation/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_554a13d8184e8095768e715c.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_81_PIONIERL3",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

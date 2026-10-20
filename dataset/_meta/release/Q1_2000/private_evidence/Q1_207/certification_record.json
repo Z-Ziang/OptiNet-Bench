@@ -1,0 +1,114 @@
+{
+  "accepted_row": {
+    "artifact_dir": "certified/Q1_GEN_28186952CF1C17F98544",
+    "beam128_grade": "WRONG_REJECT",
+    "beam16_grade": "WRONG_REJECT",
+    "candidate_number": 139,
+    "case_id": "Q1_GEN_28186952CF1C17F98544",
+    "decision": "ACCEPT",
+    "model_version": "MIXED_V0.3",
+    "n_requests": 4,
+    "node_bin": "5-10",
+    "seed": 20261018,
+    "semantic_sha256": "28186952cf1c17f98544ea99c6704c49b93e70aa8edb47fa9990b0e45b8ed796",
+    "source_case_id": "Q1C_V5_SYNTH_A5C1F8E12DEBC71E",
+    "source_origin": "SYNTHETIC_RELAXED_SPECTRUM_NOT_HISTORICAL_X3",
+    "source_snapshot_sha256": "7171162264ec3a5d6c451ddcb81f1088c764a84f632eaa9653f551fe8a78f57d"
+  },
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          21,
+          19,
+          13,
+          3
+        ],
+        "path_node_ids": [
+          9,
+          8,
+          7,
+          4,
+          0
+        ],
+        "request_id": "req_001",
+        "slot_start": 43,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          16,
+          21,
+          19
+        ],
+        "path_node_ids": [
+          6,
+          9,
+          8,
+          7
+        ],
+        "request_id": "req_002",
+        "slot_start": 245,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          15,
+          11
+        ],
+        "path_node_ids": [
+          6,
+          5,
+          4
+        ],
+        "request_id": "req_003",
+        "slot_start": 139,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          15
+        ],
+        "path_node_ids": [
+          6,
+          5
+        ],
+        "request_id": "req_004",
+        "slot_start": 146,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "baseline": {
+    "beams": {
+      "128": {
+        "final_beam_size": 0,
+        "grade": "WRONG_REJECT",
+        "primary": null,
+        "secondary": null
+      },
+      "16": {
+        "final_beam_size": 0,
+        "grade": "WRONG_REJECT",
+        "primary": null,
+        "secondary": null
+      }
+    },
+    "elapsed_seconds": 0.6657,
+    "status": "PASS"
+  },
+  "elapsed_seconds": 2.6516,
+  "proof": {
+    "milp_gap": 0.0,
+    "stage2_complete": true,
+    "stage2_search_nodes": 724,
+    "stage2_tied": 712
+  },
+  "score_replay": {
+    "primary_match": true,
+    "secondary_match": true,
+    "status": "PASS"
+  },
+  "status": "EXACT_CERTIFIED"
+}

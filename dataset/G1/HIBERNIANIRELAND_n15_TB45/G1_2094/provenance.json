@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "33c237f277c59fa810215774ac30d6ec72a3a7961d06312537c9de34450e2fe5",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 621,
+        "sha256": "e71e2de28b6ff5258ce1d17e8a1fc7411ffd41b24d64ef00ce2a5b2f795d43fd"
+      },
+      "private/reference_output.json": {
+        "bytes": 553,
+        "sha256": "67db2e0ab5a4e6eb3b999029d69998a65ab83d02a91490957b5e51eb701bf5eb"
+      },
+      "private/root_case.json": {
+        "bytes": 4252,
+        "sha256": "5a27b9afe5c90967a5c79c8a26cf63c5433962dabf807993ee92213827be930a"
+      },
+      "private/truth.json": {
+        "bytes": 753,
+        "sha256": "86b6b76a8ea7019f067a80293f0cdfd290c188eec7eab9bed933ffe17e2f27c4"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "5377915cc37e0181ed9ac576c5e39c99e87b7d816894120b9146f0740180fcd4"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 2969,
+        "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 808,
+        "sha256": "6fb670f6fccbaf345c176ea2a6097d5f209357c9e4a92a89302457e88e41dff4"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G1_002093",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_002093",
+    "source_manifest_record": {
+      "case_id": "G1_002093",
+      "case_variant": "ADJACENCY_MATRIX_TO_EDGE_LIST",
+      "derived_seed": "9527694363655365754",
+      "en_internal_case_path": "cases/G1/G1_002093",
+      "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_002093.json",
+      "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_002093.json",
+      "reference_oracle_sha256": "172a6f42f784a112d4e1a5cf4321f1f99db4e014ad0ad089e1a1d5debc843d8b",
+      "root_sha256": "5a27b9afe5c90967a5c79c8a26cf63c5433962dabf807993ee92213827be930a",
+      "task_type": "G1",
+      "topology_id": "TB_REAL::TOP_45_HIBERNIANIRELAND",
+      "topology_sequence_id": "507",
+      "truth_sha256": "86b6b76a8ea7019f067a80293f0cdfd290c188eec7eab9bed933ffe17e2f27c4"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "5aeb2501ff8497779e6754c60bac09e13ae2c0849a97e4ef674324673a2e4071",
+    "case_dir": "case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093",
+    "case_id": "G1_002093",
+    "case_uid": "33c237f277c59fa810215774ac30d6ec72a3a7961d06312537c9de34450e2fe5",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3777,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "0e0e077b750e54b83da0fb3c9251a50ae164af7f861780a490b22cbe3bfa095b",
+    "node_count": 15,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "11–29",
+    "seed": "9527694363655365754",
+    "source_category": "real",
+    "task": "G1",
+    "topology_folder": "TB_REAL_TOP_45_HIBERNIANIRELAND_n15",
+    "topology_id": "TB_REAL::TOP_45_HIBERNIANIRELAND",
+    "variant": "ADJACENCY_MATRIX_TO_EDGE_LIST"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 2969,
+      "output_path": "dataset/G1/HIBERNIANIRELAND_n15_TB45/33c237f277c59fa8/public/system_prompt.txt",
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093/public/system_prompt.txt"
+    },
+    {
+      "bytes": 808,
+      "output_path": "dataset/G1/HIBERNIANIRELAND_n15_TB45/33c237f277c59fa8/public/user_prompt.txt",
+      "sha256": "6fb670f6fccbaf345c176ea2a6097d5f209357c9e4a92a89302457e88e41dff4",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093/public/user_prompt.txt"
+    },
+    {
+      "bytes": 4252,
+      "output_path": "dataset/G1/HIBERNIANIRELAND_n15_TB45/33c237f277c59fa8/private/root_case.json",
+      "sha256": "5a27b9afe5c90967a5c79c8a26cf63c5433962dabf807993ee92213827be930a",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093/private/root_case.json"
+    },
+    {
+      "bytes": 553,
+      "output_path": "dataset/G1/HIBERNIANIRELAND_n15_TB45/33c237f277c59fa8/private/reference_output.json",
+      "sha256": "67db2e0ab5a4e6eb3b999029d69998a65ab83d02a91490957b5e51eb701bf5eb",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G1/HIBERNIANIRELAND_n15_TB45/33c237f277c59fa8/private/validation.json",
+      "sha256": "5377915cc37e0181ed9ac576c5e39c99e87b7d816894120b9146f0740180fcd4",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093/private/validation.json"
+    },
+    {
+      "bytes": 753,
+      "output_path": "dataset/G1/HIBERNIANIRELAND_n15_TB45/33c237f277c59fa8/private/truth.json",
+      "sha256": "86b6b76a8ea7019f067a80293f0cdfd290c188eec7eab9bed933ffe17e2f27c4",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093/private/truth.json"
+    },
+    {
+      "bytes": 621,
+      "output_path": "dataset/G1/HIBERNIANIRELAND_n15_TB45/33c237f277c59fa8/private/evaluation_reference_output.json",
+      "sha256": "e71e2de28b6ff5258ce1d17e8a1fc7411ffd41b24d64ef00ce2a5b2f795d43fd",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093",
+  "source_index_record": {
+    "canonical_graph_hash": "5aeb2501ff8497779e6754c60bac09e13ae2c0849a97e4ef674324673a2e4071",
+    "case_dir": "case_sets/TB_REAL_TOP_45_HIBERNIANIRELAND_n15/G1/G1_002093",
+    "case_id": "G1_002093",
+    "case_uid": "33c237f277c59fa810215774ac30d6ec72a3a7961d06312537c9de34450e2fe5",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 3777,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "0e0e077b750e54b83da0fb3c9251a50ae164af7f861780a490b22cbe3bfa095b",
+    "node_count": 15,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "11–29",
+    "seed": "9527694363655365754",
+    "source_category": "real",
+    "task": "G1",
+    "topology_folder": "TB_REAL_TOP_45_HIBERNIANIRELAND_n15",
+    "topology_id": "TB_REAL::TOP_45_HIBERNIANIRELAND",
+    "variant": "ADJACENCY_MATRIX_TO_EDGE_LIST"
+  },
+  "source_key": "gx"
+}

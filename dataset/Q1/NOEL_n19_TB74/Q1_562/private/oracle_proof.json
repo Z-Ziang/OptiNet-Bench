@@ -1,0 +1,111 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          45,
+          11,
+          3,
+          6,
+          22
+        ],
+        "path_node_ids": [
+          18,
+          15,
+          2,
+          0,
+          6,
+          7
+        ],
+        "request_id": "req_001",
+        "slot_start": 228,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      },
+      {
+        "path_link_ids": [
+          34,
+          11
+        ],
+        "path_node_ids": [
+          11,
+          15,
+          2
+        ],
+        "request_id": "req_002",
+        "slot_start": 240,
+        "transponder_profile_id": "200G_16QAM_32GBd"
+      },
+      {
+        "path_link_ids": [
+          33,
+          34,
+          11,
+          3,
+          6
+        ],
+        "path_node_ids": [
+          12,
+          11,
+          15,
+          2,
+          0,
+          6
+        ],
+        "request_id": "req_003",
+        "slot_start": 159,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      },
+      {
+        "path_link_ids": [
+          33,
+          34,
+          11,
+          3,
+          0
+        ],
+        "path_node_ids": [
+          12,
+          11,
+          15,
+          2,
+          0,
+          1
+        ],
+        "request_id": "req_004",
+        "slot_start": 140,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    35,
+    23,
+    35,
+    35
+  ],
+  "full_bounded_action_counts": [
+    22,
+    46,
+    14,
+    33
+  ],
+  "lower_bounds": [
+    20,
+    8,
+    20,
+    20
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 417,
+  "milp_gap": 0.0,
+  "milp_variables": 115,
+  "primary": 83,
+  "secondary": 0.5812184197320106,
+  "stage2_search_nodes": 1105,
+  "stage2_tied": 818,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 2.2115,
+  "witness_ub": 83
+}

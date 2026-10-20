@@ -1,0 +1,25 @@
+{
+  "case_id": "Q1_1114",
+  "topology": "top_TB_REAL%3A%3ATOP_64_MEMOREX",
+  "nodes": 19,
+  "requests": 3,
+  "proof_status": "EXACT_CERTIFIED",
+  "primary": 118,
+  "secondary": 0.5764704497812954,
+  "baselines": {
+    "128": {
+      "final_beam_size": 128,
+      "grade": "CORRECT",
+      "primary": 118,
+      "secondary": 0.5764704497812952
+    },
+    "16": {
+      "final_beam_size": 16,
+      "grade": "SUBOPTIMAL_PRIMARY",
+      "primary": 125,
+      "secondary": 0.5782113882535419
+    }
+  },
+  "source_case_id": "Q1_GEN_51BBF09B6B35B150F88E",
+  "scientific_input_sha256": "51bbf09b6b35b150f88e7e63edca975ba01c898114ef077ca60de3f929648230"
+}

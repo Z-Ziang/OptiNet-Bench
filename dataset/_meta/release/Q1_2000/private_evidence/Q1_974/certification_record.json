@@ -1,0 +1,57 @@
+{
+  "accepted_row": {
+    "artifact_dir": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to1000_20261019\\certified\\d1111d2942a7a257d69b188e6986bd280b696b0272a674add3837218651f167a",
+    "beam128_grade": "MISSING",
+    "beam16_grade": "MISSING",
+    "candidate_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to1000_20261019\\evidence\\inputs\\d1111d2942a7a257d69b188e6986bd280b696b0272a674add3837218651f167a.json.gz",
+    "case_id": "Q1_GEN_D1111D2942A7A257D69B",
+    "key": [
+      10,
+      "MIXED_RATES",
+      "MIXED_V0.3",
+      3,
+      "REJECT"
+    ],
+    "model_version": "MIXED_V0.3",
+    "record_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to1000_20261019\\evidence\\results\\d1111d2942a7a257d69b188e6986bd280b696b0272a674add3837218651f167a.json.gz",
+    "semantic_sha256": "d1111d2942a7a257d69b188e6986bd280b696b0272a674add3837218651f167a",
+    "source": "SCALED1000_NEW_GENERATION"
+  },
+  "answer": {
+    "allocations": [],
+    "decision": "REJECT"
+  },
+  "baseline": {
+    "reason": "joint reject has no ACCEPT allocation to benchmark",
+    "status": "NOT_RUN"
+  },
+  "elapsed_seconds": 3.9663,
+  "proof": {
+    "full_action_enumeration": true,
+    "individual_action_counts": [
+      2,
+      11,
+      2
+    ],
+    "minimal_joint_unsat": true,
+    "subgroup_feasibility": [
+      {
+        "milp_nodes": 0,
+        "remaining_feasible": true,
+        "removed_request_index": 0
+      },
+      {
+        "milp_nodes": 0,
+        "remaining_feasible": true,
+        "removed_request_index": 1
+      },
+      {
+        "milp_nodes": 1,
+        "remaining_feasible": true,
+        "removed_request_index": 2
+      }
+    ]
+  },
+  "score_replay": null,
+  "status": "INFEASIBLE_CERTIFIED"
+}

@@ -1,0 +1,43 @@
+You need to complete a fixed-route spectrum assignment task for a single service request in an elastic optical network. You will be given: the current directed network topology, the current spectrum resource state of each directed link, one service request intent awaiting resource assignment, and the already fixed transmission path for that request. For each case, determine whether the request can be assigned spectrum resources on its fixed path and its connection can be established. Output the spectrum resource assignment decision and plan.
+
+If the service can be established, you must strictly follow the provided fixed directed path and assign the same contiguous block of spectrum slots, with a size equal to the request's spectrum-slot demand, on every directed link traversed by that path.
+
+The assignment must satisfy all the following conditions:
+1. The service request may only use its provided fixed transmission path;
+2. The assigned slot interval must be free on every directed link of its fixed path;
+3. The starting spectrum-slot index must be identical on every directed link of its fixed path;
+4. The number of consecutive slots assigned on every directed link of its fixed path must equal the spectrum-slot demand of the request;
+5. Establish the request connection whenever a feasible assignment exists on the fixed path. If no feasible assignment exists, REJECT the request.
+
+Network information:
+Each directed link contains exactly 320 spectrum slots, indexed from 0 to 319.
+[a,b] denotes the contiguous interval from slot a to slot b, inclusive. The complete slot index set of a link is [0,1,2,...,319].
+
+Current network information is presented in the following format:
+Directed link <link_id>: <source_node_id>→<destination_node_id>; free slot intervals: [a,b],[c,d],....
+Here, link_id identifies a directed link; source_node_id→destination_node_id gives its direction. Each [a,b] denotes a contiguous interval of free spectrum slots with both endpoints included. Multiple intervals are separated by commas. If a link has no free slots, write "free slot intervals: none". Each line fully describes that directed link's connectivity and spectrum availability.
+
+A path is represented by both a node array and a directed-link array. For example, path node array [3,7,12,18] and directed-link array [18,41,57] represent 3→7→12→18, where directed link 18 connects 3→7, link 41 connects 7→12, and link 57 connects 12→18. The fixed path is provided in the case; you do not need to select or output it.
+
+Optimization objective:
+Subject to a feasible assignment of the request on its fixed path, prefer the assignment that minimizes network-wide spectrum fragmentation after allocation (minimize spectrum fragmentation).
+
+Output requirements:
+1. The request's resource assignment decision (decision): ACCEPT to establish the connection, or REJECT;
+2. When ACCEPT: output only its starting spectrum-slot index (slot_start), in addition to decision;
+3. When REJECT: slot_start must be null.
+Return ONLY one JSON object with exactly the fields shown below, with no explanatory text or markdown:
+{
+  "decision": "",
+  "slot_start": 0
+}
+Example for an accepted request:
+{
+  "decision": "ACCEPT",
+  "slot_start": 23
+}
+Example for a rejected request:
+{
+  "decision": "REJECT",
+  "slot_start": null
+}

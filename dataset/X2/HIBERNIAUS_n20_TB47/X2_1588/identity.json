@@ -1,0 +1,91 @@
+{
+  "case_dir": "dataset/X2/HIBERNIAUS_n20_TB47/X2_1588",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_34a5d627c14fa6f688d83062",
+  "case_uid": "49b5273b30c12a4a223eaa89d0ca55d7ad7792de853f189160783abd638ce561",
+  "contract_dir": "contracts/X2/R1_FROZEN",
+  "family_ids": [
+    "F_472a1021fc7838ff85d73adcd7da00d70a788b4c501eb830d3f92bece4748e69"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2841,
+      "sha256": "7df405482eed8dd5cbcf8b62451f4f75bbafa620a5c2767125beda81476b6f75"
+    },
+    "private/private_truth.json": {
+      "bytes": 351,
+      "sha256": "d8f81186445ec87e58f5e01c425531546ebacbded9918ed5a72a42a80d179d07"
+    },
+    "private/reference_output.json": {
+      "bytes": 94,
+      "sha256": "ca3ae4102e99f43a510cfb431a1d70908150227bbfaa16a0aea7ec129b2325f5"
+    },
+    "private/root_case.json": {
+      "bytes": 199602,
+      "sha256": "19f1bc25e44515f56d6cfada256ec7d10cc3d91c4b1c430b89dbecca2bb76222"
+    },
+    "private/validation.json": {
+      "bytes": 191,
+      "sha256": "46c6a312d5d06508eb5e99f654bc26577c61742512cb91e2d1bf2cb347126d1c"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "00ed215b2bbaedef2e708b3608cb20d89b5d7dc8bf6d1fd04bc33c312f5e9617"
+    },
+    "public/output_schema.json": {
+      "bytes": 1468,
+      "sha256": "bcd387baf50e0d3182739b2962fd32c0b86e2bc641fe5b8a956b327fd23a571f"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4072,
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 10560,
+      "sha256": "ead0782684984217c913c1e12ad001871e2cc31a27572dff05a3808dfbe320f1"
+    }
+  },
+  "graph_hash": "d6b8892cd18ed45b7ae5c860b15b1d8e2f2da75997f53c56b131d1bc28350425",
+  "messages_sha256": "aca7d965205bed284d335847d7a60036fb149f2da8f9c7bace1d6e779294a725",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "4a78cf39830783d0906f80609c6315054431182e96ae6206d7191075e60cc41b",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "998b947c7ed4d3f171b1e60bfff9990c50ce34f30d8e43a01297e5e4d7cfa8ea",
+    "private_truth": "d8f81186445ec87e58f5e01c425531546ebacbded9918ed5a72a42a80d179d07",
+    "reference_output": "ca3ae4102e99f43a510cfb431a1d70908150227bbfaa16a0aea7ec129b2325f5",
+    "root_case": "5952c0497a6a964447ebfa6fe66cda5b874ca3d77e43f416975a857dc2f16b5a",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+    "validation": "46c6a312d5d06508eb5e99f654bc26577c61742512cb91e2d1bf2cb347126d1c"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X2/ab40d54e9d89affeb058/public/llm_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_34a5d627c14fa6f688d83062.json",
+    "private_truth": "cases/X2/ab40d54e9d89affeb058/private/private_truth/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_34a5d627c14fa6f688d83062.json",
+    "reference_output": "cases/X2/ab40d54e9d89affeb058/private/reference_output/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_34a5d627c14fa6f688d83062.json",
+    "root_case": "cases/X2/ab40d54e9d89affeb058/private/root_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_34a5d627c14fa6f688d83062.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt",
+    "validation": "cases/X2/ab40d54e9d89affeb058/private/validation/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X2_34a5d627c14fa6f688d83062.json"
+  },
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_47_HIBERNIAUS",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": false,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": false,
+      "reference_correct_reject": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

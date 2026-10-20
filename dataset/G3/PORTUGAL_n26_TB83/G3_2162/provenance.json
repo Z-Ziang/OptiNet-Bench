@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "bab363e34209a982d614873cd7e2bc643502973255198e66c362d3d2f12e2e15",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 783,
+        "sha256": "c53c2b74f5c36bce8f55390398f9972adfc95617d1ebd3ffbcb90c690a5fcf70"
+      },
+      "private/reference_output.json": {
+        "bytes": 745,
+        "sha256": "5c3bd4bd91b222ceded0e8a8366beaa7ae7fe4abef1f18fe77673cb727b2702b"
+      },
+      "private/root_case.json": {
+        "bytes": 12260,
+        "sha256": "d983ceb1a5587478312ba6d06a9bc6fb995e57df05500364506f227320c0dfbb"
+      },
+      "private/truth.json": {
+        "bytes": 1694,
+        "sha256": "ee430d6628de896c98379cbe72a1a5013a804c6d6bdd82ca0860e84da827eee6"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "1e5908594196816b1d0425db5da3bb2e1e471760afb7bd253dd6b42b3265fba5"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 1618,
+        "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 4691,
+        "sha256": "64e587801753cbef83b84ee3f5b37c1d646cc87cf7c127c540b48be64ddd667c"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G3_002184",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G3/G3_002184",
+    "source_manifest_record": {
+      "case_id": "G3_002184",
+      "case_variant": "TOTAL_LENGTH_KM__shared_true",
+      "derived_seed": "984678913212318026",
+      "en_internal_case_path": "cases/G3/G3_002184",
+      "en_public_benchmark_case_path": "benchmark_case/G3/cases/case_002180.json",
+      "en_public_evaluation_case_path": "evaluation_case/G3/llm/case_002180.json",
+      "reference_oracle_sha256": "69b9eda3f608c1a532b2512a7e919df3ff57b708a7d61a3e9ba8cf2652c16095",
+      "root_sha256": "d983ceb1a5587478312ba6d06a9bc6fb995e57df05500364506f227320c0dfbb",
+      "task_type": "G3",
+      "topology_id": "TB_REAL::TOP_83_PORTUGAL",
+      "topology_sequence_id": "546",
+      "truth_sha256": "ee430d6628de896c98379cbe72a1a5013a804c6d6bdd82ca0860e84da827eee6"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "f0f5ee18228b4b32414c3b011b4623df57543e7a5ab71884e59f44de0cefe7e1",
+    "case_dir": "case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184",
+    "case_id": "G3_002184",
+    "case_uid": "bab363e34209a982d614873cd7e2bc643502973255198e66c362d3d2f12e2e15",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 6309,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "3a32fcdbd0696fb43e94033ff73197e80bb74539f25959febf1597cc15caf003",
+    "node_count": 26,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "11–29",
+    "seed": "984678913212318026",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_83_PORTUGAL_n26",
+    "topology_id": "TB_REAL::TOP_83_PORTUGAL",
+    "variant": "TOTAL_LENGTH_KM__shared_true"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 1618,
+      "output_path": "dataset/G3/PORTUGAL_n26_TB83/bab363e34209a982/public/system_prompt.txt",
+      "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184/public/system_prompt.txt"
+    },
+    {
+      "bytes": 4691,
+      "output_path": "dataset/G3/PORTUGAL_n26_TB83/bab363e34209a982/public/user_prompt.txt",
+      "sha256": "64e587801753cbef83b84ee3f5b37c1d646cc87cf7c127c540b48be64ddd667c",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184/public/user_prompt.txt"
+    },
+    {
+      "bytes": 12260,
+      "output_path": "dataset/G3/PORTUGAL_n26_TB83/bab363e34209a982/private/root_case.json",
+      "sha256": "d983ceb1a5587478312ba6d06a9bc6fb995e57df05500364506f227320c0dfbb",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184/private/root_case.json"
+    },
+    {
+      "bytes": 745,
+      "output_path": "dataset/G3/PORTUGAL_n26_TB83/bab363e34209a982/private/reference_output.json",
+      "sha256": "5c3bd4bd91b222ceded0e8a8366beaa7ae7fe4abef1f18fe77673cb727b2702b",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G3/PORTUGAL_n26_TB83/bab363e34209a982/private/validation.json",
+      "sha256": "1e5908594196816b1d0425db5da3bb2e1e471760afb7bd253dd6b42b3265fba5",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184/private/validation.json"
+    },
+    {
+      "bytes": 1694,
+      "output_path": "dataset/G3/PORTUGAL_n26_TB83/bab363e34209a982/private/truth.json",
+      "sha256": "ee430d6628de896c98379cbe72a1a5013a804c6d6bdd82ca0860e84da827eee6",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184/private/truth.json"
+    },
+    {
+      "bytes": 783,
+      "output_path": "dataset/G3/PORTUGAL_n26_TB83/bab363e34209a982/private/evaluation_reference_output.json",
+      "sha256": "c53c2b74f5c36bce8f55390398f9972adfc95617d1ebd3ffbcb90c690a5fcf70",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184",
+  "source_index_record": {
+    "canonical_graph_hash": "f0f5ee18228b4b32414c3b011b4623df57543e7a5ab71884e59f44de0cefe7e1",
+    "case_dir": "case_sets/TB_REAL_TOP_83_PORTUGAL_n26/G3/G3_002184",
+    "case_id": "G3_002184",
+    "case_uid": "bab363e34209a982d614873cd7e2bc643502973255198e66c362d3d2f12e2e15",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 6309,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "3a32fcdbd0696fb43e94033ff73197e80bb74539f25959febf1597cc15caf003",
+    "node_count": 26,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "11–29",
+    "seed": "984678913212318026",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_83_PORTUGAL_n26",
+    "topology_id": "TB_REAL::TOP_83_PORTUGAL",
+    "variant": "TOTAL_LENGTH_KM__shared_true"
+  },
+  "source_key": "gx"
+}

@@ -1,0 +1,174 @@
+{
+  "accepted_row": {
+    "artifact_dir": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\certified\\18ef96c3d39a7465e79e8d8893e9c04b398239f52d9b8a2a233f175fc831a355",
+    "beam128_grade": "CORRECT",
+    "beam16_grade": "WRONG_REJECT",
+    "candidate_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\evidence\\inputs\\18ef96c3d39a7465e79e8d8893e9c04b398239f52d9b8a2a233f175fc831a355.json.gz",
+    "case_id": "Q1_GEN_18EF96C3D39A7465E79E",
+    "key": [
+      50,
+      "PURE_200G",
+      "LEGACY_V0.2",
+      4,
+      "ACCEPT"
+    ],
+    "model_version": "LEGACY_V0.2",
+    "record_path": "D:\\codex\\Q1-C\\Q1_200_TO_2000_CODEX\\runs\\latest200_to2000_20261020\\evidence\\results\\18ef96c3d39a7465e79e8d8893e9c04b398239f52d9b8a2a233f175fc831a355.json.gz",
+    "semantic_sha256": "18ef96c3d39a7465e79e8d8893e9c04b398239f52d9b8a2a233f175fc831a355",
+    "source": "SCALED2000_NEW_GENERATION"
+  },
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          110,
+          125,
+          123,
+          121,
+          73,
+          69,
+          67,
+          57,
+          33
+        ],
+        "path_node_ids": [
+          38,
+          47,
+          46,
+          45,
+          44,
+          20,
+          19,
+          18,
+          14,
+          6
+        ],
+        "request_id": "req_001",
+        "slot_start": 251,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      },
+      {
+        "path_link_ids": [
+          114,
+          118,
+          73,
+          69,
+          67,
+          57,
+          54,
+          60,
+          64,
+          11
+        ],
+        "path_node_ids": [
+          42,
+          43,
+          44,
+          20,
+          19,
+          18,
+          14,
+          15,
+          16,
+          36,
+          0
+        ],
+        "request_id": "req_002",
+        "slot_start": 200,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      },
+      {
+        "path_link_ids": [
+          109,
+          107,
+          101,
+          95,
+          92,
+          91,
+          88,
+          81,
+          59,
+          54,
+          60,
+          62
+        ],
+        "path_node_ids": [
+          39,
+          38,
+          37,
+          32,
+          29,
+          30,
+          27,
+          28,
+          23,
+          14,
+          15,
+          16,
+          17
+        ],
+        "request_id": "req_003",
+        "slot_start": 282,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      },
+      {
+        "path_link_ids": [
+          38,
+          94,
+          98,
+          51,
+          46,
+          64,
+          11,
+          0
+        ],
+        "path_node_ids": [
+          10,
+          29,
+          32,
+          33,
+          13,
+          16,
+          36,
+          0,
+          1
+        ],
+        "request_id": "req_004",
+        "slot_start": 95,
+        "transponder_profile_id": "200G_8QAM_45GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "baseline": {
+    "beams": {
+      "128": {
+        "final_beam_size": 44,
+        "grade": "CORRECT",
+        "primary": 195,
+        "secondary": 0.7668050160706911
+      },
+      "16": {
+        "final_beam_size": 0,
+        "grade": "WRONG_REJECT",
+        "primary": null,
+        "secondary": null
+      }
+    },
+    "elapsed_seconds": 1.5396,
+    "status": "PASS"
+  },
+  "elapsed_seconds": 5.8403,
+  "proof": {
+    "milp_gap": 0.0,
+    "stage2_complete": true,
+    "stage2_search_nodes": 47,
+    "stage2_tied": 24
+  },
+  "score_replay": {
+    "primary_match": true,
+    "secondary_match": true,
+    "status": "PASS"
+  },
+  "status": "EXACT_CERTIFIED"
+}

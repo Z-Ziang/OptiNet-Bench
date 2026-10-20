@@ -1,0 +1,76 @@
+{
+  "case_dir": "dataset/G1/CONUS6079_n60_TB19/G1_108",
+  "case_id": "G1_001927",
+  "case_uid": "fa9383986e476fe098a57150116401392c715351e421e9e2405643b17bac7c1e",
+  "contract_dir": "contracts/G1/GX1_V5_R1",
+  "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+  "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+  "files": {
+    "metadata.json": {
+      "bytes": 2310,
+      "sha256": "eee086a3555d04861b760fb9080ed79a00bfd40ba7d73d8eb188330d2d0eb30d"
+    },
+    "private/evaluation_reference_output.json": {
+      "bytes": 2981,
+      "sha256": "ed1571a60ef8601bf6f83767c7484b542471a554e265530defe1c200b133da7e"
+    },
+    "private/reference_output.json": {
+      "bytes": 2699,
+      "sha256": "cb98362d8101dc528dbdb1f0dca64ffb4dfcb30322e16bc68c306d398be27e2a"
+    },
+    "private/root_case.json": {
+      "bytes": 9483,
+      "sha256": "ef2923fe2b4e1eb26e61f2afdea233151e7a84eabfbd37251d3030a7b07e9589"
+    },
+    "private/truth.json": {
+      "bytes": 3327,
+      "sha256": "147c8acf47d23f2c8cf23b98f2415d0f6e4de07ae2aa47f4e5a2c7d8354c54eb"
+    },
+    "private/validation.json": {
+      "bytes": 103,
+      "sha256": "e75ddfce91583dee76f4aa40d12008a28d0e3b9727463f8ab9f2724450d9be2e"
+    },
+    "provenance.json": {
+      "bytes": 8187,
+      "sha256": "efe6b7ea0ba9110d77532b3c9d2aba8cd0dce68580bb618b189b52d81568c6ed"
+    },
+    "public/output_schema.json": {
+      "bytes": 198,
+      "sha256": "c73f84708516a18590eb66b87787a1f8bdc9fb0e8d67ae8467f5355ee0f13faf"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 2969,
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 1288,
+      "sha256": "03ef5c50f06f32ca9361998f5ff19e76a97eb165f010fcab6fc1d7e2c49241c6"
+    }
+  },
+  "messages_sha256": "44f1e2da868e31a6ec37a78ec364e201b88f9f31170f2a5e08da8dcc7fd3dacd",
+  "original_identity_note": "Original source identity is preserved under provenance.json/original_identity. Current files hashes cover only files actually retained here. Scientific IDs and payloads are not newly certified by this repackaging.",
+  "packaging_version": "CLEAN_EIGHT_TASKS_ENGLISH_20261017_R1",
+  "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+  "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+  "source_case_id": "G1_001927",
+  "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+  "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_001927",
+  "source_key": "gx",
+  "source_manifest_record": {
+    "case_id": "G1_001927",
+    "case_variant": "EDGE_LIST_TO_ADJACENCY_LIST",
+    "derived_seed": "14876027811322955447",
+    "en_internal_case_path": "cases/G1/G1_001927",
+    "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_001927.json",
+    "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_001927.json",
+    "reference_oracle_sha256": "8eaa0ebfa6d08bb43ab783c57a3c5867a63e898cf4f8af6f730d3522d7b04cad",
+    "root_sha256": "ef2923fe2b4e1eb26e61f2afdea233151e7a84eabfbd37251d3030a7b07e9589",
+    "task_type": "G1",
+    "topology_id": "TB_REAL::TOP_19_CONUS6079",
+    "topology_sequence_id": "480",
+    "truth_sha256": "147c8acf47d23f2c8cf23b98f2415d0f6e4de07ae2aa47f4e5a2c7d8354c54eb"
+  },
+  "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+  "task": "G1",
+  "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+}

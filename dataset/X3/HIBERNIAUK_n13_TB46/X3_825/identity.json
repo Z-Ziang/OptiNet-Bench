@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/HIBERNIAUK_n13_TB46/X3_825",
+  "case_id": "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_21f86962d168c8240404eb5d",
+  "case_uid": "f2b31e2a6dc43fb5f4c4e2af238e17e3dee834156ce6909ffbd8ede342698d43",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_f0ef05aba8b0e0a5f2e290cd6852a8c471ad00df1cdcfbb8a8c2346c25da0aa2"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2829,
+      "sha256": "f26383eb11a135f5ad81841301deea521b7bd08c71c31e0dc99e8fa56450f922"
+    },
+    "private/private_truth.json": {
+      "bytes": 396,
+      "sha256": "50aee561416e198726c8278aaf1f2c8edc08ca1b6ac887983ae196379ffeafe1"
+    },
+    "private/reference_output.json": {
+      "bytes": 513,
+      "sha256": "2cb67d34c060e6d030f9044958698eee03b7ddf1553b4e86724aea0d88c68ec8"
+    },
+    "private/root_case.json": {
+      "bytes": 96547,
+      "sha256": "7a08d3a8789c34a9d6d189a416bac826fbfe3acfb10362fa67d9b3021f8a5d81"
+    },
+    "private/validation.json": {
+      "bytes": 211,
+      "sha256": "88727ea0f27ceaa6b93be80213ecc59e4f4e1863027e8dd0f29189ec8ab60a78"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "28300daacbffc33c8be38583a243a6b05c5644bd1738463e3b1cd0f5e1fe38cd"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 5451,
+      "sha256": "daf09c179a861530eac75da4b54075672e9ec89b55172c8692b0523ea5dccba5"
+    }
+  },
+  "graph_hash": "ca5ac20e117bef164356189d78c240e5e200bf9a1e05e10f70bd8b3645d04453",
+  "messages_sha256": "20365adb9432ee11b9bca0bc9d125c8c903cb721c5bf06dc4d37b37784e6c46b",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "412b37a70bac11dfda256c94f299eb731348070e30c989a40e0b2402ac2d2672",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "9416394a00fcd02881c51c2151b81059ddc2e4dc8902ce8be4769e29949131c5",
+    "private_truth": "50aee561416e198726c8278aaf1f2c8edc08ca1b6ac887983ae196379ffeafe1",
+    "reference_output": "d1160ccf42ce670fc2418fe545b27279dc661fd52696a0e098131b8b21c07859",
+    "root_case": "9424c736f86dc0e53d68a580b13e210fbc3503098b85619b0b4a4df8a7c07701",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "88727ea0f27ceaa6b93be80213ecc59e4f4e1863027e8dd0f29189ec8ab60a78"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/4db368045fcaeb078560/public/llm_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_21f86962d168c8240404eb5d.json",
+    "private_truth": "cases/X3/4db368045fcaeb078560/private/private_truth/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_21f86962d168c8240404eb5d.json",
+    "reference_output": "cases/X3/4db368045fcaeb078560/private/reference_output/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_21f86962d168c8240404eb5d.json",
+    "root_case": "cases/X3/4db368045fcaeb078560/private/root_case/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_21f86962d168c8240404eb5d.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/4db368045fcaeb078560/private/validation/X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_21f86962d168c8240404eb5d.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_46_HIBERNIAUK",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

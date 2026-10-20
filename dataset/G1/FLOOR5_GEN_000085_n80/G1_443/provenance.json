@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "dd2f0bd90cfd89c46ebb2fb39b1597494d1c9dfa16acdee6a1cfec18bb01a68e",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 65928,
+        "sha256": "6d18dec63ba911b816bcbac8aa6126229440da90912570c67ce39e5de966270a"
+      },
+      "private/reference_output.json": {
+        "bytes": 59282,
+        "sha256": "8bfe087e67e0625ce57ebdb9f433cfce9fbe84f0f12cb6a4cc08ef1767c0e23b"
+      },
+      "private/root_case.json": {
+        "bytes": 79389,
+        "sha256": "752c1cfd3187cbce5c49670bb7dbca15d70c790395633016b187dc3674c18156"
+      },
+      "private/truth.json": {
+        "bytes": 72638,
+        "sha256": "03c5af4e8a6b925945dc381f00f8cf52f2bc19adc61eb191d9501d9d1ade6c62"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "01422b50b80a19c7d2bfa0ea9e59d0054a026a28ac30254ae1017b6cbe84267e"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 2969,
+        "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 1778,
+        "sha256": "304651b0b2b510340405512051acb32f24b79f9fa51414bb3c0f24e438995af0"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G1_000268",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G1/G1_000268",
+    "source_manifest_record": {
+      "case_id": "G1_000268",
+      "case_variant": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX",
+      "derived_seed": "6380798202054423171",
+      "en_internal_case_path": "cases/G1/G1_000268",
+      "en_public_benchmark_case_path": "benchmark_case/G1/cases/case_000268.json",
+      "en_public_evaluation_case_path": "evaluation_case/G1/llm/case_000268.json",
+      "reference_oracle_sha256": "0049585d90617846b7e03f2dfb70c437514d26de00aaf325261c727a4f1d21ae",
+      "root_sha256": "752c1cfd3187cbce5c49670bb7dbca15d70c790395633016b187dc3674c18156",
+      "task_type": "G1",
+      "topology_id": "FLOOR5_GEN_000085",
+      "topology_sequence_id": "85",
+      "truth_sha256": "03c5af4e8a6b925945dc381f00f8cf52f2bc19adc61eb191d9501d9d1ade6c62"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "30a92eb0364352ee2d5193427acad8bb0690248b446e28b299b8dbe6cfc26569",
+    "case_dir": "case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268",
+    "case_id": "G1_000268",
+    "case_uid": "dd2f0bd90cfd89c46ebb2fb39b1597494d1c9dfa16acdee6a1cfec18bb01a68e",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 4747,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "2544849d37fba0f1805c33f51dc79dad412d885b76cd37a074c6e798264a3319",
+    "node_count": 80,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "60–100",
+    "seed": "6380798202054423171",
+    "source_category": "floor5_generated",
+    "task": "G1",
+    "topology_folder": "FLOOR5_GEN_000085_n80",
+    "topology_id": "FLOOR5_GEN_000085",
+    "variant": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 2969,
+      "output_path": "dataset/G1/FLOOR5_GEN_000085_n80/dd2f0bd90cfd89c4/public/system_prompt.txt",
+      "sha256": "415b6a7f2a45431d73ef98d2e56d73fb1523d4b643e80a4890ed7d3c4000470f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268/public/system_prompt.txt"
+    },
+    {
+      "bytes": 1778,
+      "output_path": "dataset/G1/FLOOR5_GEN_000085_n80/dd2f0bd90cfd89c4/public/user_prompt.txt",
+      "sha256": "304651b0b2b510340405512051acb32f24b79f9fa51414bb3c0f24e438995af0",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268/public/user_prompt.txt"
+    },
+    {
+      "bytes": 79389,
+      "output_path": "dataset/G1/FLOOR5_GEN_000085_n80/dd2f0bd90cfd89c4/private/root_case.json",
+      "sha256": "752c1cfd3187cbce5c49670bb7dbca15d70c790395633016b187dc3674c18156",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268/private/root_case.json"
+    },
+    {
+      "bytes": 59282,
+      "output_path": "dataset/G1/FLOOR5_GEN_000085_n80/dd2f0bd90cfd89c4/private/reference_output.json",
+      "sha256": "8bfe087e67e0625ce57ebdb9f433cfce9fbe84f0f12cb6a4cc08ef1767c0e23b",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G1/FLOOR5_GEN_000085_n80/dd2f0bd90cfd89c4/private/validation.json",
+      "sha256": "01422b50b80a19c7d2bfa0ea9e59d0054a026a28ac30254ae1017b6cbe84267e",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268/private/validation.json"
+    },
+    {
+      "bytes": 72638,
+      "output_path": "dataset/G1/FLOOR5_GEN_000085_n80/dd2f0bd90cfd89c4/private/truth.json",
+      "sha256": "03c5af4e8a6b925945dc381f00f8cf52f2bc19adc61eb191d9501d9d1ade6c62",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268/private/truth.json"
+    },
+    {
+      "bytes": 65928,
+      "output_path": "dataset/G1/FLOOR5_GEN_000085_n80/dd2f0bd90cfd89c4/private/evaluation_reference_output.json",
+      "sha256": "6d18dec63ba911b816bcbac8aa6126229440da90912570c67ce39e5de966270a",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268",
+  "source_index_record": {
+    "canonical_graph_hash": "30a92eb0364352ee2d5193427acad8bb0690248b446e28b299b8dbe6cfc26569",
+    "case_dir": "case_sets/FLOOR5_GEN_000085_n80/G1/G1_000268",
+    "case_id": "G1_000268",
+    "case_uid": "dd2f0bd90cfd89c46ebb2fb39b1597494d1c9dfa16acdee6a1cfec18bb01a68e",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 4747,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "2544849d37fba0f1805c33f51dc79dad412d885b76cd37a074c6e798264a3319",
+    "node_count": 80,
+    "path_cost_metric": "NOT_APPLICABLE",
+    "scale": "60–100",
+    "seed": "6380798202054423171",
+    "source_category": "floor5_generated",
+    "task": "G1",
+    "topology_folder": "FLOOR5_GEN_000085_n80",
+    "topology_id": "FLOOR5_GEN_000085",
+    "variant": "ADJACENCY_LIST_TO_ADJACENCY_MATRIX"
+  },
+  "source_key": "gx"
+}

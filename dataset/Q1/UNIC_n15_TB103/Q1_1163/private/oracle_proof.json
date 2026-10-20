@@ -1,0 +1,44 @@
+{
+  "answer": {
+    "allocations": [],
+    "decision": "REJECT"
+  },
+  "full_action_count_per_request": [
+    31,
+    37,
+    50,
+    50
+  ],
+  "milp_conflict_constraints": 297,
+  "milp_variables": 168,
+  "minimal_joint_unsat": true,
+  "physical_limit": "ASE_ONLY_MODEL_NOT_DEVICE_CALIBRATED",
+  "primary": null,
+  "proof_method": "FULL_PATH_PROFILE_SLOT_ACTIONS_EXHAUSTIVE_NO_CUTOFF;BINARY_SET_PACKING_MILP_INFEASIBLE",
+  "secondary": null,
+  "status": "INFEASIBLE_CERTIFIED",
+  "subgroup_feasibility": [
+    {
+      "milp_nodes": 1,
+      "remaining_feasible": true,
+      "removed_request_index": 0
+    },
+    {
+      "milp_nodes": 1,
+      "remaining_feasible": true,
+      "removed_request_index": 1
+    },
+    {
+      "milp_nodes": 1,
+      "remaining_feasible": true,
+      "removed_request_index": 2
+    },
+    {
+      "milp_nodes": 1,
+      "remaining_feasible": true,
+      "removed_request_index": 3
+    }
+  ],
+  "time_s": 0.089,
+  "unsat_milp_nodes": 0
+}

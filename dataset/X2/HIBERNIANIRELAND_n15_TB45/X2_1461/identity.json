@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X2/HIBERNIANIRELAND_n15_TB45/X2_1461",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_d3493e315bfa0e108c418623",
+  "case_uid": "4f0f1af7a86d4988bf1224995bbf76d756693f3de196600e22bd57c4cede1887",
+  "contract_dir": "contracts/X2/R1_FROZEN",
+  "family_ids": [
+    "F_4e1f4829f7c81a3a2d84fe896f542e988898d0d0786b6a80ee2c06ae7e95dbbe"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2891,
+      "sha256": "5d73eda3e1e97daa5c4803ac7b07e3eb446e77ccfc8371b96059d5738e96da45"
+    },
+    "private/private_truth.json": {
+      "bytes": 363,
+      "sha256": "be48f6fe4680477754047a799db4b10fd93545d46e8f6005b25c2c8672d4fe0b"
+    },
+    "private/reference_output.json": {
+      "bytes": 166,
+      "sha256": "79f19d04e6cdfa5baa3a92061c3b9700f2ff33b6d0444c25bbd1309bdcc242b1"
+    },
+    "private/root_case.json": {
+      "bytes": 118549,
+      "sha256": "dc120e639b452a0755563def7152889e7438f8a6972b556579f5ea78208829f8"
+    },
+    "private/validation.json": {
+      "bytes": 198,
+      "sha256": "de81b5cb6b696f32ace525c19638c77fa0237d4fe589db7b369e027568daec99"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "16604c70f77f7b3ac52e815fecdcd1d04a725d858959dce41d8ea3a4c215d57b"
+    },
+    "public/output_schema.json": {
+      "bytes": 1468,
+      "sha256": "bcd387baf50e0d3182739b2962fd32c0b86e2bc641fe5b8a956b327fd23a571f"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4072,
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 6013,
+      "sha256": "070df6561d1599dfd25ca9785a47e571461707bc893ed458a2365c7352602386"
+    }
+  },
+  "graph_hash": "b1aeea1e81da4e0c32da9e83752b31b14ac7061da71e7fe350fa1425aec0613b",
+  "messages_sha256": "38e6d2e954521be4a85faa4020b580ffd1d78ec52dd3296a3e6b71e3cc5a7ecf",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "b5770ed8514201d71d2f3726cf0817cff5383f08bd08b508ec28019e45b28014",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "8050a3efd4b8b7deb5c8ece8dc0e6dacaa7ce78639caaa3d2bd6bb5ffbbeb33b",
+    "private_truth": "be48f6fe4680477754047a799db4b10fd93545d46e8f6005b25c2c8672d4fe0b",
+    "reference_output": "79f19d04e6cdfa5baa3a92061c3b9700f2ff33b6d0444c25bbd1309bdcc242b1",
+    "root_case": "4ed11790017d8fe0211a9864a58f2d609da715e1d177297a7494488e1021e2de",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+    "validation": "de81b5cb6b696f32ace525c19638c77fa0237d4fe589db7b369e027568daec99"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X2/97397d5722ae465009df/public/llm_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_d3493e315bfa0e108c418623.json",
+    "private_truth": "cases/X2/97397d5722ae465009df/private/private_truth/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_d3493e315bfa0e108c418623.json",
+    "reference_output": "cases/X2/97397d5722ae465009df/private/reference_output/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_d3493e315bfa0e108c418623.json",
+    "root_case": "cases/X2/97397d5722ae465009df/private/root_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_d3493e315bfa0e108c418623.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt",
+    "validation": "cases/X2/97397d5722ae465009df/private/validation/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_d3493e315bfa0e108c418623.json"
+  },
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_45_HIBERNIANIRELAND",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": false,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

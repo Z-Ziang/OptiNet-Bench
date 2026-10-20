@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/CANARIE_n19_TB12/X3_160",
+  "case_id": "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_f85717a4dcc947639942d298",
+  "case_uid": "4138c39ed079cafd92127254a652e9c990611356548f8be672ca1d87a40f42a3",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_76d6714087dd75d5da752e0b571d679b3f74b01603a59625ae5653c1363acd24"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2777,
+      "sha256": "fd476f62719183add8c36880a341edaddc4dc0e9b0082f57db28702794eb29de"
+    },
+    "private/private_truth.json": {
+      "bytes": 386,
+      "sha256": "5324c68d54a11879759ca6af062e04a53e4a089acd4b24fe0a46a3af8127e6ab"
+    },
+    "private/reference_output.json": {
+      "bytes": 541,
+      "sha256": "583916ddf3f66da0f0d633e8324e561821e171decde4a3c099ba0b0637e58501"
+    },
+    "private/root_case.json": {
+      "bytes": 192347,
+      "sha256": "4fe922ea6aa48d9a9655eb4a5b38a2dabac85a7f91322a4c2aa2e32715caece5"
+    },
+    "private/validation.json": {
+      "bytes": 211,
+      "sha256": "4e1a9ad3414620915ff500f33e3dfaf9847f5ce8d1f89be6ff5f9789f848870d"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "ebbef97a5b289f4fc07c1ea6b20c10650fcd1f027500b28f347f4c2eabe6c79f"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 9801,
+      "sha256": "fc03e82d63467c99dbe4a1a47a048d11b137fc3d2f3e81b727d5d2ca0cde2fa6"
+    }
+  },
+  "graph_hash": "687a8489fd5fa7647fe4a3ebf9798e529d6babe8795537c6b197418aa2b579fe",
+  "messages_sha256": "70ad5e1315cbac6fe0f2d50e7480b0cf95cc1f0772cd45d708eeea2446437e52",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "96bc35c13424a474cd7c1533f0de07af6ef245bbc2cfc83766c73a32374eee3e",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "b491eba28f2565ea569411f224aabca4b36c87db8edb3ded7c50ffa1a7fb1664",
+    "private_truth": "5324c68d54a11879759ca6af062e04a53e4a089acd4b24fe0a46a3af8127e6ab",
+    "reference_output": "773738efb2bab9b481a955a40bf10f574fa42dee4e1af8e3b66de57c9a86c703",
+    "root_case": "fc5fbec3e07874d8d3362e3c8b0eedb0a51aba6fe154f8a225888b927192112e",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "4e1a9ad3414620915ff500f33e3dfaf9847f5ce8d1f89be6ff5f9789f848870d"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/111875f18256daba7bd7/public/llm_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_f85717a4dcc947639942d298.json",
+    "private_truth": "cases/X3/111875f18256daba7bd7/private/private_truth/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_f85717a4dcc947639942d298.json",
+    "reference_output": "cases/X3/111875f18256daba7bd7/private/reference_output/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_f85717a4dcc947639942d298.json",
+    "root_case": "cases/X3/111875f18256daba7bd7/private/root_case/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_f85717a4dcc947639942d298.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/111875f18256daba7bd7/private/validation/X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_f85717a4dcc947639942d298.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_12_CANARIE",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

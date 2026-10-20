@@ -1,0 +1,41 @@
+Q1 benchmark case Q1_1159.
+Allocate all requests in one simultaneous routing and spectrum assignment.
+The goal is to minimize spectrum fragmentation across the network.
+Requests:
+  req_001: 4 -> 5, 300 Gbit/s
+  req_002: 4 -> 5, 100 Gbit/s
+  req_003: 7 -> 5, 200 Gbit/s
+Available transponder profiles:
+  100G_QPSK_28GBd: rate=100 Gbit/s; modulation=QPSK; baud=28 GBd; contiguous slots including guard=4; minimum OSNR=15.0 dB; maximum accumulated chromatic dispersion=40000.0 ps/nm
+  100G_QPSK_32GBd: rate=100 Gbit/s; modulation=QPSK; baud=32 GBd; contiguous slots including guard=4; minimum OSNR=13.0 dB; maximum accumulated chromatic dispersion=10000.0 ps/nm
+  200G_16QAM_32GBd: rate=200 Gbit/s; modulation=16QAM; baud=32 GBd; contiguous slots including guard=4; minimum OSNR=22.0 dB; maximum accumulated chromatic dispersion=10000.0 ps/nm
+  200G_8QAM_45GBd: rate=200 Gbit/s; modulation=8QAM; baud=45 GBd; contiguous slots including guard=5; minimum OSNR=16.0 dB; maximum accumulated chromatic dispersion=20000.0 ps/nm
+  200G_QPSK_60GBd: rate=200 Gbit/s; modulation=QPSK; baud=60 GBd; contiguous slots including guard=7; minimum OSNR=16.0 dB; maximum accumulated chromatic dispersion=50000.0 ps/nm
+  300G_8QAM_60GBd: rate=300 Gbit/s; modulation=8QAM; baud=60 GBd; contiguous slots including guard=7; minimum OSNR=21.0 dB; maximum accumulated chromatic dispersion=40000.0 ps/nm
+Physical model: wavelength=1547.0 nm; fiber loss=0.2 dB/km; dispersion coefficient=17.0 ps/(nm km); maximum amplifier span=80.0 km; amplifier noise figure=5.0 dB; signal power=0.0 dBm; OSNR reference bandwidth=12500000000.0 Hz; QoT margin=0.0 dB.
+Use the stated ASE-only span model. Accumulated dispersion is additive; the OSNR calculation sums amplifier ASE contributions over all spans. Each physical span is amplified to restore its attenuation.
+Each directed link has 320 slots, indexed from 0. A listed free interval includes both endpoint slots.
+Directed links and their current free slot intervals:
+  link 0: 0 -> 1; length=345.3 km; free=[[0, 164], [201, 319]]
+  link 1: 1 -> 0; length=345.3 km; free=[[0, 247], [284, 319]]
+  link 2: 0 -> 4; length=133.545 km; free=[[0, 98], [100, 262], [299, 319]]
+  link 3: 4 -> 0; length=133.545 km; free=[[0, 235], [272, 319]]
+  link 4: 1 -> 2; length=251.85 km; free=[[0, 257], [294, 319]]
+  link 5: 2 -> 1; length=251.85 km; free=[[0, 83], [120, 319]]
+  link 6: 2 -> 3; length=130.575 km; free=[[0, 157], [194, 319]]
+  link 7: 3 -> 2; length=130.575 km; free=[[0, 29], [66, 319]]
+  link 8: 3 -> 6; length=225.45 km; free=[[0, 106], [143, 319]]
+  link 9: 6 -> 3; length=225.45 km; free=[[0, 168], [205, 319]]
+  link 10: 4 -> 5; length=48.915 km; free=[[42, 50]]
+  link 11: 5 -> 4; length=48.915 km; free=[[0, 164], [166, 213], [249, 319]]
+  link 12: 4 -> 7; length=135.795 km; free=[[0, 150], [187, 319]]
+  link 13: 7 -> 4; length=135.795 km; free=[[42, 46]]
+  link 14: 5 -> 6; length=85.57499999999999 km; free=[[0, 125], [162, 319]]
+  link 15: 6 -> 5; length=85.57499999999999 km; free=[[139, 149]]
+  link 16: 6 -> 9; length=119.655 km; free=[[0, 251], [288, 319]]
+  link 17: 9 -> 6; length=119.655 km; free=[[139, 149]]
+  link 18: 7 -> 8; length=197.1 km; free=[[139, 149]]
+  link 19: 8 -> 7; length=197.1 km; free=[[0, 258], [295, 319]]
+  link 20: 8 -> 9; length=199.2 km; free=[[139, 149]]
+  link 21: 9 -> 8; length=199.2 km; free=[[0, 146], [183, 284], [286, 319]]
+

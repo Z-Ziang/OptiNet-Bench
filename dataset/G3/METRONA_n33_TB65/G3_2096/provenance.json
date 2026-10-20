@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "0b14189a9fa791ed5c7b14db8cb548c7977426b8655d19138df42793d7367e2e",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 539,
+        "sha256": "ee3a65335314b494ebf9eaf0a5ca904f853956bef8bb62e7eefa2b8a39620327"
+      },
+      "private/reference_output.json": {
+        "bytes": 529,
+        "sha256": "fd90796cf8bff389cc739b2bb2df51db3aa1dbb2ec5aee950c53d6a7b74673c7"
+      },
+      "private/root_case.json": {
+        "bytes": 12440,
+        "sha256": "458cc83b20a3c7dcc86067aa5fe4af8881fdce8104e8ce673ec8ad58cd93601a"
+      },
+      "private/truth.json": {
+        "bytes": 1256,
+        "sha256": "250c433769680928fe59c8e3caa91a3185c0504a74959ae3133aaf5686837dab"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "5eb5b2cde0a91785a14ac7031e47afd4f357f89acb5367120619b5256c454294"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 1618,
+        "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 5221,
+        "sha256": "726e04638325fd74e737cbccab6996d2df1cc663010fa9a95d814fa776b9808f"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G3_002112",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G3/G3_002112",
+    "source_manifest_record": {
+      "case_id": "G3_002112",
+      "case_variant": "TOTAL_LENGTH_KM__shared_true",
+      "derived_seed": "6896926833273052367",
+      "en_internal_case_path": "cases/G3/G3_002112",
+      "en_public_benchmark_case_path": "benchmark_case/G3/cases/case_002108.json",
+      "en_public_evaluation_case_path": "evaluation_case/G3/llm/case_002108.json",
+      "reference_oracle_sha256": "54223e12e111873393fcc16c7c6496a1258a6fd20503ac05ebf8ab5d27297eb9",
+      "root_sha256": "458cc83b20a3c7dcc86067aa5fe4af8881fdce8104e8ce673ec8ad58cd93601a",
+      "task_type": "G3",
+      "topology_id": "TB_REAL::TOP_65_METRONA",
+      "topology_sequence_id": "528",
+      "truth_sha256": "250c433769680928fe59c8e3caa91a3185c0504a74959ae3133aaf5686837dab"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "730c2d8194f6249ae2253b7510d37566a0ad944b03d179622270092116ef795a",
+    "case_dir": "case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112",
+    "case_id": "G3_002112",
+    "case_uid": "0b14189a9fa791ed5c7b14db8cb548c7977426b8655d19138df42793d7367e2e",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 6839,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "d1c0d99f965bd847316682afd9fde3c717c0715dda412e64c9ec4aec84632aad",
+    "node_count": 33,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "30–59",
+    "seed": "6896926833273052367",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_65_METRONA_n33",
+    "topology_id": "TB_REAL::TOP_65_METRONA",
+    "variant": "TOTAL_LENGTH_KM__shared_true"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 1618,
+      "output_path": "dataset/G3/METRONA_n33_TB65/0b14189a9fa791ed/public/system_prompt.txt",
+      "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112/public/system_prompt.txt"
+    },
+    {
+      "bytes": 5221,
+      "output_path": "dataset/G3/METRONA_n33_TB65/0b14189a9fa791ed/public/user_prompt.txt",
+      "sha256": "726e04638325fd74e737cbccab6996d2df1cc663010fa9a95d814fa776b9808f",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112/public/user_prompt.txt"
+    },
+    {
+      "bytes": 12440,
+      "output_path": "dataset/G3/METRONA_n33_TB65/0b14189a9fa791ed/private/root_case.json",
+      "sha256": "458cc83b20a3c7dcc86067aa5fe4af8881fdce8104e8ce673ec8ad58cd93601a",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112/private/root_case.json"
+    },
+    {
+      "bytes": 529,
+      "output_path": "dataset/G3/METRONA_n33_TB65/0b14189a9fa791ed/private/reference_output.json",
+      "sha256": "fd90796cf8bff389cc739b2bb2df51db3aa1dbb2ec5aee950c53d6a7b74673c7",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G3/METRONA_n33_TB65/0b14189a9fa791ed/private/validation.json",
+      "sha256": "5eb5b2cde0a91785a14ac7031e47afd4f357f89acb5367120619b5256c454294",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112/private/validation.json"
+    },
+    {
+      "bytes": 1256,
+      "output_path": "dataset/G3/METRONA_n33_TB65/0b14189a9fa791ed/private/truth.json",
+      "sha256": "250c433769680928fe59c8e3caa91a3185c0504a74959ae3133aaf5686837dab",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112/private/truth.json"
+    },
+    {
+      "bytes": 539,
+      "output_path": "dataset/G3/METRONA_n33_TB65/0b14189a9fa791ed/private/evaluation_reference_output.json",
+      "sha256": "ee3a65335314b494ebf9eaf0a5ca904f853956bef8bb62e7eefa2b8a39620327",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112",
+  "source_index_record": {
+    "canonical_graph_hash": "730c2d8194f6249ae2253b7510d37566a0ad944b03d179622270092116ef795a",
+    "case_dir": "case_sets/TB_REAL_TOP_65_METRONA_n33/G3/G3_002112",
+    "case_id": "G3_002112",
+    "case_uid": "0b14189a9fa791ed5c7b14db8cb548c7977426b8655d19138df42793d7367e2e",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 6839,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "d1c0d99f965bd847316682afd9fde3c717c0715dda412e64c9ec4aec84632aad",
+    "node_count": 33,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "30–59",
+    "seed": "6896926833273052367",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_65_METRONA_n33",
+    "topology_id": "TB_REAL::TOP_65_METRONA",
+    "variant": "TOTAL_LENGTH_KM__shared_true"
+  },
+  "source_key": "gx"
+}

@@ -1,0 +1,41 @@
+{
+  "case_id": "Q1_126",
+  "nodes": 50,
+  "requests": 5,
+  "topology": "top_TB_REAL%3A%3ATOP_51_IRIS",
+  "snapshot_hash": "8c9c56a3613baf1dd3632b8534d226c9c2e1861cf4d1299e54ed2814e551f3e3",
+  "proof_status": "EXACT_CERTIFIED",
+  "primary": 177,
+  "secondary": 0.7619373392254126,
+  "minimal_joint_unsat": false,
+  "milp_nodes": 1,
+  "milp_variables": 816,
+  "stage2_nodes": 66,
+  "stage2_tied": 54,
+  "tied": 54,
+  "t_s": 2.6213,
+  "baselines": {
+    "16": {
+      "final_beam_size": 16,
+      "grade": "SUBOPTIMAL_PRIMARY",
+      "primary": 187,
+      "secondary": 0.7613351584317314
+    },
+    "128": {
+      "final_beam_size": 128,
+      "grade": "SUBOPTIMAL_PRIMARY",
+      "primary": 187,
+      "secondary": 0.7613202622556984
+    }
+  },
+  "beam16": "SUBOPTIMAL_PRIMARY",
+  "beam128": "SUBOPTIMAL_PRIMARY",
+  "grade": "HARD_BY_BASELINE",
+  "status": "CERTIFIED",
+  "source_case_id": "Q1C_V3_CAND_92F93419172B809C",
+  "source_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
+  "source_snapshot_sha256": "8c9c56a3613baf1dd3632b8534d226c9c2e1861cf4d1299e54ed2814e551f3e3",
+  "source_semantic_sha256": "1e02ea4bddea6b9447fdb6130ebbd2bb4e6d1884a94da51a14428072b0039cf1",
+  "generation_seed": 20261018,
+  "candidate_number": 1
+}

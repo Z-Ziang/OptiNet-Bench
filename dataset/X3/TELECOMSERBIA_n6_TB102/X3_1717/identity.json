@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X3/TELECOMSERBIA_n6_TB102/X3_1717",
+  "case_id": "X3_UNIFIED_CANDIDATE_20261008_051958_574121_X3_0001_05_05001_N2_V3",
+  "case_uid": "9b32164cd8c94c5225fcd2332b8b620ec81d1957543984e920f3e6159859847e",
+  "contract_dir": "contracts/X3/R1_FROZEN",
+  "family_ids": [
+    "F_fb1f37d2ebd1a83f29780e6f2ad1c7eb054da8dfe16d8fa970a8174ee2e4e956"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2806,
+      "sha256": "8c23dff8363449a35cf6550678accd8498de151948193a6666fff3c22b0c528f"
+    },
+    "private/private_truth.json": {
+      "bytes": 378,
+      "sha256": "269cbc44318863acbff64af183133488036f7f7f452070121732680e31551f00"
+    },
+    "private/reference_output.json": {
+      "bytes": 462,
+      "sha256": "630110039a719715680592d829a81714a641721859c7f5b8fb968d3a47aeae3d"
+    },
+    "private/root_case.json": {
+      "bytes": 44900,
+      "sha256": "8c627246971f6ad57f9313d6bff19f8574f6f10e28078ce796a05c9fc0a97b4c"
+    },
+    "private/validation.json": {
+      "bytes": 212,
+      "sha256": "8b0f76f0b9eddd519894347f6ed394e3124f5c6a17a3f31f43944912131c7aa4"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "456261bbd526278eb32ed4d7451deb20a9914e91786006e75f0f89cedc431057"
+    },
+    "public/output_schema.json": {
+      "bytes": 1646,
+      "sha256": "625150d226d91bac4a82bc73165af8a4d275dbe9642e67c12aa806f6d3528d4b"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 5935,
+      "sha256": "6d66cd7eb619e83a87dc283c30ee437821fd85febb8741518021ba65a0cadbe7"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 2581,
+      "sha256": "a703140e34c19d2dfcdba1239b7fb7765b5a605950a7b17c9c77dbc0bc7fa2cd"
+    }
+  },
+  "graph_hash": "2c013d4dbdb21f8b2ebb1160dcd8d5d18268968ce2eca9192f31163d12e7389a",
+  "messages_sha256": "140bff407c5629c01f64391227d6e3b74e1dc146f917b3ae5f9df4b8fdaa7f51",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "67c9857e4e270e27161278c0435fd9f9cc3e8aa84ccec181fdd1bf73c51da35a",
+  "source_archive": "Benchmark_7_7_HISTORICAL_REMAINDER_X3.zip",
+  "source_archive_sha256": "d9d387cdeb58fd3deb87d30b9031769f3990101279f7beed4ec2770e2884968e",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_REMAINDER_X3",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "b9a6f87f247bc7c8119fe20e368572138c95501225626e99ca87ace16bf84ebe",
+    "private_truth": "269cbc44318863acbff64af183133488036f7f7f452070121732680e31551f00",
+    "reference_output": "fb3ae85d114e9687dae7b73c02024a5e15ce605ed2d66ea3bbdde8061eab83a2",
+    "root_case": "f3c2d211376e0443a3ef8615cd20deb355e8c51bf0680f86d47e321034952684",
+    "system_prompt": "2f61efee3110846d99790ed8bb386d150ceeaeb35f02a7a0ebc365df2d96c87c",
+    "validation": "8b0f76f0b9eddd519894347f6ed394e3124f5c6a17a3f31f43944912131c7aa4"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X3/7b30d9a1968f01213769/public/llm_case/X3_UNIFIED_CANDIDATE_20261008_051958_574121_X3_0001_05_05001_N2_V3.json",
+    "private_truth": "cases/X3/7b30d9a1968f01213769/private/private_truth/X3_UNIFIED_CANDIDATE_20261008_051958_574121_X3_0001_05_05001_N2_V3.json",
+    "reference_output": "cases/X3/7b30d9a1968f01213769/private/reference_output/X3_UNIFIED_CANDIDATE_20261008_051958_574121_X3_0001_05_05001_N2_V3.json",
+    "root_case": "cases/X3/7b30d9a1968f01213769/private/root_case/X3_UNIFIED_CANDIDATE_20261008_051958_574121_X3_0001_05_05001_N2_V3.json",
+    "system_prompt": "runtime/contracts/X3/llm_system_prompt.txt",
+    "validation": "cases/X3/7b30d9a1968f01213769/private/validation/X3_UNIFIED_CANDIDATE_20261008_051958_574121_X3_0001_05_05001_N2_V3.json"
+  },
+  "task": "X3",
+  "topology_id": "top_TB_REAL%3A%3ATOP_102_TELECOMSERBIA",
+  "validator_source_sha256": "7e6f21cc8a321d797ee0c0660113200262b64a6f3798806ac920078e478003f5",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": true,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "478edb3f33564fe00a1f8a14b67cfa7370e6473892d13c63325f50a5feb73710",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 282,
+        "sha256": "423a218305d059b134a054d82cf8e7357af4f725791dd82a601a1405657b1038"
+      },
+      "private/reference_output.json": {
+        "bytes": 265,
+        "sha256": "699e8e143ee7a2070ca57bcd8042ebd471976aa8f0e06e9ea4477da427b7ef30"
+      },
+      "private/root_case.json": {
+        "bytes": 40039,
+        "sha256": "6743421909f477cc4e183629155fb3a66d94e818d0372e6f9b021e27fb3c7411"
+      },
+      "private/truth.json": {
+        "bytes": 454,
+        "sha256": "b291c0520e43b5f193b88b1734ec5f72ae41593c26206b861db46618481c44bc"
+      },
+      "private/validation.json": {
+        "bytes": 145,
+        "sha256": "5afde25cdaa73f496f246a9ef2bbcb1a484fef4b3b6dd9229efec78c0c0dc369"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 896,
+        "sha256": "38280f7759dbe17bec6e3656b354e7b9c4603a8ff2f3866412c06245f6f896c0"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 17185,
+        "sha256": "c1ad69920d0c893057d1a8d1d92cbf3b151647639c7d1187724f3cdfdee3288c"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "X1_000010",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/X1/X1_000010",
+    "source_manifest_record": {
+      "case_id": "X1_000010",
+      "case_variant": "TOTAL_LENGTH_KM",
+      "derived_seed": "2390711523460625035",
+      "en_internal_case_path": "cases/X1/X1_000010",
+      "en_public_benchmark_case_path": "benchmark_case/X1/cases/case_000010.json",
+      "en_public_evaluation_case_path": "evaluation_case/X1/llm/case_000010.json",
+      "reference_oracle_sha256": "22178859650065c486633c4bd5f0fb39a477705cd14b43e33bfa3b7044621666",
+      "root_sha256": "6743421909f477cc4e183629155fb3a66d94e818d0372e6f9b021e27fb3c7411",
+      "task_type": "X1",
+      "topology_id": "FLOOR5_GEN_000005",
+      "topology_sequence_id": "5",
+      "truth_sha256": "b291c0520e43b5f193b88b1734ec5f72ae41593c26206b861db46618481c44bc"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "581a40892de003b19b78803106aeaa3976d48935bee7ee5d83797203eee0569c",
+    "case_dir": "case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010",
+    "case_id": "X1_000010",
+    "case_uid": "478edb3f33564fe00a1f8a14b67cfa7370e6473892d13c63325f50a5feb73710",
+    "cohort": "CALIBRATION_EXPOSED",
+    "evaluation_eligible": true,
+    "input_characters": 18081,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "cabe5f3ff90296b470d6d83b228fdfa9df8eac674f73bd3dacabb52cf591dada",
+    "node_count": 143,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "143–200",
+    "seed": "2390711523460625035",
+    "source_category": "floor5_generated",
+    "task": "X1",
+    "topology_folder": "FLOOR5_GEN_000005_n143",
+    "topology_id": "FLOOR5_GEN_000005",
+    "variant": "TOTAL_LENGTH_KM"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 896,
+      "output_path": "dataset/X1/FLOOR5_GEN_000005_n143/478edb3f33564fe0/public/system_prompt.txt",
+      "sha256": "38280f7759dbe17bec6e3656b354e7b9c4603a8ff2f3866412c06245f6f896c0",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010/public/system_prompt.txt"
+    },
+    {
+      "bytes": 17185,
+      "output_path": "dataset/X1/FLOOR5_GEN_000005_n143/478edb3f33564fe0/public/user_prompt.txt",
+      "sha256": "c1ad69920d0c893057d1a8d1d92cbf3b151647639c7d1187724f3cdfdee3288c",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010/public/user_prompt.txt"
+    },
+    {
+      "bytes": 40039,
+      "output_path": "dataset/X1/FLOOR5_GEN_000005_n143/478edb3f33564fe0/private/root_case.json",
+      "sha256": "6743421909f477cc4e183629155fb3a66d94e818d0372e6f9b021e27fb3c7411",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010/private/root_case.json"
+    },
+    {
+      "bytes": 265,
+      "output_path": "dataset/X1/FLOOR5_GEN_000005_n143/478edb3f33564fe0/private/reference_output.json",
+      "sha256": "699e8e143ee7a2070ca57bcd8042ebd471976aa8f0e06e9ea4477da427b7ef30",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010/private/reference_output.json"
+    },
+    {
+      "bytes": 145,
+      "output_path": "dataset/X1/FLOOR5_GEN_000005_n143/478edb3f33564fe0/private/validation.json",
+      "sha256": "5afde25cdaa73f496f246a9ef2bbcb1a484fef4b3b6dd9229efec78c0c0dc369",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010/private/validation.json"
+    },
+    {
+      "bytes": 454,
+      "output_path": "dataset/X1/FLOOR5_GEN_000005_n143/478edb3f33564fe0/private/truth.json",
+      "sha256": "b291c0520e43b5f193b88b1734ec5f72ae41593c26206b861db46618481c44bc",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010/private/truth.json"
+    },
+    {
+      "bytes": 282,
+      "output_path": "dataset/X1/FLOOR5_GEN_000005_n143/478edb3f33564fe0/private/evaluation_reference_output.json",
+      "sha256": "423a218305d059b134a054d82cf8e7357af4f725791dd82a601a1405657b1038",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010",
+  "source_index_record": {
+    "canonical_graph_hash": "581a40892de003b19b78803106aeaa3976d48935bee7ee5d83797203eee0569c",
+    "case_dir": "case_sets/FLOOR5_GEN_000005_n143/X1/X1_000010",
+    "case_id": "X1_000010",
+    "case_uid": "478edb3f33564fe00a1f8a14b67cfa7370e6473892d13c63325f50a5feb73710",
+    "cohort": "CALIBRATION_EXPOSED",
+    "evaluation_eligible": true,
+    "input_characters": 18081,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "cabe5f3ff90296b470d6d83b228fdfa9df8eac674f73bd3dacabb52cf591dada",
+    "node_count": 143,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "143–200",
+    "seed": "2390711523460625035",
+    "source_category": "floor5_generated",
+    "task": "X1",
+    "topology_folder": "FLOOR5_GEN_000005_n143",
+    "topology_id": "FLOOR5_GEN_000005",
+    "variant": "TOTAL_LENGTH_KM"
+  },
+  "source_key": "gx"
+}

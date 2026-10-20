@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X2/CORONET_n60_TB21/X2_741",
+  "case_id": "X2_SCALE_DIFFICULTY_CONTINUATION_20261009_072738_596236_SCALE_X2_695a846901a14bc0b01a2717d6c6",
+  "case_uid": "d636554fecbf2ccda71aeb7e984fffb6df068eb584b8e0f57361fa58696344ee",
+  "contract_dir": "contracts/X2/R1_FROZEN",
+  "family_ids": [
+    "F_6f5f34c85fb18655e68c8a05e2e3a21a343a31cf87739e62b86ad3756295fc93"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2781,
+      "sha256": "4115dda8fa779a09a99f6aabf37b2808e866601b237055987545785cb28e7fe2"
+    },
+    "private/private_truth.json": {
+      "bytes": 352,
+      "sha256": "812c2fdad986e43c429544e1e1a3acdaae060a4a853a054094161239d1c8968f"
+    },
+    "private/reference_output.json": {
+      "bytes": 277,
+      "sha256": "d80d8f20f91b0e2eee1b552ab8940ce5090185a5d1c89212584b28ad21fd0045"
+    },
+    "private/root_case.json": {
+      "bytes": 583176,
+      "sha256": "783fabf374a36eb2d8b81036aaa289a22997a055b3badf05f70074e09c0d0ee0"
+    },
+    "private/validation.json": {
+      "bytes": 199,
+      "sha256": "25b973d46c8f943c229cff63c40c0360cce8542cb492d989a2253fec7cdda7ae"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "5a6f8c5fbbb6b24846f803b7308d029ab9115bf217a0c719ac7df139681271cd"
+    },
+    "public/output_schema.json": {
+      "bytes": 1468,
+      "sha256": "bcd387baf50e0d3182739b2962fd32c0b86e2bc641fe5b8a956b327fd23a571f"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4072,
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 31613,
+      "sha256": "a373f68fe429ef8f1a5bd8ed835b224fbbe86ead0ea18ea16b3e46bf76b69d56"
+    }
+  },
+  "graph_hash": "80067c43391817b68d6039cfab85d47a6beb3ce2f8552eaab4fd496e328f6559",
+  "messages_sha256": "e8c6cda258f4a64e41b4884d59eb753b9ac6c272e6eb02a07ded82b3df1def69",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "c040bbf47143784e17e977d6bc443ea9062d5a5db0144368ebd67e5c955dd6f3",
+  "source_archive": "Benchmark_7_7_STATIC_3500_DELIVERY_FINAL.zip",
+  "source_archive_sha256": "eac50b2cd18603d9c68a185f935188966c6e8fd347ec56e88d3fb0f81f0b3408",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_STATIC_3500_DELIVERY_FINAL",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "269c77e591167751e1a6be2e2a73203d66f93c70d0011ff463d4fe84e3174f67",
+    "private_truth": "812c2fdad986e43c429544e1e1a3acdaae060a4a853a054094161239d1c8968f",
+    "reference_output": "d80d8f20f91b0e2eee1b552ab8940ce5090185a5d1c89212584b28ad21fd0045",
+    "root_case": "d9e6c50c274245e7404ab208cabcccabae226a7aa2440f1ef46c039209782ab1",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+    "validation": "25b973d46c8f943c229cff63c40c0360cce8542cb492d989a2253fec7cdda7ae"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X2/695a846901a14bc0/public/llm_case/X2_SCALE_DIFFICULTY_CONTINUATION_20261009_072738_596236_SCALE_X2_695a846901a14bc0b01a2717d6c6.json",
+    "private_truth": "cases/X2/695a846901a14bc0/private/private_truth/X2_SCALE_DIFFICULTY_CONTINUATION_20261009_072738_596236_SCALE_X2_695a846901a14bc0b01a2717d6c6.json",
+    "reference_output": "cases/X2/695a846901a14bc0/private/reference_output/X2_SCALE_DIFFICULTY_CONTINUATION_20261009_072738_596236_SCALE_X2_695a846901a14bc0b01a2717d6c6.json",
+    "root_case": "cases/X2/695a846901a14bc0/private/root_case/X2_SCALE_DIFFICULTY_CONTINUATION_20261009_072738_596236_SCALE_X2_695a846901a14bc0b01a2717d6c6.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt",
+    "validation": "cases/X2/695a846901a14bc0/private/validation/X2_SCALE_DIFFICULTY_CONTINUATION_20261009_072738_596236_SCALE_X2_695a846901a14bc0b01a2717d6c6.json"
+  },
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_21_CORONET",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": false,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

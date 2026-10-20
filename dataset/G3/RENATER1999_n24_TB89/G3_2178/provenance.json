@@ -1,0 +1,166 @@
+{
+  "original_identity": {
+    "case_uid": "53e19348359b6288218d24b17563728fea26c2a10fd39d601927841148ab4a3b",
+    "evaluation_protocol": "GX1_V5_FORMAL_PROTOCOL_FROZEN_R1_20261003",
+    "evaluation_reference_policy": "Same source path and decisions; weighted declared cost summed from V5 public six-significant-digit link values. Source reference and truth retained unchanged.",
+    "files": {
+      "private/evaluation_reference_output.json": {
+        "bytes": 624,
+        "sha256": "195a7a3f6c51e3ce260aa2ea57abb5ae6c9f1ebdf5c99df393b44cfa69580829"
+      },
+      "private/reference_output.json": {
+        "bytes": 604,
+        "sha256": "f1ba0f3d2ff58829e5071cfc4f3e0c9340859c96587685f8aed4ac4b0e44d4d2"
+      },
+      "private/root_case.json": {
+        "bytes": 8628,
+        "sha256": "33e787b53ae8f728402b0f3cf00337f49f56c38952557a71455ef22bfd4cc8ab"
+      },
+      "private/truth.json": {
+        "bytes": 1412,
+        "sha256": "4fed01f4b7eafcb3a2bec5b2ade4ee4db0b73df5a8cf09340d7f2a9ef4e17486"
+      },
+      "private/validation.json": {
+        "bytes": 103,
+        "sha256": "5d3a3c61eeb3fe42cba2b539c6a72415b373750c18c945d3c303e376642155ff"
+      },
+      "public/system_prompt.txt": {
+        "bytes": 1618,
+        "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb"
+      },
+      "public/user_prompt.txt": {
+        "bytes": 3229,
+        "sha256": "eaa3a5175c07b8792633116ded946511fd1fd69c0086f555fb39be79f90bd626"
+      }
+    },
+    "source_archive": "GX1_V3_1_BILINGUAL_FULLPOOL_FINAL_20261002.zip",
+    "source_archive_sha256": "4f4e875efc78c27c3c1d24ebf43978cde49a763f09c1c55274d651797a385812",
+    "source_case_id": "G3_002204",
+    "source_contract": "GX1_V3.1_Algorithm_LLM_Only",
+    "source_internal_case_path": "02_EN_INTERNAL_DATASET/cases/G3/G3_002204",
+    "source_manifest_record": {
+      "case_id": "G3_002204",
+      "case_variant": "TOTAL_LENGTH_KM__shared_true",
+      "derived_seed": "11816626984433634820",
+      "en_internal_case_path": "cases/G3/G3_002204",
+      "en_public_benchmark_case_path": "benchmark_case/G3/cases/case_002200.json",
+      "en_public_evaluation_case_path": "evaluation_case/G3/llm/case_002200.json",
+      "reference_oracle_sha256": "e5f5ddac82788357903a00909daa5e1ec13684b9dce9558cd18e12befc4607e5",
+      "root_sha256": "33e787b53ae8f728402b0f3cf00337f49f56c38952557a71455ef22bfd4cc8ab",
+      "task_type": "G3",
+      "topology_id": "TB_REAL::TOP_89_RENATER1999",
+      "topology_sequence_id": "551",
+      "truth_sha256": "4fed01f4b7eafcb3a2bec5b2ade4ee4db0b73df5a8cf09340d7f2a9ef4e17486"
+    },
+    "source_production_validator_sha256": "3cefe1680ab7e346dc11b7e27fe38b51d84009e362de93359882276bae40dd19",
+    "validator_source_sha256": "b69b46bc3f97131727fe92070869c7e6b5edea516236dbc4ca41d45aefd7f460"
+  },
+  "original_metadata": {
+    "canonical_graph_hash": "d948bbd0cbe4a865c8ba5e9a0ea109090d873580b2bf1a78fa8070022e198d28",
+    "case_dir": "case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204",
+    "case_id": "G3_002204",
+    "case_uid": "53e19348359b6288218d24b17563728fea26c2a10fd39d601927841148ab4a3b",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 4847,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "8fda995dafc7629609cb239987cd871aa3db5f740f6fd8704089b2a88ccdcd20",
+    "node_count": 24,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "11–29",
+    "seed": "11816626984433634820",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_89_RENATER1999_n24",
+    "topology_id": "TB_REAL::TOP_89_RENATER1999",
+    "variant": "TOTAL_LENGTH_KM__shared_true"
+  },
+  "packaging_transformations": [
+    "Reordered task/topology/case directories",
+    "Copied scientific payload and source public messages unchanged",
+    "Added normalized metadata and current file identity",
+    "No public message transformation",
+    "Redundant source prompt mirrors, model answers/logs and runtime omitted; originals remain in source ZIPs"
+  ],
+  "retained_source_files": [
+    {
+      "bytes": 1618,
+      "output_path": "dataset/G3/RENATER1999_n24_TB89/53e19348359b6288/public/system_prompt.txt",
+      "sha256": "816b77935a532f87d8856d945f5c866591594fc7f0fbd1f7e7aaef108690c6cb",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204/public/system_prompt.txt"
+    },
+    {
+      "bytes": 3229,
+      "output_path": "dataset/G3/RENATER1999_n24_TB89/53e19348359b6288/public/user_prompt.txt",
+      "sha256": "eaa3a5175c07b8792633116ded946511fd1fd69c0086f555fb39be79f90bd626",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204/public/user_prompt.txt"
+    },
+    {
+      "bytes": 8628,
+      "output_path": "dataset/G3/RENATER1999_n24_TB89/53e19348359b6288/private/root_case.json",
+      "sha256": "33e787b53ae8f728402b0f3cf00337f49f56c38952557a71455ef22bfd4cc8ab",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204/private/root_case.json"
+    },
+    {
+      "bytes": 604,
+      "output_path": "dataset/G3/RENATER1999_n24_TB89/53e19348359b6288/private/reference_output.json",
+      "sha256": "f1ba0f3d2ff58829e5071cfc4f3e0c9340859c96587685f8aed4ac4b0e44d4d2",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204/private/reference_output.json"
+    },
+    {
+      "bytes": 103,
+      "output_path": "dataset/G3/RENATER1999_n24_TB89/53e19348359b6288/private/validation.json",
+      "sha256": "5d3a3c61eeb3fe42cba2b539c6a72415b373750c18c945d3c303e376642155ff",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204/private/validation.json"
+    },
+    {
+      "bytes": 1412,
+      "output_path": "dataset/G3/RENATER1999_n24_TB89/53e19348359b6288/private/truth.json",
+      "sha256": "4fed01f4b7eafcb3a2bec5b2ade4ee4db0b73df5a8cf09340d7f2a9ef4e17486",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204/private/truth.json"
+    },
+    {
+      "bytes": 624,
+      "output_path": "dataset/G3/RENATER1999_n24_TB89/53e19348359b6288/private/evaluation_reference_output.json",
+      "sha256": "195a7a3f6c51e3ce260aa2ea57abb5ae6c9f1ebdf5c99df393b44cfa69580829",
+      "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+      "source_key": "gx",
+      "source_member": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204/private/evaluation_reference_output.json"
+    }
+  ],
+  "source_archive": "OptiRSA_GX1_合并含评测记录_20261017_R1.zip",
+  "source_case_directory": "G-X1-cases/case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204",
+  "source_index_record": {
+    "canonical_graph_hash": "d948bbd0cbe4a865c8ba5e9a0ea109090d873580b2bf1a78fa8070022e198d28",
+    "case_dir": "case_sets/TB_REAL_TOP_89_RENATER1999_n24/G3/G3_002204",
+    "case_id": "G3_002204",
+    "case_uid": "53e19348359b6288218d24b17563728fea26c2a10fd39d601927841148ab4a3b",
+    "cohort": "FORMAL_UNSEEN_HELDOUT",
+    "evaluation_eligible": true,
+    "input_characters": 4847,
+    "interface_status": "SOURCE_V3_1_EN_V5_R1_SCIENCE",
+    "messages_sha256": "8fda995dafc7629609cb239987cd871aa3db5f740f6fd8704089b2a88ccdcd20",
+    "node_count": 24,
+    "path_cost_metric": "TOTAL_LENGTH_KM",
+    "scale": "11–29",
+    "seed": "11816626984433634820",
+    "source_category": "real",
+    "task": "G3",
+    "topology_folder": "TB_REAL_TOP_89_RENATER1999_n24",
+    "topology_id": "TB_REAL::TOP_89_RENATER1999",
+    "variant": "TOTAL_LENGTH_KM__shared_true"
+  },
+  "source_key": "gx"
+}

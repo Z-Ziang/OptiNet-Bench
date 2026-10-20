@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X2/TELECOMSERBIA_n6_TB102/X2_3522",
+  "case_id": "X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_c5bf637ce326cc2d1c99",
+  "case_uid": "ee9943ae5223ad5f53c7a4ebc7a31d4d2bb7fb252da14113a7618fd40aaff38f",
+  "contract_dir": "contracts/X2/R1_FROZEN",
+  "family_ids": [
+    "F_edf33edac9fc52a4859fd7870abe7fd777b3a44040eac584ecd0ef9c30db3720"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2800,
+      "sha256": "a026f7becaf791b0d70c25a824a03c45405c4503b733f707a53c555337f05dae"
+    },
+    "private/private_truth.json": {
+      "bytes": 329,
+      "sha256": "7ca0dcc8fcd590f84a0898c8cc89733047cb9fc4573544700a6815970f2402e6"
+    },
+    "private/reference_output.json": {
+      "bytes": 133,
+      "sha256": "5e6e5d58f24afac62d22d3739f1fcaa59f6b13e430339af39a75b1cb5acb909e"
+    },
+    "private/root_case.json": {
+      "bytes": 44756,
+      "sha256": "4ff77ef2381f434f1079ac73b1c23ec6b09b168d234fdd3293f2456362ef75c5"
+    },
+    "private/validation.json": {
+      "bytes": 200,
+      "sha256": "f90621033a562d734c9a00b57256855d41f134b7c26e8629ed30d3c20a0d576e"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "ce834d86c010db7cbcc8136b59b0c970fc72b157dceadd1c28d9f850b241160f"
+    },
+    "public/output_schema.json": {
+      "bytes": 1468,
+      "sha256": "bcd387baf50e0d3182739b2962fd32c0b86e2bc641fe5b8a956b327fd23a571f"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4072,
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 2376,
+      "sha256": "9c157b94f8f775e94f562b1185e63debf26dfee15287b1a1c34b8450a635a501"
+    }
+  },
+  "graph_hash": "2c013d4dbdb21f8b2ebb1160dcd8d5d18268968ce2eca9192f31163d12e7389a",
+  "messages_sha256": "7a1688ab0949b203fa785a91fb908b8275392700b29ce4006a995b8ce20c4860",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "dca0105a0a6be8840f684b40bfd6f2c0854eec7804cbe13d24fbd46f15cdb43e",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "03f1099e34a9fef72b3d5386cafdfb5b3fa70b2871ab5c5bc1dc26d026dd8dd6",
+    "private_truth": "7ca0dcc8fcd590f84a0898c8cc89733047cb9fc4573544700a6815970f2402e6",
+    "reference_output": "5e6e5d58f24afac62d22d3739f1fcaa59f6b13e430339af39a75b1cb5acb909e",
+    "root_case": "eef177581639843ebbae28c9cf9effaf40de4136534fceec9f1832bb19c70165",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+    "validation": "f90621033a562d734c9a00b57256855d41f134b7c26e8629ed30d3c20a0d576e"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X2/b4c5ea672d293382916d/public/llm_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_c5bf637ce326cc2d1c99.json",
+    "private_truth": "cases/X2/b4c5ea672d293382916d/private/private_truth/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_c5bf637ce326cc2d1c99.json",
+    "reference_output": "cases/X2/b4c5ea672d293382916d/private/reference_output/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_c5bf637ce326cc2d1c99.json",
+    "root_case": "cases/X2/b4c5ea672d293382916d/private/root_case/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_c5bf637ce326cc2d1c99.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt",
+    "validation": "cases/X2/b4c5ea672d293382916d/private/validation/X2_UNIFIED_CANDIDATE_20261008_051958_574121_OX_c5bf637ce326cc2d1c99.json"
+  },
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_102_TELECOMSERBIA",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": false,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}

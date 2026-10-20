@@ -1,0 +1,36 @@
+{
+  "baselines": {
+    "1": {
+      "final_beam_size": 0,
+      "grade": "WRONG_REJECT",
+      "primary": null,
+      "secondary": null
+    },
+    "128": {
+      "final_beam_size": 128,
+      "grade": "SUBOPTIMAL_SECONDARY",
+      "primary": 164,
+      "secondary": 0.7239746807068699
+    },
+    "16": {
+      "final_beam_size": 16,
+      "grade": "SUBOPTIMAL_PRIMARY",
+      "primary": 166,
+      "secondary": 0.7239420415846982
+    }
+  },
+  "beam128": "SUBOPTIMAL_SECONDARY",
+  "beam16": "SUBOPTIMAL_PRIMARY",
+  "case_id": "Q1_016",
+  "grade": "HARD_BY_BASELINE",
+  "milp_nodes": 1,
+  "nodes": 34,
+  "primary": 164,
+  "proof_status": "EXACT_CERTIFIED",
+  "requests": 6,
+  "secondary": 0.7230163156726046,
+  "snapshot_hash": "adf65e5c4da3b8fed2980a2ec5312870feec5ba79e56e056af3041fc61c86aba",
+  "stage2_tied": 1026,
+  "status": "CERTIFIED",
+  "topology": "top_TB_REAL%3A%3ATOP_39_GRNET"
+}

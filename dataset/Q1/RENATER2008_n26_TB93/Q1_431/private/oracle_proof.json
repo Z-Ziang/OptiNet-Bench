@@ -1,0 +1,113 @@
+{
+  "answer": {
+    "allocations": [
+      {
+        "path_link_ids": [
+          23,
+          3,
+          4,
+          55,
+          56,
+          67
+        ],
+        "path_node_ids": [
+          7,
+          6,
+          0,
+          17,
+          16,
+          25,
+          24
+        ],
+        "request_id": "req_001",
+        "slot_start": 276,
+        "transponder_profile_id": "200G_QPSK_60GBd"
+      },
+      {
+        "path_link_ids": [
+          37,
+          25,
+          23,
+          3,
+          4,
+          11
+        ],
+        "path_node_ids": [
+          15,
+          10,
+          7,
+          6,
+          0,
+          17,
+          2
+        ],
+        "request_id": "req_002",
+        "slot_start": 191,
+        "transponder_profile_id": "300G_8QAM_60GBd"
+      },
+      {
+        "path_link_ids": [
+          25,
+          26,
+          42
+        ],
+        "path_node_ids": [
+          10,
+          7,
+          13,
+          14
+        ],
+        "request_id": "req_003",
+        "slot_start": 136,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      },
+      {
+        "path_link_ids": [
+          25,
+          23,
+          3
+        ],
+        "path_node_ids": [
+          10,
+          7,
+          6,
+          0
+        ],
+        "request_id": "req_004",
+        "slot_start": 288,
+        "transponder_profile_id": "100G_QPSK_28GBd"
+      }
+    ],
+    "decision": "ACCEPT"
+  },
+  "certification": "SCIPY_MILP_ZERO_GAP_PLUS_EXHAUSTIVE_PRIMARY_TIES_FROZEN_WUFR",
+  "full_action_bounds": [
+    64,
+    68,
+    60,
+    60
+  ],
+  "full_bounded_action_counts": [
+    23,
+    48,
+    146,
+    109
+  ],
+  "lower_bounds": [
+    16,
+    20,
+    12,
+    12
+  ],
+  "milp_branch_nodes": 1,
+  "milp_conflict_constraints": 1339,
+  "milp_gap": 0.0,
+  "milp_variables": 326,
+  "primary": 108,
+  "secondary": 0.6817446787331468,
+  "stage2_search_nodes": 4512,
+  "stage2_tied": 2003,
+  "status": "EXACT_CERTIFIED",
+  "time_s": 8.0508,
+  "witness_ub": 108
+}

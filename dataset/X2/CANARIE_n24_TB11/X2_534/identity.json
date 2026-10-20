@@ -1,0 +1,92 @@
+{
+  "case_dir": "dataset/X2/CANARIE_n24_TB11/X2_534",
+  "case_id": "X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_9073eb2b722dc56fcf3bc112",
+  "case_uid": "3fb432b7638eed5e409bb6f0e098b46d75c13840304ac845049bd487cfdcd2e0",
+  "contract_dir": "contracts/X2/R1_FROZEN",
+  "family_ids": [
+    "F_8ae66eaf0d10fe01101c7a1b1bef535529951dd32e0e09bcdf38ac4c962dedae"
+  ],
+  "files": {
+    "metadata.json": {
+      "bytes": 2791,
+      "sha256": "7200183063e759ad47c2ae1603cc205e36bc221d22b77f6ade07ca86eff40885"
+    },
+    "private/private_truth.json": {
+      "bytes": 362,
+      "sha256": "af7d61a5b8a76d4efee4d583cd52e108eaa0786d7cbbc818e33f0f1c0eb7bc77"
+    },
+    "private/reference_output.json": {
+      "bytes": 149,
+      "sha256": "fb40f6ffc6734c2277f054cb3c0e66b0bc139b9a95fda38a12da7ace866c17a2"
+    },
+    "private/root_case.json": {
+      "bytes": 243837,
+      "sha256": "75c4106d9a6f10b9fecc4ca8a629371f969ba56346427384189cec6befd4cdfa"
+    },
+    "private/validation.json": {
+      "bytes": 198,
+      "sha256": "0b2bcb21ff90fdf906ced668afcb1a4b59fce6ed42d2d94a4b62ad7ebbcef973"
+    },
+    "provenance.json": {
+      "bytes": 587,
+      "sha256": "0998e6830a90336490ecc3645d3cd5a323ed67167ae799beaea51ad93470606f"
+    },
+    "public/output_schema.json": {
+      "bytes": 1468,
+      "sha256": "bcd387baf50e0d3182739b2962fd32c0b86e2bc641fe5b8a956b327fd23a571f"
+    },
+    "public/system_prompt.txt": {
+      "bytes": 4072,
+      "sha256": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6"
+    },
+    "public/user_prompt.txt": {
+      "bytes": 13136,
+      "sha256": "82558513add096c90c708d24f8d4dab6ed7d371239e7dbc4052eccdce2da1a37"
+    }
+  },
+  "graph_hash": "cab52bb0ddc2a3f161a965cdf4a33eb5b687a3718b4fedc13c69c11b4851eddd",
+  "messages_sha256": "6ee955ecf7bce8651bf59e29c10e22e6f2221e4987cdc16478012636805d19f9",
+  "original_identity_note": "Source identity is retained in the source provenance ledger. Case UID is a stable source lineage key; message hash plus request_id_version identifies this input version.",
+  "package_input_version": "ENGLISH_REQUEST_IDS_R1",
+  "packaging_version": "REQUEST_IDS_R3_20261018",
+  "snapshot_hash": "c5582978c71146ca62587f41f031372693c5017314003ca3e0b37e11ff95497a",
+  "source_archive": "Benchmark_7_7_HISTORICAL_X2.zip",
+  "source_archive_sha256": "bcd7ae1b863dd30a5c7a0deacae2ed01e5356548a8d6ed95b257ac87178d331d",
+  "source_case_status": "REVIEW_OBJECTIVE_DEFINITION",
+  "source_dataset_version": "Benchmark_7_7_HISTORICAL_X2",
+  "source_key": "x",
+  "source_member_hashes": {
+    "llm_case": "61e7f5826adc13368025c9aee122024921891606d8cd32db639d98a44674fcd5",
+    "private_truth": "af7d61a5b8a76d4efee4d583cd52e108eaa0786d7cbbc818e33f0f1c0eb7bc77",
+    "reference_output": "fb40f6ffc6734c2277f054cb3c0e66b0bc139b9a95fda38a12da7ace866c17a2",
+    "root_case": "537fa80b9c7cbf6f58ed9778d334265513772a62a303b5c0946e01645dbf915c",
+    "system_prompt": "7c6ff34237b028ba86b672e8d74289f04dda770840cf86f850965d0c39f33fb6",
+    "validation": "0b2bcb21ff90fdf906ced668afcb1a4b59fce6ed42d2d94a4b62ad7ebbcef973"
+  },
+  "source_member_paths": {
+    "llm_case": "cases/X2/fca0fb42ae598dc5ef19/public/llm_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_9073eb2b722dc56fcf3bc112.json",
+    "private_truth": "cases/X2/fca0fb42ae598dc5ef19/private/private_truth/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_9073eb2b722dc56fcf3bc112.json",
+    "reference_output": "cases/X2/fca0fb42ae598dc5ef19/private/reference_output/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_9073eb2b722dc56fcf3bc112.json",
+    "root_case": "cases/X2/fca0fb42ae598dc5ef19/private/root_case/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_9073eb2b722dc56fcf3bc112.json",
+    "system_prompt": "runtime/contracts/X2/llm_system_prompt.txt",
+    "validation": "cases/X2/fca0fb42ae598dc5ef19/private/validation/X2_SCHEDULING_RECOVERY_V5_20261008_223402_421810_RECOVER_HANDOFF_R33_STATIC_X2_9073eb2b722dc56fcf3bc112.json"
+  },
+  "task": "X2",
+  "topology_id": "top_TB_REAL%3A%3ATOP_11_CANARIE",
+  "validator_source_sha256": "31660b7c47b6875d4332ec8212cfea2bae583ae029b60ce6da54bf0a48393a32",
+  "verification": {
+    "all_global_optima_independently_resolved": false,
+    "public": {
+      "links_and_spectrum_exact": true,
+      "request_ids_exact": false,
+      "request_parameters_exact": true
+    },
+    "reference_feasibility_primary": {
+      "feasible": true,
+      "no_new_global_optimality_proof": true,
+      "primary_matches_source_optimum": true
+    },
+    "source_validation_bound": true
+  },
+  "request_id_version": "REQUEST_IDS_R1_20261018"
+}
