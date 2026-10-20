@@ -1,7 +1,7 @@
 # OptiNet-Bench
 
 Code and data for the nine-task optical-network benchmark. The evaluation package
-is **OptiRA** (`optira`), using Inspect AI and frozen scientific validators.
+is **OptiNet** (`optinet`), using Inspect AI and frozen scientific validators.
 
 ## Contents
 
