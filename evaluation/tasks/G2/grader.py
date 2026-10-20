@@ -1,5 +1,5 @@
 """G2: Path validity classification. Delegate scientific rules without duplicating them."""
-from optira.legacy import grade_legacy
+from optinet.legacy import grade_legacy
 
 
 def grade(record: dict, final_answer: str) -> dict:

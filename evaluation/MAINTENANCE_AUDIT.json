@@ -1,0 +1,50 @@
+{
+  "benchmark": "OptiNet-Bench",
+  "date": "2026-10-20",
+  "base_commit": "229e27cd798978eb288afe2d34033217291f0846",
+  "scope": "Current public naming, imports, plan identity, documentation, integrity bindings, and offline integration",
+  "public_python_package": "optinet",
+  "inspect_task": "optinet_cases",
+  "new_plan_schema": "OPTINET_NINE_TASKS_PLAN_V1",
+  "backward_compatible_plan_schema": "OPTIRA_NINE_TASKS_PLAN_V1",
+  "case_counts": {
+    "G1": 2430,
+    "G2": 2815,
+    "G3": 2247,
+    "X1": 1126,
+    "O1-S": 3618,
+    "O1-C": 1751,
+    "X2": 3618,
+    "X3": 1751,
+    "Q1": 2000
+  },
+  "dataset_cases": 21356,
+  "dataset_changed_files": [
+    "README.md",
+    "LICENSE_NOTICE.md",
+    "_meta/SHA256SUMS.json"
+  ],
+  "scientific_payloads_and_catalogs_changed": false,
+  "dataset_manifest_sha256_before": "a205054b08b12c85fb1b5bd9492eba31b51f3b2159ce63f0f17b6d6635e6a733",
+  "dataset_manifest_sha256_after": "58e5744a5ae221fe32ded6e5e6d3609167cdef99dc8cc0f64cfdfc36b2151e86",
+  "dataset_manifest_payload_entries": 235900,
+  "frozen_vendor_files_verified_byte_identical": 50,
+  "regression_cases": 24,
+  "regression_response_variants_per_case": 4,
+  "strict_and_relaxed_before_after_comparisons": 96,
+  "regression_tasks": 9,
+  "regression_differences": 0,
+  "documentation_relative_link_errors": [],
+  "unit_tests_passed": 10,
+  "all_task_plan_and_preflight": "PASS (9 cases, one per task)",
+  "inspect_offline_replay": "PASS (9 of 9 reference answers CORRECT)",
+  "real_model_API_calls": 0,
+  "full_dataset_download_and_rehash_repeated": false,
+  "full_dataset_check_scope": "Scientific payloads are unchanged from the base Git tree; 24 representative case directories were fetched and checked. Full download/rehash was not repeated.",
+  "historical_identifiers_retained_in": [
+    "frozen scientific protocols and original source bindings",
+    "saved-plan read compatibility",
+    "original acceptance and release provenance"
+  ],
+  "original_acceptance_record": "ACCEPTANCE.json describes the original release; this record covers the naming maintenance revision"
+}

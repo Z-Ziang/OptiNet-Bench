@@ -8,10 +8,10 @@ tags:
 - benchmark
 - optical-networks
 - resource-allocation
-pretty_name: OptiRA nine-task benchmark with 2000 Q1 cases
+pretty_name: OptiNet-Bench
 ---
 
-# OptiRA optical-network benchmark
+# OptiNet-Bench dataset
 
 The catalog contains 21,356 Cases across nine tasks. Q1 contains 2,000 certified
 Cases: 600 pure-200G and 1,400 mixed-rate. Its original 200 Cases are retained

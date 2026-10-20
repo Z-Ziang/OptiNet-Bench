@@ -12,15 +12,15 @@ Check directed routing and spectrum feasibility. Minimize hops first and WUFR se
 ## Results
 Four categories for feasible instances; certified correct rejection is separate. Review, service failures and scoring exceptions remain separate.
 Strict scoring preserves the final response; relaxed scoring only removes a
-single outer JSON code fence. See `docs/SCORING_PROTOCOL.md`.
+single outer JSON code fence. See [scoring protocol](../../docs/SCORING_PROTOCOL.md).
 
 ## Interface
 `grader.py` exports `grade(record: dict, final_answer: str) -> dict`.
-Obtain records through `optira.data.inventory()` instead of guessing paths.
+Obtain records through `optinet.data.inventory()` instead of guessing paths.
 
 ```shell
-python evaluate.py grade --config config.json --case FULL_CASE_UID --answer answer.txt --out score.json
+python evaluate.py grade --dataset ../dataset --case FULL_CASE_UID --answer answer.txt --out score.json
 ```
 
 Keep the entire evaluation package. Shared frozen code lives under
-`optira/_vendor`; a task folder alone is not a standalone grader.
+`optinet/_vendor`; a task folder alone is not a standalone grader.

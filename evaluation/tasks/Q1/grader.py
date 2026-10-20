@@ -1,5 +1,5 @@
 """Q1: QoT-aware multi-request single-step RMSA. Delegate scientific rules without duplicating them."""
-from optira.q1 import grade_q1
+from optinet.q1 import grade_q1
 
 
 def grade(record: dict, final_answer: str) -> dict:

@@ -22,7 +22,7 @@ FAMILIES = ("LEGACY_V0.2", "MIXED_V0.3")
 def engine(family: str):
     if family not in FAMILIES:
         raise ValueError(f"Unknown physical model family: {family}")
-    name = "_optira_q1_" + family.replace(".", "_")
+    name = "_optinet_q1_" + family.replace(".", "_")
     if name not in sys.modules:
         vendor = Path(__file__).parent / "_vendor/q1"
         for relative, expected in read_json(vendor / "FILE_SHA256.json").items():

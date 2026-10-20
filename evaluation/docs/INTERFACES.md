@@ -1,8 +1,8 @@
 # Interfaces
 
 ```python
-from optira.data import inventory, public_messages
-from optira.scoring import score_answer
+from optinet.data import inventory, public_messages
+from optinet.scoring import score_answer
 
 record = next(inventory(["/absolute/path/to/dataset"]))
 messages = public_messages(record)  # exactly public system and user

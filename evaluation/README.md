@@ -1,4 +1,4 @@
-# OptiRA: optical-network benchmark evaluation
+# OptiNet-Bench evaluation
 
 Use this program to send benchmark questions to a model and grade its final
 answers. Inspect AI runs the model calls; the bundled scientific validators
@@ -13,9 +13,9 @@ check the answers. The expanded dataset is included in the same GitHub repositor
 | G3 | Find shortest paths and shared directed links | 2,247 |
 | X1 | Find an optimal path | 1,126 |
 | O1-S | Allocate spectrum on a fixed path | 3,618 |
-| O1-C | Allocate spectrum on a fixed path | 1,751 |
+| O1-C | Allocate spectrum for concurrent requests on fixed paths | 1,751 |
 | X2 | Route and allocate spectrum for a request | 3,618 |
-| X3 | Route and allocate spectrum for a request | 1,751 |
+| X3 | Route and allocate spectrum for concurrent requests | 1,751 |
 | Q1 | Jointly admit and allocate a batch of requests | 2,000 |
 
 There are **21,356 Cases**. Q1 contains 600 pure-200G and 1,400 mixed-rate Cases.
@@ -34,13 +34,13 @@ git lfs pull
 Record `git rev-parse HEAD` as your exact code/data revision.
 
 ```text
-any-working-directory/
-  evaluation/                  # this GitHub repository
+OptiNet-Bench/                 # cloned repository
+  evaluation/                  # evaluation program
     evaluate.py
     config.example.json
-    optira/
+    optinet/
     tasks/
-  dataset/                     # the downloaded benchmark files
+  dataset/                     # included benchmark files
     G1/ G2/ G3/ X1/ O1-S/ O1-C/ X2/ X3/ Q1/
     _meta/
 ```
@@ -135,7 +135,7 @@ directory number. `docs/INTERFACES.md` describes the Python API and retry/export
   benchmark, not a secret test set. Q1 includes disclosed difficulty selection.
 - Freeze the code/data revisions and hashes. The same saved answer can be
   regraded deterministically; remote model generation is not guaranteed identical.
-- Keep the whole evaluator: `optira/_vendor` contains required frozen scientific
+- Keep the whole evaluator: `optinet/_vendor` contains required frozen scientific
   code and contracts. The task folders are adapters, not standalone graders.
 - This repository contains no production jobs or historical model runs.
   Source REVIEW flags and scientific limitations remain documented in
@@ -144,4 +144,5 @@ directory number. `docs/INTERFACES.md` describes the Python API and retry/export
   Retain applicable third-party notices; see `LICENSE_NOTICE.md`.
 
 See `docs/RELEASE_CHECKLIST.md` for the public-release criteria and
-`ACCEPTANCE.json` for the current validation status.
+`MAINTENANCE_AUDIT.json` for the current audit and `ACCEPTANCE.json` for
+the original engineering acceptance.

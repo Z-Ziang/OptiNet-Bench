@@ -1,11 +1,11 @@
 # Compatibility
 
-Use the entire evaluation directory with its optira package, task adapters,
+Use the entire evaluation directory with its optinet package, task adapters,
 frozen runtimes and contracts. The public interface is evaluate.py and the
 Python API documented in INTERFACES.md. No source workspace is imported.
 
 The enclosing project directory can be moved. Keep the dataset directory named
-dataset and retain its _meta catalog; DATASET.md covers Hugging Face layouts.
+dataset and retain its _meta catalog; DATASET.md describes the current GitHub layout.
 Configuration dataset paths are relative to the config file. Plans bind absolute
 dataset locations and message hashes: regenerate plans after moving data.
 
@@ -21,3 +21,9 @@ the catalog/identity task. Supplemental validator identity bridges are retained.
 Source REVIEW flags and source parser behavior remain authoritative. Frozen
 historical schema IDs are not current package names. No translation or correction
 of model prompts occurs during loading. See REVIEW.md for scientific limitations.
+
+The public Python namespace is `optinet`; use `optinet_cases` for Inspect tasks.
+New plans use `OPTINET_NINE_TASKS_PLAN_V1`. Existing
+`OPTIRA_NINE_TASKS_PLAN_V1` plans remain readable with the same identity checks.
+Frozen source protocols and original release records retain their historical
+identifiers for provenance and integrity; they are not current package names.

@@ -7,8 +7,8 @@ from inspect_ai.model import ChatMessageSystem, ChatMessageUser, ModelOutput
 from inspect_ai.scorer import Score, scorer
 from inspect_ai.solver import generate, solver
 
-from optira.data import plan_rows, public_messages, reference
-from optira.scoring import score_answer
+from optinet.data import plan_rows, public_messages, reference
+from optinet.scoring import score_answer
 
 
 @scorer(metrics=[])
@@ -30,11 +30,11 @@ def offline_reference_replay():
 
 
 @task
-def optira_cases(plan_path: str, offline_reference: bool = False):
+def optinet_cases(plan_path: str, offline_reference: bool = False):
     samples = []
     for row in plan_rows(plan_path):
         messages = [(ChatMessageSystem if item["role"] == "system" else ChatMessageUser)(content=item["content"])
                     for item in public_messages(row)]
         samples.append(Sample(id=row["case_uid"], input=messages, target="", metadata={"case_record": row}))
     return Task(dataset=samples, solver=offline_reference_replay() if offline_reference else generate(),
-                scorer=frozen_scoring(), version="OPTIRA_NINE_TASKS_EN_20261018_R2")
+                scorer=frozen_scoring(), version="OPTINET_NINE_TASKS_EN_20261020_R3")

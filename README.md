@@ -1,7 +1,8 @@
 # OptiNet-Bench
 
-Code and data for the nine-task optical-network benchmark. The evaluation package
-is **OptiNet** (`optinet`), using Inspect AI and frozen scientific validators.
+Code and data for **OptiNet-Bench**, a nine-task benchmark for evaluating large
+language models in optical-network resource allocation. The `optinet` evaluation
+package uses Inspect AI and frozen scientific validators.
 
 ## Contents
 
@@ -63,7 +64,8 @@ prompt files are sent to models. Shared topologies, difficulty selection, frozen
 physical assumptions and source REVIEW limitations are described in the
 [dataset card](dataset/README.md) and [scientific scope](evaluation/docs/REVIEW.md).
 
-The current engineering acceptance is [ACCEPTANCE.json](evaluation/ACCEPTANCE.json).
+The original engineering acceptance is [ACCEPTANCE.json](evaluation/ACCEPTANCE.json).
+The current naming and integration audit is [MAINTENANCE_AUDIT.json](evaluation/MAINTENANCE_AUDIT.json).
 Use `evaluation/FILE_SHA256.json` and `dataset/_meta/SHA256SUMS.json` to verify
 code and data. A saved model answer can be regraded; remote model generation is
 not guaranteed identical. No historical model runs or credentials are shipped.

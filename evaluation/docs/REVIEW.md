@@ -24,7 +24,7 @@ model categories, certified rejection, REVIEW states and service errors separate
 
 Directory normalization changes current location metadata and integrity bindings;
 scientific payloads, prompt bytes, source IDs, UIDs and scoring Python are not
-changed. The OptiRA namespace uses optira; frozen legacy compatibility identifiers
+changed. The current OptiNet-Bench Python namespace is optinet; frozen legacy compatibility identifiers
 inside vendored source are historical protocol values, not active package names.
 Check UID and public-message hash when joining historical results, not display IDs.
 

@@ -17,7 +17,7 @@ def score_answer(row: dict, answer: str) -> dict:
         raise TypeError("Answer must be the final visible response text")
     if task not in _modules:
         path = Path(__file__).resolve().parents[1] / "tasks" / task / "grader.py"
-        spec = importlib.util.spec_from_file_location("_optira_task_" + task.replace("-", "_"), path)
+        spec = importlib.util.spec_from_file_location("_optinet_task_" + task.replace("-", "_"), path)
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
         _modules[task] = module

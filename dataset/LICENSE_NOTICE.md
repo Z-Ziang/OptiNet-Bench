@@ -1,12 +1,12 @@
-# OptiRA dataset license and attribution
+# OptiNet-Bench dataset license and attribution
 
-The project owner licenses the OptiRA dataset contributions under Creative
+The project owner licenses the OptiNet-Bench dataset contributions under Creative
 Commons Attribution 4.0 International (CC BY 4.0).
 See LICENSE for the full legal text and
 https://creativecommons.org/licenses/by/4.0/ for its summary.
 
 When sharing the dataset or an adaptation, give appropriate credit to the
-OptiRA contributors, retain supplied source attributions, provide the license
+OptiNet-Bench contributors, retain supplied source attributions, provide the license
 link and indicate changes. Identify the dataset release URL and exact revision
 when available. Per-Case provenance and _meta retain original source identities.
 

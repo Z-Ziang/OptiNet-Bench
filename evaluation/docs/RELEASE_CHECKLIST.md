@@ -20,13 +20,13 @@ The referenced guidance is used for documentation and reproducibility review:
 | Honest denominators and unresolved cases | SCORING_PROTOCOL.md and REVIEW.md |
 | Topology and family dependence | Dataset card and DATASET.md |
 | Naming preserves scientific payloads | Dataset DIRECTORY_NAMING_ACCEPTANCE.json |
-| Reproducible execution evidence | Current ACCEPTANCE.json; local detailed logs are not shipped |
+| Reproducible execution evidence | MAINTENANCE_AUDIT.json and original ACCEPTANCE.json |
 | Licensing and redistribution | Code: MIT; dataset: CC BY 4.0; see LICENSE_NOTICE.md |
-| Actual publication URLs/revisions | Supply once the owner creates the GitHub/Hugging Face repositories |
+| Actual publication URLs/revisions | https://github.com/Z-Ziang/OptiNet-Bench; record the Git commit SHA |
 
 The publication tree contains the CLI, Inspect task, shared adapters, frozen
 validators/contracts, required source bindings/notices and current documentation.
-Historical acceptance reports, production scripts, model outputs, logs, virtual
+Original acceptance evidence is retained in ACCEPTANCE.json. Production scripts, model outputs, logs, virtual
 environments, caches and account files are outside this tree. FILE_SHA256.json
 enumerates the shipped files; it excludes itself to avoid a self-referential hash.
 

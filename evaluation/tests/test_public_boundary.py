@@ -8,13 +8,13 @@ import unittest
 from unittest.mock import patch
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
-from optira.data import inside, inventory, public_messages
-from optira.cli import reject_secrets
+from optinet.data import inside, inventory, public_messages
+from optinet.cli import reject_secrets
 
 
 class PublicBoundaryTests(unittest.TestCase):
     def setUp(self):
-        self.temporary=tempfile.TemporaryDirectory(prefix='optira_public_checks_')
+        self.temporary=tempfile.TemporaryDirectory(prefix='optinet_public_checks_')
         self.root=Path(self.temporary.name)/'arbitrary project name'
         self.data=self.root/'dataset'
         self.directory=self.data/'Q1/TOPOLOGY/Q1_001'
@@ -61,7 +61,7 @@ class PublicBoundaryTests(unittest.TestCase):
         import inspect_tasks
         row=next(inventory([str(self.data)]))
         with patch.object(inspect_tasks,'plan_rows',return_value=[row]):
-            task=inspect_tasks.optira_cases('unused.json',offline_reference=False)
+            task=inspect_tasks.optinet_cases('unused.json',offline_reference=False)
         sample=task.dataset[0]
         self.assertEqual(sample.target,'')
         self.assertEqual(len(sample.input),2)
