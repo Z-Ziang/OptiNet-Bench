@@ -42,19 +42,7 @@ dataset/
   _meta/SHA256SUMS.json
 ```
 
-Q1 IDs run from `Q1_001` to `Q1_2000`, with a minimum of three numeric digits.
-The catalog is authoritative. Per-Case identity files bind all seven payload
-files by SHA-256 and byte length. Model messages consist of the two `public`
-files only. `private` denotes the grading role; those files contain reference
-answers and proofs and are also downloadable from a public dataset repository.
-
-Q1 uses 53 joint quota strata based on exact node count, rate mode, frozen
-physical contract, request count and Oracle decision. Each stratum is ten times
-the reviewed 200-Case seed population. New Cases include explicitly documented,
-seeded spectrum-snapshot variants; network structures can be shared. Source
-lineage and full production certification evidence are retained under
-`dataset/_meta/release/Q1_2000/`. This construction uses certification and
-difficulty selection and does not represent a uniform random topology sample.
+sample.
 
 ## Download and evaluate
 

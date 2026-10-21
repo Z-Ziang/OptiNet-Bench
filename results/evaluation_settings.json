@@ -1,0 +1,57 @@
+{
+  "benchmark": "OptiNet-Bench",
+  "configuration_type": "evaluation_protocol",
+  "dataset_cases": 21356,
+  "evaluation_subset": {
+    "cases": 2200,
+    "sampling": "stratified by task and topology size",
+    "G1_to_X3_cases": 2000,
+    "Q1_cases": 200,
+    "case_uid_file": "evaluation/splits/evaluation_cases.txt"
+  },
+  "runs_per_evaluated_case": 1,
+  "frontier_models": {
+    "models": [
+      "Gemini 3.8 Flash",
+      "GPT-6.1 Sol",
+      "Claude Fable 5",
+      "DeepSeek-V4.1-Flash-1017"
+    ],
+    "access": "official APIs",
+    "output_budget": "32K tokens",
+    "context_window": "model default",
+    "other_parameters": "default"
+  },
+  "smaller_models": {
+    "models": [
+      "Qwen3-8B",
+      "Qwen3-8B (Non-Thinking)",
+      "Qwen3-4B",
+      "Ministral 3 3B",
+      "Qwen3-1.7B",
+      "Qwen3-0.6B"
+    ],
+    "context_window": "32K tokens",
+    "output_budget": "8K tokens",
+    "hardware": {
+      "gpu_count": 4,
+      "gpu": "NVIDIA A100",
+      "memory_per_gpu": "80 GB"
+    }
+  },
+  "reasoning": {
+    "setting": "enabled where supported",
+    "exception": "Qwen3-8B (Non-Thinking)"
+  },
+  "evaluation_framework": "Inspect AI",
+  "metrics": {
+    "G1_G2_G3": "Corr.",
+    "other_tasks": [
+      "Opt.",
+      "Succ."
+    ],
+    "overall": "unweighted mean of task-level end-to-end success rates over G1-X3",
+    "Q1": "separate",
+    "percentage_decimal_places": 1
+  }
+}
