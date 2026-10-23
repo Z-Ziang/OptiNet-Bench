@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_058",
+  "case_id": "Q1_0058",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -898,59 +898,7 @@
       "source_node_id": 44
     }
   ],
-  "generation": {
-    "derived_from_q1c_case_id": "Q1C_V2_0016",
-    "derived_source_class": "v2_18_certified_source",
-    "difficulty_claim": "TO_BE_MEASURED",
-    "mixed_model_version": "V0.3_EJOR2026_TABLE1_1FSU_ASSUMED_GUARD",
-    "original_graph_and_spectrum_hash": "d2f440ca44a360e4fc60da65f3306248e01134b2137e2006154e8cd8f76e0d29",
-    "original_snapshot_unchanged": true,
-    "physical_model": "UNCHANGED_Q1C_ASE_ONLY_CD",
-    "rate_assignment": "DETERMINISTIC_STRATIFIED_CYCLING_100_200_300",
-    "request_origins": [
-      {
-        "od_pair": [
-          29,
-          9
-        ],
-        "source_request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_001286",
-        "source_x3_case_id": "X3_GAP_beb2f7debc9bec274b70cc62"
-      },
-      {
-        "od_pair": [
-          40,
-          25
-        ],
-        "source_request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_001786",
-        "source_x3_case_id": "X3_GAP_3f7193fec2644093899e14cb"
-      },
-      {
-        "od_pair": [
-          40,
-          30
-        ],
-        "source_request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_001791",
-        "source_x3_case_id": "X3_GAP_59e6d56d5489470d8d2d9459"
-      },
-      {
-        "od_pair": [
-          9,
-          12
-        ],
-        "source_request_id": "req_TB_REAL%3A%3ATOP_79_PALMETTO_000408",
-        "source_x3_case_id": "X3_GAP_64fa61349772833d785a0ad5"
-      }
-    ],
-    "source": "X3_SOURCE_100_CERTIFIED_20261016",
-    "source_snapshot_hash": "3cd6e3483620ee19fff1e5f280be53c796d137cfb4b531e7c91ebf908a4399c4",
-    "source_x3_case_ids": [
-      "X3_GAP_3f7193fec2644093899e14cb",
-      "X3_GAP_59e6d56d5489470d8d2d9459",
-      "X3_GAP_64fa61349772833d785a0ad5",
-      "X3_GAP_beb2f7debc9bec274b70cc62"
-    ],
-    "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-  },
+  "generation": {"rate_and_guard_model": "MIXED_RATES_EJOR2026_TABLE1_1FSU_ASSUMED_GUARD", "input_spectrum_preserved": true, "physical_model": "ASE_ONLY_PLUS_CD", "rate_assignment": "DETERMINISTIC_STRATIFIED_CYCLING_100_200_300", "request_origins": [{"od_pair": [29, 9]}, {"od_pair": [40, 25]}, {"od_pair": [40, 30]}, {"od_pair": [9, 12]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -42606,7 +42554,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -42645,6 +42593,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_79_PALMETTO"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_79_PALMETTO"
 }

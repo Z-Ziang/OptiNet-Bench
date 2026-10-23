@@ -12,9 +12,14 @@ result = score_answer(record, final_visible_response)
 Every task folder exports grade(record, final_answer). Use the shared loader:
 it binds dataset location, UID, task and public-message hashes. The returned
 strict and relaxed objects preserve source validator diagnostics and metrics.
+Use `score_answer` for the uniform strict/relaxed preprocessing policy. The
+relaxed grade includes `output_processing`, with the selected method, candidate
+count, offsets, hash and extracted text when applicable. The original visible
+answer is preserved in the run export. See `SCORING_PROTOCOL.md` for precedence
+and ambiguity rules; low-level frozen adapters retain their source interfaces.
 Never substitute reference-string equality for feasibility/optimality checks.
 
-CLI: verify, verify-data, tasks, plan, preflight, offline, run, grade, export,
+CLI: verify, verify-data, tasks, quick, plan, preflight, offline, run, grade, export,
 retry. Run `python evaluate.py --help` for arguments. New outputs use exclusive
 creation to protect old experiments. Export rejects overlapping model/Case pairs.
 

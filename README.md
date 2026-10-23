@@ -26,10 +26,11 @@ code, including task-specific validators and reference answers.
 | RMSA task | Q1 | QoT-aware joint routing, modulation, and spectrum assignment | 2,000 |
 | **Total** | | | **21,356** |
 
-Graph tasks cover **5–500-node** topologies. Resource-allocation tasks use
-**5–60-node** topologies with **320 spectrum slots per directed link**. Q1
-additionally includes physical link lengths, service bit rates, modulation
-formats, and transceiver configurations.
+Graph tasks cover **561 topologies spanning 5–500 nodes**. Resource-allocation tasks use
+**5–60-node** topologies with **320 spectrum slots per directed link**; the
+smallest topology size differs by task (for example, Q1's smallest topologies
+have 10 nodes). Q1 additionally includes physical link lengths, service bit
+rates, modulation formats, and transceiver configurations.
 
 All tasks describe the requirements and constraints in natural language. Only
 `public/system_prompt.txt` and `public/user_prompt.txt` are sent to a model.
@@ -39,8 +40,18 @@ they are publicly downloadable, but are not model inputs.
 ## Paper evaluation subset
 
 The paper evaluates **2,200 cases sampled by task and topology size**: 2,000
-across G1–X3 for nine LLMs and 200 Q1 cases for four frontier models, owing to
-context-window limits. Each model is run once per evaluated case.
+across G1–X3 and 200 Q1 cases (a stratified sample of the 2,000 Q1 dataset
+cases) for the four frontier models. Each model is run once per evaluated case.
+
+All reported metrics are computed as proportions over the cases actually
+evaluated and scored for each model. The four frontier models are submitted on
+the full 2,000-case G1–X3 sample; cases with no returned answer or no
+format-compliant answer are excluded from the corresponding scored/compliant
+denominators. For the smaller models, cases whose input alone exceeded the
+32K-token context window (typically cases on the largest topologies) were not
+fed to the model and have no evaluation record: the published runs contain
+1,843 cases for each Qwen3 configuration and 1,824 for Ministral 3 3B.
+Per-task denominator counts are listed in `results/task_summary.csv`.
 
 [`evaluation/splits/evaluation_cases.txt`](evaluation/splits/evaluation_cases.txt)
 lists the Case UIDs in the paper's sampled evaluation set, with one UID per line.
@@ -58,9 +69,15 @@ the repository to identify the exact code and dataset revision.
 | **Decision-failure rate** | 100% − Succ. |
 | **Overall** | Unweighted mean of the eight task-level end-to-end success rates over G1–X3; Q1 is reported separately |
 
+All cases use the same task-specific scoring policy. The export includes
+per-task metrics and denominator counts in `summary.json` and `summary.csv`,
+with the eight-task macro-average in `overall.csv`.
+
 Format-invalid responses are excluded from Opt. and Succ., but count as
 failures in end-to-end success. Correct rejections contribute to Succ., not
 Opt. Incorrect acceptances and rejections count as decision failures.
+Service-error records (a request with no returned answer) are excluded from
+scored-response denominators and are reported separately.
 
 Validators first check feasibility and then compare against precomputed
 reference optima. X1 minimizes hop count or total path length; O1-S/O1-C
@@ -76,9 +93,11 @@ OptiNet-Bench/
 ├── LICENSE
 ├── dataset/
 │   ├── G1/ G2/ G3/ X1/ O1-S/ O1-C/ X2/ X3/ Q1/
-│   ├── _meta/
+│   ├── _meta/catalog/      # Case and file-identity indexes
+│   ├── _meta/contracts/    # Shared output formats and task specifications
 │   ├── LICENSE
 │   └── LICENSE_NOTICE.md
+├── results/
 └── evaluation/
     ├── evaluate.py
     ├── inspect_tasks.py
@@ -92,17 +111,15 @@ OptiNet-Bench/
 
 ## Download
 
-Install [Git](https://git-scm.com/) and [Git LFS](https://git-lfs.com/), then run:
+Install [Git](https://git-scm.com/), then run:
 
 ```shell
-git lfs install
 git clone https://github.com/Z-Ziang/OptiNet-Bench.git
 cd OptiNet-Bench
-git lfs pull
 git rev-parse HEAD
 ```
 
-The expanded dataset occupies approximately **4.65 GiB**. No separate archive
+The dataset is distributed as ordinary files. No separate archive
 extraction or Hugging Face account is required.
 
 ## Install and run
@@ -146,12 +163,19 @@ The pilot checks setup and scoring; it does not measure model performance.
 Its deterministic selection is separate from the paper's sampled evaluation set.
 
 To evaluate a model, copy `config.example.json` to `config.json`, configure the
-served model and generation settings, and provide API credentials through
-environment variables. Then run:
+model/API connection, optional generation settings and case selection, and
+provide API credentials through environment variables. The example uses
+DeepSeek with `DEEPSEEK_API_KEY` and selects one G1 case. Then run:
 
 ```shell
-python evaluate.py run --config config.json --plan plans/pilot.json --out runs/my_model
+python evaluate.py quick --config config.json
 ```
+
+This one command validates the cases, calls the model, grades the answers and
+exports results. Override selection with repeated `--case` options, or use a
+task batch such as `--tasks X2 --limit-per-task 10`. Omitting the limit with
+`--tasks X2` selects all X2 cases. Use `--dry-run` to validate without model
+calls. See the [configuration guide](evaluation/docs/CONFIGURATION.md).
 
 Model requests may incur provider charges. The configuration example is a
 starting point; record the actual model, context and output budgets, reasoning
@@ -173,6 +197,11 @@ task-specific rules.
   when reporting benchmark results.
 - Record the code/data revision and evaluation settings. Saved answers can be
   regraded; remote model generation need not be identical across repeated calls.
+
+## Experimental results
+
+The [results directory](results/README.md) provides experimental settings,
+per-case outcomes and task-level summaries.
 
 ## Citation
 

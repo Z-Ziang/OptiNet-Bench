@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_796",
+  "case_id": "Q1_0796",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -898,142 +898,7 @@
       "source_node_id": 48
     }
   ],
-  "generation": {
-    "candidate_number": 4,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "generator": "Q1_SCALED1000_SEEDED_SPECTRUM_PERTURBATION_V1",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "seed": "1535a59d0f2af792b83f8f8fd57cafb58b66eadda8495962729bc14dea90a231",
-    "source_case_id": "Q1_004",
-    "source_generation": {
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "request_origins": [
-        {
-          "od_pair": [
-            10,
-            1
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_09b4c270e8d7ae5ec375e175",
-            "X3_GAP_8afd7626d79126fff93d51a7",
-            "X3_GAP_af5c4cba9bff1581b7620a54",
-            "X3_GAP_d1513d703cb7ec4aa2539939"
-          ]
-        },
-        {
-          "od_pair": [
-            21,
-            49
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_09b4c270e8d7ae5ec375e175",
-            "X3_GAP_6ee93597f7dc354ea7069462",
-            "X3_GAP_71b9fd07b7294131f61febe0",
-            "X3_GAP_7ee87c717ca755099eb42ce5"
-          ]
-        },
-        {
-          "od_pair": [
-            46,
-            35
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_26683f8887035c671042c95f",
-            "X3_GAP_ec149aa36beaea1140807f14"
-          ]
-        },
-        {
-          "od_pair": [
-            24,
-            2
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_2def8343c632697191ee987d"
-          ]
-        },
-        {
-          "od_pair": [
-            22,
-            3
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_2def8343c632697191ee987d",
-            "X3_GAP_7ee87c717ca755099eb42ce5",
-            "X3_GAP_af5c4cba9bff1581b7620a54",
-            "X3_GAP_bd5d3873591da24211cee4e4"
-          ]
-        },
-        {
-          "od_pair": [
-            18,
-            40
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_f8ad6b2b06c1a242ee78bef5"
-          ]
-        }
-      ],
-      "semantic_key": "92f93419172b809c80a1b6dac7206ee8174f6d09c1a395b2f3915483a237e105",
-      "source": "X3_485_20261016",
-      "source_km_overlay_sha256": "b85eb0ce66a5598bfeb95b5141402529af41d6ab61cce191ba1c7bd8a922414f",
-      "source_snapshot_hash": "8c9c56a3613baf1dd3632b8534d226c9c2e1861cf4d1299e54ed2814e551f3e3",
-      "source_x3_case_ids": [
-        "X3_GAP_09b4c270e8d7ae5ec375e175",
-        "X3_GAP_26683f8887035c671042c95f",
-        "X3_GAP_2def8343c632697191ee987d",
-        "X3_GAP_6ee93597f7dc354ea7069462",
-        "X3_GAP_71b9fd07b7294131f61febe0",
-        "X3_GAP_7ee87c717ca755099eb42ce5",
-        "X3_GAP_8afd7626d79126fff93d51a7",
-        "X3_GAP_af5c4cba9bff1581b7620a54",
-        "X3_GAP_bd5d3873591da24211cee4e4",
-        "X3_GAP_d1513d703cb7ec4aa2539939",
-        "X3_GAP_ec149aa36beaea1140807f14",
-        "X3_GAP_f8ad6b2b06c1a242ee78bef5"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "865545e51af67a0f28311cf62dec80ca96ee77a4eeca3a2156a4c4c51e0533c6",
-    "spectrum_edits": [
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 92,
-        "slot": 239
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 31,
-        "slot": 198
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 57,
-        "slot": 36
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 117,
-        "slot": 90
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 100,
-        "slot": 315
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "seed": "1535a59d0f2af792b83f8f8fd57cafb58b66eadda8495962729bc14dea90a231", "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [10, 1]}, {"od_pair": [21, 49]}, {"od_pair": [46, 35]}, {"od_pair": [24, 2]}, {"od_pair": [22, 3]}, {"od_pair": [18, 40]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "spectrum_perturbations": [{"after": 1, "before": 0, "link_id": 92, "slot": 239}, {"after": 0, "before": 1, "link_id": 31, "slot": 198}, {"after": 1, "before": 0, "link_id": 57, "slot": 36}, {"after": 0, "before": 1, "link_id": 117, "slot": 90}, {"after": 0, "before": 1, "link_id": 100, "slot": 315}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -42694,7 +42559,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -42745,6 +42610,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_51_IRIS"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_51_IRIS"
 }

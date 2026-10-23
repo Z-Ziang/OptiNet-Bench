@@ -1,17 +1,28 @@
 {
+  "_comment": {
+    "usage": "Copy this file to config.json, set the API key environment variable, then run: python evaluate.py quick --config config.json. This explanatory block is ignored by quick and may be kept or removed.",
+    "datasets": "Dataset paths relative to this configuration file. The default ../dataset points to the dataset included in this repository.",
+    "model": "Provider/model ID. This example uses deepseek-flash through the official DeepSeek API. Change this field to select another model.",
+    "api_key_env": "The name of the environment variable holding the API key, never the key itself. PowerShell example: $env:DEEPSEEK_API_KEY = 'YOUR_API_KEY'.",
+    "base_url (optional)": "To use a custom API endpoint, add a top-level base_url field containing its API base address. When omitted here, quick uses the official DeepSeek address.",
+    "generation.max_tokens": "Output-token cap per case, explicitly set to 8192 in this example. For 32K, use 32768. Some providers count reasoning tokens toward this cap. This does not enlarge the model's context window.",
+    "generation.temperature (optional)": "Add temperature under generation when needed, for example 0 or 0.6. If omitted, Inspect/provider defaults apply. Supported values depend on the model.",
+    "other generation options": "Optional settings include top_p, seed, timeout, max_retries and reasoning_effort. See docs/CONFIGURATION.md. Omitted settings retain Inspect/provider defaults.",
+    "max_samples": "Number of cases running concurrently. A value of 1 runs cases sequentially; it does not limit the total number of selected cases.",
+    "selection.cases": "Canonical case IDs or full UIDs to evaluate. This example selects only G1_0001. Multiple-case example: [\"X2_0001\", \"X2_0002\"].",
+    "batch selection": "For all X2 cases, replace the entire selection object with {\"tasks\":[\"X2\"]}. For ten X2 cases, use {\"tasks\":[\"X2\"],\"limit_per_task\":10}. Do not combine cases and tasks.",
+    "outputs and checks": "Results are saved in a new runs/ directory next to the configuration file. Add --dry-run to validate selection without API calls, or --offline to check the workflow using stored reference answers."
+  },
   "datasets": [
     "../dataset"
   ],
-  "model": "openai/REPLACE_WITH_YOUR_SERVED_MODEL_ID",
-  "base_url": "http://127.0.0.1:8000/v1",
-  "model_args": {
-    "responses_api": false
-  },
+  "model": "deepseek/deepseek-flash",
+  "api_key_env": "DEEPSEEK_API_KEY",
   "generation": {
-    "temperature": 0,
-    "max_tokens": 8192,
-    "timeout": 900,
-    "max_retries": 2
+    "max_tokens": 8192
   },
-  "max_samples": 1
+  "max_samples": 1,
+  "selection": {
+    "cases": ["G1_0001"]
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_051",
+  "case_id": "Q1_0051",
   "directed_links": [
     {
       "destination_node_id": 2,
@@ -548,61 +548,7 @@
       "source_node_id": 33
     }
   ],
-  "generation": {
-    "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-    "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-    "new_combined_requests": true,
-    "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-    "request_origins": [
-      {
-        "od_pair": [
-          4,
-          26
-        ],
-        "source_x3_case_ids": [
-          "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_ff778cd47af3e0b5b4b3b581"
-        ]
-      },
-      {
-        "od_pair": [
-          17,
-          7
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ba0c8e3bb0805237b9b01402"
-        ]
-      },
-      {
-        "od_pair": [
-          5,
-          14
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_d275ca5eb58bab9955ebf244"
-        ]
-      },
-      {
-        "od_pair": [
-          9,
-          25
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_d56790d39a16f09cc6ff60a2"
-        ]
-      }
-    ],
-    "semantic_key": "dbe2898aa93c6d124a551c087207ec64fe7c434b1c16dd4766b0af2b3b211f79",
-    "source": "L5_8340_20261014",
-    "source_km_overlay_sha256": "4af76ef75d35eb5dc058653495a409ab9caafb60cffba58185f297bb78396125",
-    "source_snapshot_hash": "adf65e5c4da3b8fed2980a2ec5312870feec5ba79e56e056af3041fc61c86aba",
-    "source_x3_case_ids": [
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_d56790d39a16f09cc6ff60a2",
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ba0c8e3bb0805237b9b01402",
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_d275ca5eb58bab9955ebf244",
-      "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_ff778cd47af3e0b5b4b3b581"
-    ],
-    "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-  },
+  "generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [4, 26]}, {"od_pair": [17, 7]}, {"od_pair": [5, 14]}, {"od_pair": [9, 25]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -25997,7 +25943,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -26036,6 +25982,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_39_GRNET"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_39_GRNET"
 }

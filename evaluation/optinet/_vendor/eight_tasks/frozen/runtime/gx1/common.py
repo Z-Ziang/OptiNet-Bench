@@ -17,7 +17,7 @@ PUBLIC_LENGTH_SIGNIFICANT_DIGITS = 6
 def public_length_km(value: float | int) -> float:
     """Return the canonical numeric value exposed in G3/X1 text prompts.
 
-    Historical GX1 prompts used Python's ``:g`` formatting, whose default is
+    G3/X1 prompts use Python's ``:g`` formatting, whose default is
     six significant digits.  The evaluated system can reason only over that
     public value, so weighted scientific validation must use the same value.
     """

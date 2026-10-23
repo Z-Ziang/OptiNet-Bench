@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_314",
+  "case_id": "Q1_0314",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -898,112 +898,7 @@
       "source_node_id": 44
     }
   ],
-  "generation": {
-    "algorithm_version": "q1-unified-v0.2",
-    "candidate_number": 2,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "difficulty_proxy_shared_route_overlap": 4,
-    "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS",
-    "generator": "Q1_UNIFIED_CANDIDATE_FACTORY",
-    "physical_topology_and_spectrum_unchanged": true,
-    "proof_status": "EXACT_CERTIFIED",
-    "scientific_input_sha256": "a307881fda992b1a1e7aa36c78e8e2b46b8e70231691098de46b4f34b8125c57",
-    "seed": 20261018,
-    "snapshot_reused": true,
-    "source_archive_sha256": "33fd5b1b182338dd76eff6fad1d54599c6026ea2746a314189b32760cf3cf85d",
-    "source_case_id": "Q1C_V6_7F3E8D868D446DBA1423",
-    "source_generation_record": {
-      "V6_rate_reassignment": "SAME_ORIGINAL_LINKS_LENGTHS_SPECTRUM_AND_OD",
-      "difficulty_claim": "TO_BE_MEASURED",
-      "input_source_case_id": "Q1C_V2_0041",
-      "input_source_class": "CERTIFIED_130",
-      "original_graph_and_spectrum_hash": "289a8dec66d4fe55957af1fc983f85fb4abeb323675efc4a24d8ee6e38c77451",
-      "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-      "rate_assignment": [
-        200,
-        300,
-        100,
-        200
-      ],
-      "request_origins": [
-        {
-          "od_pair": [
-            25,
-            42
-          ],
-          "source_request_id": "req_0f733bf5e147f1c71ee289ab",
-          "source_x3_case_id": "X3_COND_e22de75b797e5ac993bad6d2"
-        },
-        {
-          "od_pair": [
-            26,
-            11
-          ],
-          "source_request_id": "req_8de37e4ee8b0102bd93ac8af",
-          "source_x3_case_id": "X3_COND_e22de75b797e5ac993bad6d2"
-        },
-        {
-          "od_pair": [
-            9,
-            12
-          ],
-          "source_request_id": "req_70304e321d1dcb82b4a5e560",
-          "source_x3_case_id": "X3_COND_500c5e8bc1d3286b07771348"
-        },
-        {
-          "od_pair": [
-            37,
-            3
-          ],
-          "source_request_id": "req_3850543d8b1a7fb0510704d4",
-          "source_x3_case_id": "X3_COND_ac290af82f99dd2042e149a4"
-        }
-      ],
-      "source": "X3_SOURCE_100_CERTIFIED_20261016",
-      "source_snapshot_hash": "25db7ed6909d6878f00cc691898bfaddc08e314da21dd2d156ed5b7851780170",
-      "source_x3_case_ids": [
-        "X3_COND_500c5e8bc1d3286b07771348",
-        "X3_COND_ac290af82f99dd2042e149a4",
-        "X3_COND_e22de75b797e5ac993bad6d2"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-      "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-    },
-    "source_pair_selection_policy": "ACCEPTED_SOURCE_OD_RATE_PAIRS_OVERLAP_RANKED",
-    "source_request_case_ids": [
-      "Q1C_MIXED_4542D7EF30F1D6D7",
-      "Q1C_V6_001C9FE3204A90CD9B55",
-      "Q1C_V6_26B80A242736ABA914F1"
-    ],
-    "source_request_evidence": [
-      {
-        "destination_node_id": 10,
-        "node_bin": "41-50",
-        "rate_gbps": 100,
-        "source_case_id": "Q1C_V6_001C9FE3204A90CD9B55",
-        "source_node_id": 27
-      },
-      {
-        "destination_node_id": 30,
-        "node_bin": "41-50",
-        "rate_gbps": 300,
-        "source_case_id": "Q1C_MIXED_4542D7EF30F1D6D7",
-        "source_node_id": 40
-      },
-      {
-        "destination_node_id": 12,
-        "node_bin": "41-50",
-        "rate_gbps": 200,
-        "source_case_id": "Q1C_V6_26B80A242736ABA914F1",
-        "source_node_id": 9
-      }
-    ],
-    "source_root_sha256": "079785dfb34cca3b2e374c060d01f827080a4a15f251ca801343296822ad5ef1",
-    "source_snapshot_sha256": "25db7ed6909d6878f00cc691898bfaddc08e314da21dd2d156ed5b7851780170",
-    "source_spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-    "source_topology_id": "top_TB_REAL%3A%3ATOP_79_PALMETTO",
-    "synthetic_snapshot": false
-  },
+  "generation": {"difficulty_proxy_shared_route_overlap": 4, "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS", "input_physical_state_preserved": true, "proof_status": "EXACT_CERTIFIED", "seed": 20261018, "snapshot_reused": true, "input_generation": {"rate_reassignment": "INPUT_LINKS_LENGTHS_SPECTRUM_AND_OD_PRESERVED", "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "rate_assignment": [200, 300, 100, 200], "request_origins": [{"od_pair": [25, 42]}, {"od_pair": [26, 11]}, {"od_pair": [9, 12]}, {"od_pair": [37, 3]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "request_pair_selection": "ACCEPTED_OD_RATE_PAIRS_OVERLAP_RANKED", "input_request_parameters": [{"destination_node_id": 10, "node_bin": "41-50", "rate_gbps": 100, "source_node_id": 27}, {"destination_node_id": 30, "node_bin": "41-50", "rate_gbps": 300, "source_node_id": 40}, {"destination_node_id": 12, "node_bin": "41-50", "rate_gbps": 200, "source_node_id": 9}], "input_spectrum_origin": "REUSED_SPECTRUM_STATE", "synthetic_snapshot": false},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -42659,7 +42554,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -42692,6 +42587,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_79_PALMETTO"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_79_PALMETTO"
 }

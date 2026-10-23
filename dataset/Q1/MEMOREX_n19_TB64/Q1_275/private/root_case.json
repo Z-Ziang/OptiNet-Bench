@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_275",
+  "case_id": "Q1_0275",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -338,171 +338,7 @@
       "source_node_id": 17
     }
   ],
-  "generation": {
-    "algorithm_version": "q1-unified-v0.3-hard-priority",
-    "candidate_number": 50,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "difficulty_proxy_shared_route_overlap": 16,
-    "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS",
-    "generator": "Q1_UNIFIED_CANDIDATE_FACTORY",
-    "physical_topology_and_spectrum_unchanged": true,
-    "preferred_source_policy": [
-      "Q1C_MIXED_041BE43F460E985B",
-      "Q1C_MIXED_7DCB4935A446D681",
-      "Q1C_MIXED_823ADE06024609B4",
-      "Q1C_MIXED_ABD913A204E241A3",
-      "Q1C_MIXED_AF53FEA48B1CCC96",
-      "Q1C_MIXED_CA73207B23009C22",
-      "Q1C_V2_0011",
-      "Q1C_V2_0015",
-      "Q1C_V2_0019",
-      "Q1C_V2_0023",
-      "Q1C_V2_0029",
-      "Q1C_V2_0032",
-      "Q1C_V2_0035",
-      "Q1C_V2_0041",
-      "Q1C_V3_CAND_0B101E6D239EEF59",
-      "Q1C_V3_CAND_25D0F5DA03FDDD51",
-      "Q1C_V3_CAND_36111B30E037E19C",
-      "Q1C_V3_CAND_581BE5B58A1FBAD3",
-      "Q1C_V3_CAND_92F93419172B809C",
-      "Q1C_V6_001C9FE3204A90CD9B55",
-      "Q1C_V6_0221CA191BAD0B68E48D",
-      "Q1C_V6_04F0D0BA997A4DC3F66D",
-      "Q1C_V6_09C5D65E96E263A6697B",
-      "Q1C_V6_0C46FE5858E9B7E89930",
-      "Q1C_V6_131CAE7FD77B39B62BCF",
-      "Q1C_V6_303794AFD810DCC4BDB8",
-      "Q1C_V6_352708F377D729FE6A1B",
-      "Q1C_V6_457ADE4E03BC86101B68",
-      "Q1C_V6_5EEF5524B36F2795D910",
-      "Q1C_V6_730AFD9B519D051620F4",
-      "Q1C_V6_769ABA6420E3A0353BCE",
-      "Q1C_V6_79D880FEBBC9EA9FFFDC",
-      "Q1C_V6_7C6AC866154E55CFE51C",
-      "Q1C_V6_7F3E8D868D446DBA1423",
-      "Q1C_V6_84B8FD2B655425DA3CDF",
-      "Q1C_V6_9554A3E8D11251F4A8F1",
-      "Q1C_V6_CFE40AD77EE4BBFE6653",
-      "Q1C_V6_D3B6927596426F52C969",
-      "Q1C_V6_FB7DD52DD5E0F93DC2B3",
-      "Q1C_V6_FDF893A0AE6724C0B938"
-    ],
-    "preferred_source_probability": 0.8,
-    "proof_status": "EXACT_CERTIFIED",
-    "scientific_input_sha256": "dae8f83caefa7f6ac8363da8a71f011d7974651f966aef667c5a7215ffb1e1b8",
-    "seed": 20261018,
-    "snapshot_reused": true,
-    "source_archive_sha256": "33fd5b1b182338dd76eff6fad1d54599c6026ea2746a314189b32760cf3cf85d",
-    "source_case_id": "Q1C_V6_CFE40AD77EE4BBFE6653",
-    "source_generation_record": {
-      "V6_rate_reassignment": "SAME_ORIGINAL_LINKS_LENGTHS_SPECTRUM_AND_OD",
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "input_source_case_id": "Q1C_V3_CAND_97BDE3AC93B4ADA4",
-      "input_source_class": "CERTIFIED_130",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "rate_assignment": [
-        100,
-        300,
-        200,
-        200
-      ],
-      "request_origins": [
-        {
-          "od_pair": [
-            1,
-            9
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_b19b655cead3f66c7b8c9c6e"
-          ]
-        },
-        {
-          "od_pair": [
-            1,
-            7
-          ],
-          "source_x3_case_ids": [
-            "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_10c70315a20b1c3334eb98b2"
-          ]
-        },
-        {
-          "od_pair": [
-            2,
-            18
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_726102107fff978f966ae0cb"
-          ]
-        },
-        {
-          "od_pair": [
-            1,
-            13
-          ],
-          "source_x3_case_ids": [
-            "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_20e65c7e4bff024d3e914199"
-          ]
-        }
-      ],
-      "semantic_key": "97bde3ac93b4ada47a89ed84a9393e50966bd504b59c9b4f34497fb1158f363f",
-      "source": "L5_8340_20261014",
-      "source_km_overlay_sha256": "1198fa99726f1e1bf468dc531267ec51b3cec4e77268c70bc826cadfdb6681b7",
-      "source_snapshot_hash": "1a2a890cfbd7c10af7e0fab1a8a16d75410f093157a5184528185f8c89e509df",
-      "source_x3_case_ids": [
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_726102107fff978f966ae0cb",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_b19b655cead3f66c7b8c9c6e",
-        "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_10c70315a20b1c3334eb98b2",
-        "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_20e65c7e4bff024d3e914199"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-      "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-    },
-    "source_pair_selection_policy": "ACCEPTED_SOURCE_OD_RATE_PAIRS_OVERLAP_RANKED",
-    "source_request_case_ids": [
-      "Q1C_MIXED_20E5706BCEAA965F",
-      "Q1C_MIXED_FA08E1B93ED8E3EC",
-      "Q1C_V6_3EB079C9E323F90A91D8"
-    ],
-    "source_request_evidence": [
-      {
-        "destination_node_id": 9,
-        "node_bin": "11-20",
-        "rate_gbps": 300,
-        "source_case_id": "Q1C_V6_3EB079C9E323F90A91D8",
-        "source_node_id": 1
-      },
-      {
-        "destination_node_id": 7,
-        "node_bin": "11-20",
-        "rate_gbps": 200,
-        "source_case_id": "Q1C_MIXED_20E5706BCEAA965F",
-        "source_node_id": 1
-      },
-      {
-        "destination_node_id": 16,
-        "node_bin": "11-20",
-        "rate_gbps": 100,
-        "source_case_id": "Q1C_MIXED_FA08E1B93ED8E3EC",
-        "source_node_id": 1
-      },
-      {
-        "destination_node_id": 13,
-        "node_bin": "11-20",
-        "rate_gbps": 300,
-        "source_case_id": "Q1C_MIXED_20E5706BCEAA965F",
-        "source_node_id": 1
-      }
-    ],
-    "source_root_sha256": "b413a2f1891da134a56b1eb6d9e85f791b7b65e3a2be01dcd81733cf0d5c7f9c",
-    "source_snapshot_sha256": "1a2a890cfbd7c10af7e0fab1a8a16d75410f093157a5184528185f8c89e509df",
-    "source_spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-    "source_topology_id": "top_TB_REAL%3A%3ATOP_64_MEMOREX",
-    "synthetic_snapshot": false
-  },
+  "generation": {"difficulty_proxy_shared_route_overlap": 16, "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS", "input_physical_state_preserved": true, "preferred_pool_probability": 0.8, "proof_status": "EXACT_CERTIFIED", "seed": 20261018, "snapshot_reused": true, "input_generation": {"rate_reassignment": "INPUT_LINKS_LENGTHS_SPECTRUM_AND_OD_PRESERVED", "model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "rate_assignment": [100, 300, 200, 200], "request_origins": [{"od_pair": [1, 9]}, {"od_pair": [1, 7]}, {"od_pair": [2, 18]}, {"od_pair": [1, 13]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "request_pair_selection": "ACCEPTED_OD_RATE_PAIRS_OVERLAP_RANKED", "input_request_parameters": [{"destination_node_id": 9, "node_bin": "11-20", "rate_gbps": 300, "source_node_id": 1}, {"destination_node_id": 7, "node_bin": "11-20", "rate_gbps": 200, "source_node_id": 1}, {"destination_node_id": 16, "node_bin": "11-20", "rate_gbps": 100, "source_node_id": 1}, {"destination_node_id": 13, "node_bin": "11-20", "rate_gbps": 300, "source_node_id": 1}], "input_spectrum_origin": "REUSED_SPECTRUM_STATE", "synthetic_snapshot": false, "preferred_pool_size": 40},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -16132,7 +15968,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -16171,6 +16007,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_64_MEMOREX"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_64_MEMOREX"
 }

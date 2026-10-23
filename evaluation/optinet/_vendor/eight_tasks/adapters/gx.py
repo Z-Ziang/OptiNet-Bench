@@ -1,5 +1,6 @@
 """GX1 public-only inputs and byte-bound frozen scientific validation."""
 from __future__ import annotations
+from case_identity import load_identity
 import argparse,hashlib,json,pathlib,re,sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RUNTIME = ROOT / 'frozen/runtime'
@@ -18,7 +19,6 @@ def resolve_case(relative):
 def select_cases(task='all',topology='',scale='',limit_per_task=0):
  rows=[];counts={}
  for r in manifest():
-  if not r.get('evaluation_eligible',True):continue
   if task!='all' and r['task']!=task:continue
   if topology and not (r['topology_folder']==topology or topology==r['topology_id'] or r['topology_folder'].startswith(topology+'_')):continue
   if scale and r['scale']!=scale:continue
@@ -27,7 +27,7 @@ def select_cases(task='all',topology='',scale='',limit_per_task=0):
  if not rows:raise ValueError('No matching cases')
  return rows
 def public_messages(row):
- d=resolve_case(row['case_dir']);ident=readjson(d/'identity.json');ms=[]
+ d=resolve_case(row['case_dir']);ident=load_identity(d);ms=[]
  for role,name in [('system','system_prompt.txt'),('user','user_prompt.txt')]:
   rel='public/'+name;b=(d/rel).read_bytes()
   if sha(b)!=ident['files'][rel]['sha256']:raise ValueError('Public input hash mismatch')
@@ -38,17 +38,16 @@ def normalize_fence(text):
  m=re.fullmatch(r'```(?:json)?\s*\r?\n(.*?)\r?\n```',text.strip(),re.I|re.S)
  return (m.group(1),True) if m else (text.strip(),False)
 def classify(row,content,allow_single_fence=True):
- if row.get('interface_status','').startswith('REVIEW'):return {'category':'REVIEW_INTERFACE','reason':row['interface_status']}
- d=resolve_case(row['case_dir']);ident=readjson(d/'identity.json')
+ d=resolve_case(row['case_dir']);ident=load_identity(d)
  for rel in ['private/root_case.json','private/truth.json']:
-  if sha((d/rel).read_bytes())!=ident['files'][rel]['sha256']:return {'category':'REVIEW_DATA','reason':'PRIVATE_FILE_HASH_MISMATCH'}
- if sha((RUNTIME/'gx1/validators.py').read_bytes())!=ident['validator_source_sha256']:return {'category':'REVIEW_DATA','reason':'VALIDATOR_HASH_MISMATCH'}
+  if sha((d/rel).read_bytes())!=ident['files'][rel]['sha256']:return {'category':'SCORING_ERROR','reason':'PRIVATE_FILE_HASH_MISMATCH'}
+ if sha((RUNTIME/'gx1/validators.py').read_bytes())!=ident['validator_source_sha256']:return {'category':'SCORING_ERROR','reason':'VALIDATOR_HASH_MISMATCH'}
  root=readjson(d/'private/root_case.json');text,removed=normalize_fence(content) if allow_single_fence else (content,False)
  v=validate_dut_output(root,text);reason=v.get('reason','')
  category='CORRECT' if v['valid'] else 'MISSING' if reason in ('INVALID_JSON','OUTPUT_SCHEMA') else 'SUBOPTIMAL' if row['task']=='X1' and reason=='NOT_GLOBAL_OPTIMUM' else 'INFEASIBLE'
  # A submitted better legal path is a truth conflict, not a model failure.
- if row['task']=='X1' and reason=='NOT_GLOBAL_OPTIMUM' and v['submitted_cost']<v['optimal_cost']-1e-9:category='REVIEW_ORACLE'
- return {'category':category,'binary_correct':category=='CORRECT','task':row['task'],'truth_feasible':True,'correct_reject':False,'single_outer_fence_removed':removed,'interface_status':row['interface_status'],'grading_version':'GX1_LOCAL_FROZEN_FOUR_WAY_V1','validator':v}
+ if row['task']=='X1' and reason=='NOT_GLOBAL_OPTIMUM' and v['submitted_cost']<v['optimal_cost']-1e-9:category='SCORING_ERROR'
+ return {'category':category,'binary_correct':category=='CORRECT','task':row['task'],'truth_feasible':True,'correct_reject':False,'single_outer_fence_removed':removed,'grading_version':'GX1_LOCAL_FROZEN_FOUR_WAY_V1','validator':v}
 def safe_classify(row,content,allow_single_fence=True):
  try:return classify(row,content,allow_single_fence)
  except Exception as e:return {'category':'SCORING_ERROR','reason':type(e).__name__,'message':str(e)}

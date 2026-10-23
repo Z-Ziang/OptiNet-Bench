@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_906",
+  "case_id": "Q1_0906",
   "directed_links": [
     {
       "destination_node_id": 29,
@@ -1234,88 +1234,7 @@
       "source_node_id": 49
     }
   ],
-  "generation": {
-    "candidate_number": 13,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "generator": "Q1_SCALED1000_SEEDED_SPECTRUM_PERTURBATION_V1",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "seed": "5a6013f0a132cbbda838511d78589fba5f1837ff88021682bf0f2052fa685f62",
-    "source_case_id": "Q1_047",
-    "source_generation": {
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "request_origins": [
-        {
-          "od_pair": [
-            13,
-            14
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_2bd5571930c7f96bdab6d6a6",
-            "X3_GAP_857e84fcbd1d8c39230dd90a",
-            "X3_GAP_90806bd8dbb79227b5b6dab6"
-          ]
-        },
-        {
-          "od_pair": [
-            45,
-            35
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_4d34ea71168acb2e95195ddb",
-            "X3_GAP_ddc2b673d67a4858a243b70d",
-            "X3_GAP_eff59e809f7f4e65beba0631",
-            "X3_GAP_fb357aac2b2140315110e131"
-          ]
-        },
-        {
-          "od_pair": [
-            49,
-            6
-          ],
-          "source_x3_case_ids": [
-            "X3_GAP_77c9b0101b955f0086643365"
-          ]
-        }
-      ],
-      "semantic_key": "1e58fa932be5a36cdeac505168b09d039f1626a2cb01553da35818afe32f8a25",
-      "source": "X3_485_20261016",
-      "source_km_overlay_sha256": "fdfba358f6e3441086c42bdd44d84edfe209fb2adbed41dba2dd40c2bc897091",
-      "source_snapshot_hash": "d429544e569f408bcb3eacf3e7193198244b84875e27d9e9d9110aacafd4e684",
-      "source_x3_case_ids": [
-        "X3_GAP_2bd5571930c7f96bdab6d6a6",
-        "X3_GAP_4d34ea71168acb2e95195ddb",
-        "X3_GAP_77c9b0101b955f0086643365",
-        "X3_GAP_857e84fcbd1d8c39230dd90a",
-        "X3_GAP_90806bd8dbb79227b5b6dab6",
-        "X3_GAP_ddc2b673d67a4858a243b70d",
-        "X3_GAP_eff59e809f7f4e65beba0631",
-        "X3_GAP_fb357aac2b2140315110e131"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "5b4e1f490f1867a65f4b34cfd073a00ddb8dc31ace9f68944d9620710bf7ea38",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 157,
-        "slot": 178
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 105,
-        "slot": 27
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "seed": "5a6013f0a132cbbda838511d78589fba5f1837ff88021682bf0f2052fa685f62", "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [13, 14]}, {"od_pair": [45, 35]}, {"od_pair": [49, 6]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 157, "slot": 178}, {"after": 1, "before": 0, "link_id": 105, "slot": 27}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -58576,7 +58495,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -58609,6 +58528,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_37_GERMANY50"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_37_GERMANY50"
 }

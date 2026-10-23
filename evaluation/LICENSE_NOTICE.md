@@ -8,9 +8,4 @@ license.
 Third-party components and dependencies retain their respective licenses and
 notices. Source notices are preserved under optinet/_vendor/eight_tasks/notices.
 The project license does not replace independent third-party terms or grant
-rights beyond those held by the licensor. Frozen source and source bindings
-are retained for reproducible scientific grading.
-
-Historical source notices may describe the earlier, undeclared project license.
-This current declaration records the owner's choice for the present release;
-it does not alter the historical source records or third-party ownership.
+rights beyond those held by the licensor. Scientific grading implementations and integrity bindings are included.

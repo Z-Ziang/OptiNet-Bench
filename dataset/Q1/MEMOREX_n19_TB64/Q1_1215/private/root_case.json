@@ -338,115 +338,7 @@
       "source_node_id": 17
     }
   ],
-  "generation": {
-    "candidate_number": 21,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "desired_decision": "REJECT",
-    "generator": "Q1_SCALED2000_REVIEWED_DECISION_SNAPSHOT_V2",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "INFEASIBLE_CERTIFIED",
-    "protected_witness_link_ids": [],
-    "seed": "dedb81cd10c215b7ff29852199ba50a505cc908fe0fc9a0dbb6e7e2f06971b82",
-    "source_beam128_grade": "MISSING",
-    "source_beam16_grade": "MISSING",
-    "source_case_id": "Q1_GEN_A38C7B7126F5B08FD575",
-    "source_generation": {
-      "candidate_number": 6,
-      "certification_status": "CERTIFIED_NEW_CASE",
-      "generator": "Q1_SCALED1000_SEEDED_SPECTRUM_PERTURBATION_V1",
-      "physical_contract_unchanged": "LEGACY_V0.2",
-      "proof_status": "INFEASIBLE_CERTIFIED",
-      "seed": "60b4fe3155251250ab61be6a4efdeed3a27cc49a4111bcda6e0b3dd74f040bf8",
-      "source_case_id": "Q1_039",
-      "source_generation": {
-        "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-        "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-        "new_combined_requests": true,
-        "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-        "request_origins": [
-          {
-            "od_pair": [
-              1,
-              17
-            ],
-            "source_x3_case_ids": [
-              "X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ac31fd9b738ecf66ef5a"
-            ]
-          },
-          {
-            "od_pair": [
-              1,
-              16
-            ],
-            "source_x3_case_ids": [
-              "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_b19b655cead3f66c7b8c9c6e"
-            ]
-          },
-          {
-            "od_pair": [
-              1,
-              9
-            ],
-            "source_x3_case_ids": [
-              "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_b19b655cead3f66c7b8c9c6e"
-            ]
-          }
-        ],
-        "semantic_key": "c3f7d933819f3c526672b62e590b3324cdebf6822d39f6c271e992074caf7460",
-        "source": "L5_8340_20261014",
-        "source_km_overlay_sha256": "1198fa99726f1e1bf468dc531267ec51b3cec4e77268c70bc826cadfdb6681b7",
-        "source_snapshot_hash": "1a2a890cfbd7c10af7e0fab1a8a16d75410f093157a5184528185f8c89e509df",
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_b19b655cead3f66c7b8c9c6e",
-          "X3_UNIFIED_CANDIDATE_20261008_051958_574121_OX_ac31fd9b738ecf66ef5a"
-        ],
-        "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-      },
-      "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-      "source_semantic_sha256": "7d9d524564a2c2f218f9e847d8ab518a80cbdc246365e6922d610672432abd02",
-      "spectrum_edits": [
-        {
-          "after": 1,
-          "before": 0,
-          "link_id": 29,
-          "slot": 19
-        }
-      ],
-      "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-      "synthetic_snapshot": true
-    },
-    "source_oracle_decision": "REJECT",
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "a38c7b7126f5b08fd57576d5a4f7d08d171fa29d8517cf93e068b8c53a75a0ea",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 45,
-        "slot": 213
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 21,
-        "slot": 261
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 9,
-        "slot": 100
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 10,
-        "slot": 204
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"desired_decision": "REJECT", "physical_model_family": "PURE_200G", "proof_status": "INFEASIBLE_CERTIFIED", "protected_witness_link_ids": [], "seed": "dedb81cd10c215b7ff29852199ba50a505cc908fe0fc9a0dbb6e7e2f06971b82", "input_beam128_grade": "MISSING", "input_beam16_grade": "MISSING", "input_generation": {"physical_model_family": "PURE_200G", "proof_status": "INFEASIBLE_CERTIFIED", "seed": "60b4fe3155251250ab61be6a4efdeed3a27cc49a4111bcda6e0b3dd74f040bf8", "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [1, 17]}, {"od_pair": [1, 16]}, {"od_pair": [1, 9]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "spectrum_perturbations": [{"after": 1, "before": 0, "link_id": 29, "slot": 19}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true}, "input_oracle_decision": "REJECT", "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 45, "slot": 213}, {"after": 0, "before": 1, "link_id": 21, "slot": 261}, {"after": 0, "before": 1, "link_id": 9, "slot": 100}, {"after": 1, "before": 0, "link_id": 10, "slot": 204}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -16076,7 +15968,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -16109,6 +16001,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_64_MEMOREX"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_64_MEMOREX"
 }

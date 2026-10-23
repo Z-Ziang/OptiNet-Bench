@@ -26,12 +26,12 @@ class PublicBoundaryTests(unittest.TestCase):
             raw=item['content'].encode();(self.directory/'public'/name).write_bytes(raw)
             files['public/'+name]={'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()}
         (self.directory/'private/reference_output.json').write_text('PRIVATE_REFERENCE_SENTINEL',encoding='utf-8')
-        self.row={'task':'Q1','case_uid':'Q1/Q1_001','case_id':'Q1_001',
+        self.row={'task':'Q1','case_uid':'2222222222222222222222222222222222222222222222222222222222222222','case_id':'Q1_0001',
             'case_dir':'dataset/Q1/TOPOLOGY/Q1_001','messages_sha256':hashlib.sha256(
                 json.dumps(messages,ensure_ascii=False,sort_keys=True,separators=(',',':')).encode()).hexdigest()}
-        (self.directory/'identity.json').write_text(json.dumps({**self.row,'files':files}),encoding='utf-8')
         self.catalog=self.data/'_meta/catalog/case_index.jsonl';self.catalog.parent.mkdir(parents=True)
         self.catalog.write_text(json.dumps(self.row)+'\n',encoding='utf-8')
+        (self.catalog.parent/'case_identity.jsonl').write_text(json.dumps({**self.row,'files':files})+'\n',encoding='utf-8')
 
     def tearDown(self):
         self.temporary.cleanup()
@@ -50,6 +50,12 @@ class PublicBoundaryTests(unittest.TestCase):
 
     def test_duplicate_case_is_rejected(self):
         with self.assertRaises(ValueError):list(inventory([str(self.data),str(self.data)]))
+
+    def test_inventory_accepts_exact_canonical_case_id_filter(self):
+        self.assertEqual([r['case_uid'] for r in inventory([str(self.data)], {'Q1_0001'})], [self.row['case_uid']])
+
+    def test_inventory_task_filter(self):
+        self.assertEqual(list(inventory([str(self.data)], wanted_tasks={'X2'})), [])
 
     def test_path_escape_is_rejected(self):
         with self.assertRaises(ValueError):inside(self.data,'../outside.json')

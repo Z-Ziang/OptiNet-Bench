@@ -338,110 +338,7 @@
       "source_node_id": 17
     }
   ],
-  "generation": {
-    "candidate_number": 1,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "desired_decision": "ACCEPT",
-    "generator": "Q1_SCALED2000_REVIEWED_DECISION_SNAPSHOT_V2",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "protected_witness_link_ids": [
-      1,
-      2,
-      4,
-      6,
-      8,
-      10,
-      12,
-      14,
-      16,
-      18,
-      22,
-      26,
-      34,
-      39,
-      40,
-      43
-    ],
-    "seed": "e039233f47a89b69fbeb60248c3c9ca150d13766c57d7ac92bebaf5913fe4cca",
-    "source_beam128_grade": "SUBOPTIMAL_PRIMARY",
-    "source_beam16_grade": "WRONG_REJECT",
-    "source_case_id": "Q1_040",
-    "source_generation": {
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "request_origins": [
-        {
-          "od_pair": [
-            1,
-            9
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_b19b655cead3f66c7b8c9c6e"
-          ]
-        },
-        {
-          "od_pair": [
-            1,
-            7
-          ],
-          "source_x3_case_ids": [
-            "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_10c70315a20b1c3334eb98b2"
-          ]
-        },
-        {
-          "od_pair": [
-            2,
-            18
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_726102107fff978f966ae0cb"
-          ]
-        },
-        {
-          "od_pair": [
-            1,
-            13
-          ],
-          "source_x3_case_ids": [
-            "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_20e65c7e4bff024d3e914199"
-          ]
-        }
-      ],
-      "semantic_key": "97bde3ac93b4ada47a89ed84a9393e50966bd504b59c9b4f34497fb1158f363f",
-      "source": "L5_8340_20261014",
-      "source_km_overlay_sha256": "1198fa99726f1e1bf468dc531267ec51b3cec4e77268c70bc826cadfdb6681b7",
-      "source_snapshot_hash": "1a2a890cfbd7c10af7e0fab1a8a16d75410f093157a5184528185f8c89e509df",
-      "source_x3_case_ids": [
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_726102107fff978f966ae0cb",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_b19b655cead3f66c7b8c9c6e",
-        "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_10c70315a20b1c3334eb98b2",
-        "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_20e65c7e4bff024d3e914199"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_oracle_decision": "ACCEPT",
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "b59bf6e590b481e017b4ff30ec4be70ebb085023ec55966f89b48dbe169134a1",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 37,
-        "slot": 257
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 20,
-        "slot": 306
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"desired_decision": "ACCEPT", "physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "protected_witness_link_ids": [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 22, 26, 34, 39, 40, 43], "seed": "e039233f47a89b69fbeb60248c3c9ca150d13766c57d7ac92bebaf5913fe4cca", "input_beam128_grade": "SUBOPTIMAL_PRIMARY", "input_beam16_grade": "WRONG_REJECT", "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [1, 9]}, {"od_pair": [1, 7]}, {"od_pair": [2, 18]}, {"od_pair": [1, 13]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "input_oracle_decision": "ACCEPT", "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 37, "slot": 257}, {"after": 0, "before": 1, "link_id": 20, "slot": 306}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -16071,7 +15968,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -16110,6 +16007,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_64_MEMOREX"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_64_MEMOREX"
 }

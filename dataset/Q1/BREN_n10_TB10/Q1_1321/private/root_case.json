@@ -156,72 +156,7 @@
       "source_node_id": 9
     }
   ],
-  "generation": {
-    "candidate_number": 227,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "desired_decision": "REJECT",
-    "generator": "Q1_SCALED2000_REVIEWED_DECISION_SNAPSHOT_V2",
-    "physical_contract_unchanged": "MIXED_V0.3",
-    "proof_status": "INFEASIBLE_CERTIFIED",
-    "protected_witness_link_ids": [],
-    "seed": "fe7e2630545e09287504119028f2d8d5a88ad456f8cadca6f2fee22f556a184a",
-    "source_beam128_grade": null,
-    "source_beam16_grade": null,
-    "source_case_id": "Q1_125",
-    "source_generation": {
-      "difficulty": "CANDIDATE_UNCERTIFIED",
-      "physical_topology_km_identical_to_original": true,
-      "seed": 2496733213,
-      "source_root_sha256": "6a6b5a8a28e2da84b8d26fed65e7ba7c701435567ffbf1ba0c5a4cb867cce9d7",
-      "source_spectrum_intentionally_modified": true,
-      "spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_NOT_HISTORICAL_X3",
-      "v5_origin_case_id": "Q1C_120_N10_HELL_01",
-      "v5_origin_zip": "Q1C_120_FULL_ENGINEERING_CERTIFIED_20261016.zip"
-    },
-    "source_oracle_decision": "REJECT",
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "5545461acea18f8089a09a5fe703f2aeae105c077b1cfb9f02f7359f346d5700",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 0,
-        "slot": 195
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 15,
-        "slot": 220
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 19,
-        "slot": 89
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 6,
-        "slot": 245
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 4,
-        "slot": 115
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 0,
-        "slot": 175
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"desired_decision": "REJECT", "physical_model_family": "MIXED_RATES", "proof_status": "INFEASIBLE_CERTIFIED", "protected_witness_link_ids": [], "seed": "fe7e2630545e09287504119028f2d8d5a88ad456f8cadca6f2fee22f556a184a", "input_beam128_grade": null, "input_beam16_grade": null, "input_generation": {"input_link_lengths_preserved": true, "seed": 2496733213, "input_spectrum_modified": true, "spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_STATE"}, "input_oracle_decision": "REJECT", "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 0, "slot": 195}, {"after": 0, "before": 1, "link_id": 15, "slot": 220}, {"after": 1, "before": 0, "link_id": 19, "slot": 89}, {"after": 0, "before": 1, "link_id": 6, "slot": 245}, {"after": 0, "before": 1, "link_id": 4, "slot": 115}, {"after": 1, "before": 0, "link_id": 0, "slot": 175}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -7392,7 +7327,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -7425,6 +7360,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
+  "task_type": "Q1",
   "topology_id": "TB_REAL::TOP_10_BREN"
 }

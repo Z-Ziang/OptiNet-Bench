@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_198",
+  "case_id": "Q1_0198",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -898,93 +898,7 @@
       "source_node_id": 44
     }
   ],
-  "generation": {
-    "V6_rate_reassignment": "RECOMPUTED_ORACLE_FROM_OLD_HARD_CANDIDATE",
-    "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-    "input_source_case_id": "Q1C_V3_CAND_152F24CF2D5B7A8C",
-    "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-    "new_combined_requests": true,
-    "original_v4_candidate_id": "Q1C_MIXED_5EF842866E254143",
-    "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-    "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-    "request_origins": [
-      {
-        "od_pair": [
-          26,
-          11
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_2a9b6d9c5e588daa01064641",
-          "X3_COND_e22de75b797e5ac993bad6d2"
-        ]
-      },
-      {
-        "od_pair": [
-          27,
-          10
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_2a9b6d9c5e588daa01064641",
-          "X3_COND_418edaa15a1cd81bbe6a4b7f"
-        ]
-      },
-      {
-        "od_pair": [
-          25,
-          42
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_418edaa15a1cd81bbe6a4b7f",
-          "X3_COND_93d3215bd85c186cba3b8f6f",
-          "X3_COND_e22de75b797e5ac993bad6d2"
-        ]
-      },
-      {
-        "od_pair": [
-          9,
-          12
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_500c5e8bc1d3286b07771348",
-          "X3_COND_5f95130824799a2d96621731"
-        ]
-      }
-    ],
-    "semantic_key": "152f24cf2d5b7a8c5637123c7dc933c90bdf5207362abd39532b0e2d7cf705af",
-    "source": "X3_485_20261016",
-    "source_km_overlay_sha256": "a6377c5a11baeb6dcf9675a1cc65d27e9a9831e11b402549f977cdce9f762923",
-    "source_original_hard_baseline_evidence": {
-      "1": {
-        "final_beam_size": 1,
-        "grade": "SUBOPTIMAL_SECONDARY",
-        "primary": 163,
-        "secondary": 0.8062666814336052
-      },
-      "128": {
-        "final_beam_size": 128,
-        "grade": "CORRECT",
-        "primary": 163,
-        "secondary": 0.8060065251440367
-      },
-      "16": {
-        "final_beam_size": 16,
-        "grade": "SUBOPTIMAL_SECONDARY",
-        "primary": 163,
-        "secondary": 0.8060865662787051
-      }
-    },
-    "source_snapshot_hash": "25db7ed6909d6878f00cc691898bfaddc08e314da21dd2d156ed5b7851780170",
-    "source_x3_case_ids": [
-      "X3_COND_2a9b6d9c5e588daa01064641",
-      "X3_COND_418edaa15a1cd81bbe6a4b7f",
-      "X3_COND_500c5e8bc1d3286b07771348",
-      "X3_COND_5f95130824799a2d96621731",
-      "X3_COND_93d3215bd85c186cba3b8f6f",
-      "X3_COND_e22de75b797e5ac993bad6d2"
-    ],
-    "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-    "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-  },
+  "generation": {"rate_reassignment": "ORACLE_RECOMPUTED_AFTER_RATE_ASSIGNMENT", "model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [26, 11]}, {"od_pair": [27, 10]}, {"od_pair": [25, 42]}, {"od_pair": [9, 12]}], "input_instance_baselines": {"1": {"final_beam_size": 1, "grade": "SUBOPTIMAL_SECONDARY", "primary": 163, "secondary": 0.8062666814336052}, "128": {"final_beam_size": 128, "grade": "CORRECT", "primary": 163, "secondary": 0.8060065251440367}, "16": {"final_beam_size": 16, "grade": "SUBOPTIMAL_SECONDARY", "primary": 163, "secondary": 0.8060865662787051}}, "spectrum_origin": "REUSED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -42640,7 +42554,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -42679,6 +42593,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_79_PALMETTO"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_79_PALMETTO"
 }

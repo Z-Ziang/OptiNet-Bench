@@ -37,4 +37,4 @@ def optinet_cases(plan_path: str, offline_reference: bool = False):
                     for item in public_messages(row)]
         samples.append(Sample(id=row["case_uid"], input=messages, target="", metadata={"case_record": row}))
     return Task(dataset=samples, solver=offline_reference_replay() if offline_reference else generate(),
-                scorer=frozen_scoring(), version="OPTINET_NINE_TASKS_EN_20261020_R3")
+                scorer=frozen_scoring(), version="OPTINET_NINE_TASKS_V1")

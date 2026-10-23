@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_201",
+  "case_id": "Q1_0201",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -156,27 +156,7 @@
       "source_node_id": 9
     }
   ],
-  "generation": {
-    "V6_rate_reassignment": "SAME_ORIGINAL_LINKS_LENGTHS_SPECTRUM_AND_OD",
-    "difficulty": "CANDIDATE_UNCERTIFIED",
-    "input_source_case_id": "Q1C_V5_SYNTH_FC8B37EC5EF0EFCB",
-    "input_source_class": "CERTIFIED_130",
-    "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-    "physical_topology_km_identical_to_original": true,
-    "rate_assignment": [
-      300,
-      100,
-      100,
-      200
-    ],
-    "seed": 3248612107,
-    "source_root_sha256": "06ccaf4c87d433d0a9dff631650e847914aecce41e997b279209ec297c92b8ef",
-    "source_spectrum_intentionally_modified": true,
-    "spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_NOT_HISTORICAL_X3",
-    "v5_origin_case_id": "Q1C_120_N10_HELL_02",
-    "v5_origin_zip": "Q1C_120_FULL_ENGINEERING_CERTIFIED_20261016.zip",
-    "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-  },
+  "generation": {"rate_reassignment": "INPUT_LINKS_LENGTHS_SPECTRUM_AND_OD_PRESERVED", "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "input_link_lengths_preserved": true, "rate_assignment": [300, 100, 100, 200], "seed": 3248612107, "input_spectrum_modified": true, "spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -7347,7 +7327,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -7386,6 +7366,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
+  "task_type": "Q1",
   "topology_id": "TB_REAL::TOP_10_BREN"
 }

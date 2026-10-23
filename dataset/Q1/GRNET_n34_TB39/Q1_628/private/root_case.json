@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_628",
+  "case_id": "Q1_0628",
   "directed_links": [
     {
       "destination_node_id": 2,
@@ -548,125 +548,7 @@
       "source_node_id": 33
     }
   ],
-  "generation": {
-    "algorithm_version": "q1-unified-v0.2",
-    "candidate_number": 11,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "difficulty_proxy_shared_route_overlap": 10,
-    "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS",
-    "generator": "Q1_UNIFIED_CANDIDATE_FACTORY",
-    "physical_topology_and_spectrum_unchanged": true,
-    "proof_status": "EXACT_CERTIFIED",
-    "scientific_input_sha256": "6ff4657504350253e44df6168ae7a5f734917396edd96b4e092a7a59b9dec5b9",
-    "seed": 20261018,
-    "snapshot_reused": true,
-    "source_archive_sha256": "33fd5b1b182338dd76eff6fad1d54599c6026ea2746a314189b32760cf3cf85d",
-    "source_case_id": "Q1C_V3_CAND_C19FFD7A194971B2",
-    "source_generation_record": {
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "request_origins": [
-        {
-          "od_pair": [
-            11,
-            6
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_c17d71b502e682db46682f97"
-          ]
-        },
-        {
-          "od_pair": [
-            4,
-            26
-          ],
-          "source_x3_case_ids": [
-            "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_ff778cd47af3e0b5b4b3b581"
-          ]
-        },
-        {
-          "od_pair": [
-            17,
-            7
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ba0c8e3bb0805237b9b01402"
-          ]
-        },
-        {
-          "od_pair": [
-            26,
-            21
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_d275ca5eb58bab9955ebf244"
-          ]
-        },
-        {
-          "od_pair": [
-            5,
-            14
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_d275ca5eb58bab9955ebf244"
-          ]
-        }
-      ],
-      "semantic_key": "c19ffd7a194971b2c05c2f6382d19dc49dff01b17a79d34181dc9208ad8c2367",
-      "source": "L5_8340_20261014",
-      "source_km_overlay_sha256": "4af76ef75d35eb5dc058653495a409ab9caafb60cffba58185f297bb78396125",
-      "source_snapshot_hash": "adf65e5c4da3b8fed2980a2ec5312870feec5ba79e56e056af3041fc61c86aba",
-      "source_x3_case_ids": [
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_c17d71b502e682db46682f97",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ba0c8e3bb0805237b9b01402",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_d275ca5eb58bab9955ebf244",
-        "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_ff778cd47af3e0b5b4b3b581"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_pair_selection_policy": "ACCEPTED_SOURCE_OD_RATE_PAIRS_OVERLAP_RANKED",
-    "source_request_case_ids": [
-      "Q1C_V3_CAND_0B101E6D239EEF59",
-      "Q1C_V3_CAND_C19FFD7A194971B2"
-    ],
-    "source_request_evidence": [
-      {
-        "destination_node_id": 21,
-        "node_bin": "31-40",
-        "rate_gbps": 200,
-        "source_case_id": "Q1C_V3_CAND_0B101E6D239EEF59",
-        "source_node_id": 5
-      },
-      {
-        "destination_node_id": 3,
-        "node_bin": "31-40",
-        "rate_gbps": 200,
-        "source_case_id": "Q1C_V3_CAND_0B101E6D239EEF59",
-        "source_node_id": 8
-      },
-      {
-        "destination_node_id": 26,
-        "node_bin": "31-40",
-        "rate_gbps": 200,
-        "source_case_id": "Q1C_V3_CAND_C19FFD7A194971B2",
-        "source_node_id": 4
-      },
-      {
-        "destination_node_id": 14,
-        "node_bin": "31-40",
-        "rate_gbps": 200,
-        "source_case_id": "Q1C_V3_CAND_C19FFD7A194971B2",
-        "source_node_id": 5
-      }
-    ],
-    "source_root_sha256": "d0a0fbd6f843f3015729e795463db13fe9cad72513c29bcb2613ba331c9431f6",
-    "source_snapshot_sha256": "adf65e5c4da3b8fed2980a2ec5312870feec5ba79e56e056af3041fc61c86aba",
-    "source_spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-    "source_topology_id": "top_TB_REAL%3A%3ATOP_39_GRNET",
-    "synthetic_snapshot": false
-  },
+  "generation": {"difficulty_proxy_shared_route_overlap": 10, "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS", "input_physical_state_preserved": true, "proof_status": "EXACT_CERTIFIED", "seed": 20261018, "snapshot_reused": true, "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [11, 6]}, {"od_pair": [4, 26]}, {"od_pair": [17, 7]}, {"od_pair": [26, 21]}, {"od_pair": [5, 14]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "request_pair_selection": "ACCEPTED_OD_RATE_PAIRS_OVERLAP_RANKED", "input_request_parameters": [{"destination_node_id": 21, "node_bin": "31-40", "rate_gbps": 200, "source_node_id": 5}, {"destination_node_id": 3, "node_bin": "31-40", "rate_gbps": 200, "source_node_id": 8}, {"destination_node_id": 26, "node_bin": "31-40", "rate_gbps": 200, "source_node_id": 4}, {"destination_node_id": 14, "node_bin": "31-40", "rate_gbps": 200, "source_node_id": 5}], "input_spectrum_origin": "REUSED_SPECTRUM_STATE", "synthetic_snapshot": false},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -26061,7 +25943,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -26100,6 +25982,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_39_GRNET"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_39_GRNET"
 }

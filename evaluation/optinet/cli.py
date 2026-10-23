@@ -11,6 +11,7 @@ from urllib.parse import urlsplit
 
 from .data import TASKS, inventory, plan_rows, public_messages, read_json, sha256
 from .scoring import score_answer
+from .metrics import normalize_result, task_metrics, overall_metrics, SCORED_CATEGORIES
 
 HERE = Path(__file__).resolve().parents[1]
 
@@ -29,7 +30,11 @@ def serialize(value):
 def reject_secrets(value):
     if isinstance(value, dict):
         for key, item in value.items():
-            if key.lower() in ("api_key", "authorization", "access_token", "password"):
+            if key.lower().replace("-", "_") in (
+                "api_key", "authorization", "access_token", "password", "azure_ad_token",
+                "api_token", "bearer_token", "token", "secret", "client_secret",
+                "credential", "credentials",
+            ):
                 raise ValueError("Put credentials in environment variables, not configuration files")
             reject_secrets(item)
     elif isinstance(value, list):
@@ -71,8 +76,11 @@ def export_logs(paths, destination):
                 seen.add(key)
                 row = (sample.metadata or {}).get("case_record", {})
                 score = next(iter((sample.scores or {}).values()), None)
-                grading = score.metadata if score and score.metadata else {}
-                result = grading.get("relaxed", {})
+                grading = dict(score.metadata) if score and score.metadata else {}
+                for policy in ("strict", "relaxed"):
+                    if grading.get(policy):
+                        grading[policy] = normalize_result(grading[policy])
+                result = normalize_result(grading.get("relaxed", {})) if grading.get("relaxed") else {}
                 returned = bool(sample.output and sample.output.choices)
                 error = sample.error.model_dump(mode="json") if sample.error else None
                 category = result.get("category", ("SCORING_ERROR" if returned else "SERVICE_ERROR") if error else "UNSCORED")
@@ -85,7 +93,9 @@ def export_logs(paths, destination):
                     "returned_answer": returned, "answer": sample.output.completion if sample.output else "",
                     "category": category, "strict_category": grading.get("strict", {}).get("category"),
                     "truth_feasible": result.get("truth_feasible"), "correct_reject": result.get("correct_reject", False),
-                    "formal_eligible": result.get("formal_eligible", False), "grading": grading,
+                    "format_compliant": result.get("format_compliant"),
+                    "decision_success": result.get("decision_success"),
+                    "optimal_solution": result.get("optimal_solution"), "grading": grading,
                     "usage": sample.model_usage, "total_time": sample.total_time, "error": error,
                     "inspect_log": str(path),
                 }
@@ -103,25 +113,29 @@ def export_logs(paths, destination):
                     count["infeasible_truth_" + category] += 1
                 if result.get("correct_reject"):
                     count["correct_reject"] += 1
-                if result.get("formal_eligible"):
-                    count["formal_scored"] += 1
-                    count["formal_correct"] += category == "CORRECT"
-                elif category in ("CORRECT", "SUBOPTIMAL", "INFEASIBLE", "MISSING"):
-                    count["exploratory_scored"] += 1
-                    count["exploratory_correct"] += category == "CORRECT"
+                if category in SCORED_CATEGORIES:
+                    count["scored_cases"] += 1
+                    count["format_compliant_responses"] += bool(result.get("format_compliant"))
+                    count["format_invalid_responses"] += not result.get("format_compliant")
+                    count["successful_decisions"] += bool(result.get("decision_success"))
+                    count["optimal_solutions"] += bool(result.get("optimal_solution"))
+                    count["correct_answers"] += category == "CORRECT"
     rows = []
     for (model, task), count in groups.items():
-        rows.append({"model": model, "task": task, **dict(count),
-                     "formal_correct_rate": count["formal_correct"] / count["formal_scored"] if count["formal_scored"] else None,
-                     "exploratory_correct_rate": count["exploratory_correct"] / count["exploratory_scored"] if count["exploratory_scored"] else None})
-    write_new(destination / "summary.json", {"logs": logs, "rows": rows,
-              "note": "Read categories with truth_feasible; review/service errors are separate. Missing usage stays unknown."})
+        rows.append({"model": model, "task": task, **dict(count), **task_metrics(count, task)})
+    overall = overall_metrics(rows)
+    write_new(destination / "summary.json", {"logs": logs, "rows": rows, "overall": overall,
+              "note": "All cases use one scoring policy. Percentages use explicit per-task denominators; infrastructure errors remain unresolved."})
+    with (destination / "overall.csv").open("x", encoding="utf-8-sig", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=("model", "overall_e2e_percent", "missing_tasks", "unresolved_tasks"))
+        writer.writeheader()
+        writer.writerows(overall)
     fields = ["model", "task"] + sorted({key for row in rows for key in row if key not in ("model", "task")})
     with (destination / "summary.csv").open("x", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields)
         writer.writeheader()
         writer.writerows(rows)
-    return {"samples": len(seen), "rows": rows}
+    return {"samples": len(seen), "rows": rows, "overall": overall}
 
 
 def parser():
@@ -131,6 +145,19 @@ def parser():
     data_check = sub.add_parser("verify-data", help="Verify every payload file against the dataset manifest; no model calls")
     data_check.add_argument("--dataset", required=True)
     sub.add_parser("tasks", help="List the nine supported tasks")
+    quick = sub.add_parser("quick", help="Select, validate, run and export from one configuration")
+    quick.add_argument("--config", default="config.json")
+    quick.add_argument("--case", action="append", help="Exact canonical case ID or full UID; repeat for multiple cases")
+    quick.add_argument("--case-file", help="UTF-8 text file containing one canonical ID or UID per line")
+    quick.add_argument("--tasks", help="Comma-separated tasks, e.g. X2 or G1,G2")
+    quick.add_argument("--limit-per-task", type=int, help="0 means all matching cases in each selected task")
+    quick.add_argument("--offset-per-task", type=int)
+    quick.add_argument("--scale")
+    quick.add_argument("--topology")
+    quick.add_argument("--out", help="New output directory; otherwise use config output_dir or a timestamped runs folder")
+    mode = quick.add_mutually_exclusive_group()
+    mode.add_argument("--dry-run", action="store_true", help="Validate and save the exact plan; no model calls")
+    mode.add_argument("--offline", action="store_true", help="Run stored reference answers through the existing graders; no model calls")
     plan = sub.add_parser("plan", help="Freeze a batch; source order is not stratified random sampling")
     plan.add_argument("--config", default="config.json")
     plan.add_argument("--dataset", action="append", help="Dataset root; repeat only for disjoint catalogs")
@@ -234,9 +261,32 @@ def main():
     if args.command == "export":
         print(json.dumps(export_logs(args.logs, args.out), ensure_ascii=False))
         return
+    quick_config, runtime_model = None, None
+    if args.command == "quick":
+        from .quick import prepare, model_connection
+        quick_config, bound_plan, destination = prepare(*load_config(args.config), args)
+        # Resolve the key and construct the model before creating any output.
+        # The key is passed directly to Inspect, never added to the saved config.
+        if not args.dry_run and not args.offline:
+            from inspect_ai.model import get_model
+            connection = model_connection(quick_config)
+            runtime_model = get_model(quick_config["model"], **connection)
+            if connection.get("base_url"):
+                quick_config["base_url"] = connection["base_url"]
+        destination.mkdir(parents=True, exist_ok=False)
+        args.plan = str(destination / "plan.json")
+        write_new(args.plan, bound_plan)
+        print(json.dumps({"cases": len(bound_plan["cases"]), "counts": bound_plan["counts"],
+                          "output": str(destination), "mode": "dry-run" if args.dry_run else "offline" if args.offline else "live"}), flush=True)
+        if args.dry_run:
+            print(json.dumps({"status": "PASS", "API_calls": 0, "plan": args.plan}))
+            return
+        args.out = str(destination)
+        args.command = "offline" if args.offline else "run"
     from inspect_ai import eval, eval_retry
     destination = Path(args.out).resolve()
-    destination.mkdir(parents=True, exist_ok=False)
+    if quick_config is None:
+        destination.mkdir(parents=True, exist_ok=False)
     if args.command == "retry":
         from inspect_ai.log import read_eval_log
         old = read_eval_log(args.log)
@@ -249,26 +299,29 @@ def main():
         rows = plan_rows(args.plan)
         for row in rows:
             public_messages(row)
-        config = {} if args.command == "offline" else load_config(args.config)[0]
+        config = (quick_config or {}) if args.command == "offline" else (quick_config if quick_config is not None else load_config(args.config)[0])
         generation = config.get("generation", {})
         protected = {"tasks", "task_args", "solver", "model", "model_base_url", "model_args", "log_dir", "log_samples", "log_model_api", "score", "max_samples", "display", "fail_on_error"}
         if protected & set(generation):
             raise ValueError("Generation config overrides protected orchestration settings")
         import importlib.metadata
         manifest = HERE / "FILE_SHA256.json"
+        if not manifest.is_file():
+            raise FileNotFoundError("Required program manifest is missing")
         write_new(destination / "run_identity.json", {"plan": read_json(args.plan), "config": config,
                   "offline": args.command == "offline", "framework": "Inspect AI",
                   "python": sys.version,
                   "versions": {name: importlib.metadata.version(name) for name in ("inspect-ai", "openai", "jsonschema")},
-                  "program_manifest_sha256": sha256(manifest.read_bytes()) if manifest.exists() else "UNKNOWN_DEVELOPMENT_TREE"})
+                  "program_manifest_sha256": sha256(manifest.read_bytes())})
         logs = eval(str(HERE / "inspect_tasks.py") + "@optinet_cases",
-                    model="mockllm/model" if args.command == "offline" else config["model"],
+                    model="mockllm/model" if args.command == "offline" else (runtime_model if runtime_model is not None else config["model"]),
                     task_args={"plan_path": str(Path(args.plan).resolve()), "offline_reference": args.command == "offline"},
-                    model_base_url=config.get("base_url"), model_args=config.get("model_args", {}),
+                    model_base_url=None if runtime_model is not None else config.get("base_url"),
+                    model_args={} if runtime_model is not None else config.get("model_args", {}),
                     log_dir=str(destination / "logs"), display="none", log_samples=True, log_model_api=False,
-                    fail_on_error=False, max_samples=config.get("max_samples", 1), **generation)
+                    fail_on_error=False, max_samples=config.get("max_samples", 1), **({"epochs": 1} if quick_config is not None else {}), **generation)
     paths = [log.location for log in logs]
     write_new(destination / "inspect_logs.json", paths)
     print(json.dumps(export_logs(paths, destination / "export"), ensure_ascii=False))
-    if any(log.status != "success" for log in logs):
+    if any(log.status != "success" or any(sample.error for sample in log.samples or []) for log in logs):
         sys.exit(2)

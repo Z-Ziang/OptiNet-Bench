@@ -1,5 +1,6 @@
 """Portable catalog access. Only public_messages() constructs model-visible input."""
 from __future__ import annotations
+from .case_identity import load_identity
 
 import hashlib
 import json
@@ -25,7 +26,8 @@ def inside(root: str | Path, relative: str) -> Path:
     return target
 
 
-def inventory(roots: list[str], wanted_ids: set[str] | None = None) -> Iterator[dict]:
+def inventory(roots: list[str], wanted_ids: set[str] | None = None,
+              *, wanted_tasks: set[str] | None = None) -> Iterator[dict]:
     seen = set()
     for location in roots:
         root = Path(location).resolve()
@@ -45,13 +47,15 @@ def inventory(roots: list[str], wanted_ids: set[str] | None = None) -> Iterator[
                 if not line.strip():
                     continue
                 row = json.loads(line)
-                if wanted_ids is not None and row.get("case_uid") not in wanted_ids:
+                if wanted_ids is not None and not ({row.get("case_uid"), row.get("case_id")} & wanted_ids):
+                    continue
+                if wanted_tasks is not None and row.get("task") not in wanted_tasks:
                     continue
                 if row["task"] not in TASKS:
                     raise ValueError(f"Unsupported task: {row['task']}")
                 allowed = [logical_root / "dataset"]
                 if row["task"] == "Q1":
-                    allowed.append(logical_root / "cases")  # compatible with renamed engineering release
+                    allowed.append(logical_root / "cases")
                 if not any(inside(logical_root, row["case_dir"]).is_relative_to(folder) for folder in allowed):
                     raise ValueError("Only cataloged default Cases are allowed")
                 if row["case_uid"] in seen:
@@ -62,7 +66,7 @@ def inventory(roots: list[str], wanted_ids: set[str] | None = None) -> Iterator[
 
 def checked_file(row: dict, relative: str) -> bytes:
     directory = inside(row["dataset_root"], row["case_dir"])
-    identity = read_json(directory / "identity.json")
+    identity = load_identity(directory)
     if identity["case_uid"] != row["case_uid"] or identity["task"] != row["task"]:
         raise ValueError("Case identity mismatch")
     raw = inside(directory, relative).read_bytes()
@@ -84,14 +88,14 @@ def public_messages(row: dict) -> list[dict[str, str]]:
 
 
 def reference(row: dict) -> dict:
-    filename = "evaluation_reference_output.json" if row["task"] in ("G1", "G2", "G3", "X1") else "reference_output.json"
+    filename = "reference_output.json"
     return json.loads(checked_file(row, "private/" + filename))
 
 
 def plan_rows(path: str | Path) -> list[dict]:
     plan = read_json(path)
     # Read existing saved plans without changing their case or message identities.
-    if plan.get("schema") not in ("OPTINET_NINE_TASKS_PLAN_V1", "OPTIRA_NINE_TASKS_PLAN_V1"):
+    if plan.get("schema") not in ("OPTINET_NINE_TASKS_PLAN_V1",):
         raise ValueError("Unsupported plan schema")
     wanted = plan["cases"]
     if len({item["case_uid"] for item in wanted}) != len(wanted):

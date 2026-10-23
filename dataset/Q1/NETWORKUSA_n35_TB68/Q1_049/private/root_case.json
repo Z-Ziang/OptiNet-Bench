@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_049",
+  "case_id": "Q1_0049",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -548,50 +548,7 @@
       "source_node_id": 34
     }
   ],
-  "generation": {
-    "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-    "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-    "new_combined_requests": true,
-    "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-    "request_origins": [
-      {
-        "od_pair": [
-          3,
-          28
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ef033424f9cf8c78b6abcd16"
-        ]
-      },
-      {
-        "od_pair": [
-          3,
-          34
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_6505eaa03db4efca3b4780cd"
-        ]
-      },
-      {
-        "od_pair": [
-          3,
-          33
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_6505eaa03db4efca3b4780cd"
-        ]
-      }
-    ],
-    "semantic_key": "b0b75208e4e1fdc06256706ab5f81faee5443b1c046b22274125268862420468",
-    "source": "L5_8340_20261014",
-    "source_km_overlay_sha256": "22323e158101d057de2f1a3d78e762b92d7abb9720ffbb58ff476aa93243af5b",
-    "source_snapshot_hash": "9b10b69a80c63448d896a281033322c3f7368b9c114fc1e50a4d96044a3a3b13",
-    "source_x3_case_ids": [
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_6505eaa03db4efca3b4780cd",
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ef033424f9cf8c78b6abcd16"
-    ],
-    "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-  },
+  "generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [3, 28]}, {"od_pair": [3, 34]}, {"od_pair": [3, 33]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -25987,7 +25944,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -26020,6 +25977,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_68_NETWORKUSA"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_68_NETWORKUSA"
 }

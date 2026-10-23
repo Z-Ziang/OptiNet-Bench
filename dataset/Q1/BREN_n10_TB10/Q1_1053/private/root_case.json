@@ -156,114 +156,7 @@
       "source_node_id": 9
     }
   ],
-  "generation": {
-    "candidate_number": 215,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "desired_decision": "ACCEPT",
-    "generator": "Q1_SCALED2000_REVIEWED_DECISION_SNAPSHOT_V2",
-    "physical_contract_unchanged": "MIXED_V0.3",
-    "proof_status": "EXACT_CERTIFIED",
-    "protected_witness_link_ids": [
-      3,
-      11,
-      13,
-      15,
-      16,
-      17,
-      19,
-      21
-    ],
-    "seed": "bb6afa5d25542821db91e42330aa0a25989abd1ae17f84f700beb55fe476b974",
-    "source_beam128_grade": "SUBOPTIMAL_SECONDARY",
-    "source_beam16_grade": "SUBOPTIMAL_SECONDARY",
-    "source_case_id": "Q1_GEN_5F65ADC351AD957DEA26",
-    "source_generation": {
-      "algorithm_version": "q1-unified-v0.2",
-      "candidate_number": 22,
-      "certification_status": "CERTIFIED_NEW_CASE",
-      "difficulty_proxy_shared_route_overlap": 3,
-      "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS",
-      "generator": "Q1_UNIFIED_CANDIDATE_FACTORY",
-      "physical_topology_and_spectrum_unchanged": true,
-      "proof_status": "EXACT_CERTIFIED",
-      "scientific_input_sha256": "5f65adc351ad957dea2643a6435e256f88187c732e56e63f6961fb9b3ecaa528",
-      "seed": 20261018,
-      "snapshot_reused": true,
-      "source_archive_sha256": "33fd5b1b182338dd76eff6fad1d54599c6026ea2746a314189b32760cf3cf85d",
-      "source_case_id": "Q1C_V6_CB0407B7DD8BDA52B260",
-      "source_generation_record": {
-        "V6_rate_reassignment": "SAME_ORIGINAL_LINKS_LENGTHS_SPECTRUM_AND_OD",
-        "difficulty": "CANDIDATE_UNCERTIFIED",
-        "input_source_case_id": "Q1C_V5_SYNTH_7323345C19CF9E18",
-        "input_source_class": "CERTIFIED_130",
-        "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-        "physical_topology_km_identical_to_original": true,
-        "rate_assignment": [
-          300,
-          100,
-          200
-        ],
-        "seed": 479133393,
-        "source_root_sha256": "06ccaf4c87d433d0a9dff631650e847914aecce41e997b279209ec297c92b8ef",
-        "source_spectrum_intentionally_modified": true,
-        "spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_NOT_HISTORICAL_X3",
-        "v5_origin_case_id": "Q1C_120_N10_HELL_02",
-        "v5_origin_zip": "Q1C_120_FULL_ENGINEERING_CERTIFIED_20261016.zip",
-        "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-      },
-      "source_pair_selection_policy": "TOPOLOGICALLY_REACHABLE_PAIR_OVERLAP_RANKED",
-      "source_request_case_ids": [],
-      "source_request_evidence": [],
-      "source_root_sha256": "54928a57790eb6301d003441e2a995cfb7b8afca14ad00031d5e7ced79cf918c",
-      "source_snapshot_sha256": "d83d35912248bd03f84aa262aec10ed66a68a2fa7cf557ac715a8d2d261418ec",
-      "source_spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_NOT_HISTORICAL_X3",
-      "source_topology_id": "TB_REAL::TOP_10_BREN",
-      "synthetic_snapshot": true
-    },
-    "source_oracle_decision": "ACCEPT",
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "5f65adc351ad957dea2643a6435e256f88187c732e56e63f6961fb9b3ecaa528",
-    "spectrum_edits": [
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 12,
-        "slot": 176
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 2,
-        "slot": 178
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 0,
-        "slot": 231
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 0,
-        "slot": 142
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 0,
-        "slot": 31
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 18,
-        "slot": 25
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"desired_decision": "ACCEPT", "physical_model_family": "MIXED_RATES", "proof_status": "EXACT_CERTIFIED", "protected_witness_link_ids": [3, 11, 13, 15, 16, 17, 19, 21], "seed": "bb6afa5d25542821db91e42330aa0a25989abd1ae17f84f700beb55fe476b974", "input_beam128_grade": "SUBOPTIMAL_SECONDARY", "input_beam16_grade": "SUBOPTIMAL_SECONDARY", "input_generation": {"difficulty_proxy_shared_route_overlap": 3, "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS", "input_physical_state_preserved": true, "proof_status": "EXACT_CERTIFIED", "seed": 20261018, "snapshot_reused": true, "input_generation": {"rate_reassignment": "INPUT_LINKS_LENGTHS_SPECTRUM_AND_OD_PRESERVED", "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "input_link_lengths_preserved": true, "rate_assignment": [300, 100, 200], "seed": 479133393, "input_spectrum_modified": true, "spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_STATE"}, "request_pair_selection": "TOPOLOGICALLY_REACHABLE_PAIR_OVERLAP_RANKED", "input_request_parameters": [], "input_spectrum_origin": "SYNTHETIC_RELAXED_SPECTRUM_STATE", "synthetic_snapshot": true}, "input_oracle_decision": "ACCEPT", "spectrum_perturbations": [{"after": 1, "before": 0, "link_id": 12, "slot": 176}, {"after": 0, "before": 1, "link_id": 2, "slot": 178}, {"after": 0, "before": 1, "link_id": 0, "slot": 231}, {"after": 0, "before": 1, "link_id": 0, "slot": 142}, {"after": 0, "before": 1, "link_id": 0, "slot": 31}, {"after": 1, "before": 0, "link_id": 18, "slot": 25}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -7434,7 +7327,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -7467,6 +7360,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
+  "task_type": "Q1",
   "topology_id": "TB_REAL::TOP_10_BREN"
 }

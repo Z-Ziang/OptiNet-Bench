@@ -1,5 +1,6 @@
 """Public-only inputs and offline grading through byte-bound frozen validators."""
 from __future__ import annotations
+from case_identity import load_identity
 import argparse, hashlib, importlib, json, pathlib, re, sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RUNTIME = ROOT / 'frozen/runtime'
@@ -31,7 +32,7 @@ def select_cases(task='all',topology='',scale='',limit_per_task=0):
     return rows
 
 def public_messages(row):
-    folder=resolve_case(row['case_dir']);identity=readjson(folder/'identity.json')
+    folder=resolve_case(row['case_dir']);identity=load_identity(folder)
     messages=[]
     for role,name in [('system','system_prompt.txt'),('user','user_prompt.txt')]:
         rel='public/'+name;raw=(folder/rel).read_bytes()
@@ -47,18 +48,18 @@ def normalize_fence(text):
     return (m.group(1),True) if m else (stripped,False)
 
 def classify(row,content,allow_single_fence=True):
-    folder=resolve_case(row['case_dir']);task=row['task'];identity=readjson(folder/'identity.json')
+    folder=resolve_case(row['case_dir']);task=row['task'];identity=load_identity(folder)
     for name in ('root_case','private_truth'):
         rel='private/'+name+'.json'
         if sha((folder/rel).read_bytes())!=identity['files'][rel]['sha256']:
-            return {'category':'REVIEW_DATA','reason':'PRIVATE_FILE_HASH_MISMATCH'}
+            return {'category':'SCORING_ERROR','reason':'PRIVATE_FILE_HASH_MISMATCH'}
     vp=RUNTIME/'src/tasks'/task.lower()/'validator.py'
     if sha(vp.read_bytes())!=identity['validator_source_sha256']:
-        return {'category':'REVIEW_DATA','reason':'FROZEN_VALIDATOR_HASH_MISMATCH'}
+        return {'category':'SCORING_ERROR','reason':'FROZEN_VALIDATOR_HASH_MISMATCH'}
     root=readjson(folder/'private/root_case.json');truth=readjson(folder/'private/private_truth.json')
     feasible=bool(truth['feasible' if task=='X2' else 'joint_feasible'])
     text,removed=normalize_fence(content) if allow_single_fence else (content,False)
-    base={'truth_feasible':feasible,'single_outer_fence_removed':removed,'interface_status':row['interface_status'],'grading_version':'X2_X3_LOCAL_FOUR_WAY_V1'}
+    base={'truth_feasible':feasible,'single_outer_fence_removed':removed,'grading_version':'X2_X3_LOCAL_FOUR_WAY_V1'}
     try:
         obj=json.loads(text,parse_constant=lambda x:(_ for _ in ()).throw(ValueError('nonfinite JSON')))
     except (ValueError,TypeError):return {**base,'category':'MISSING','reason':'INVALID_JSON'}
@@ -69,7 +70,7 @@ def classify(row,content,allow_single_fence=True):
     v=getattr(validator,'validate_'+task.lower()+'_output')(root,truth,obj)
     errors=[str(e).lower() for e in v.get('errors',[])]
     if any('truth inconsisten' in e or 'truth is inconsistent' in e or 'below stored optimum' in e for e in errors):
-        return {**base,'category':'REVIEW_ORACLE','validator':v}
+        return {**base,'category':'SCORING_ERROR','reason':'REFERENCE_OPTIMUM_CONFLICT','validator':v}
     if obj['decision']=='REJECT' and feasible:
         return {**base,'category':'MISSING','reason':'INCORRECT_REJECT_NO_ALLOCATION','validator':v}
     if not v['valid']:return {**base,'category':'INFEASIBLE','validator':v}
@@ -90,22 +91,3 @@ if __name__=='__main__':
 def bind_dataset(root):
     global ROOT
     ROOT = pathlib.Path(root).resolve()
-
-
-# Supplemental source never had the legacy per-case validator hash field.
-# Bridge ONLY that packaging metadata in memory, using independently compared
-# supplemental frozen_source bytes; scientific classify() remains untouched.
-_source_readjson = readjson
-def readjson(p):
-    obj = _source_readjson(p)
-    if pathlib.Path(p).name == 'identity.json' and 'validator_source_sha256' not in obj:
-        task = obj.get('task')
-        if task not in ('X2','X3') or obj.get('source_key')!='x' or obj.get('contract_dir')!=f'contracts/{task}/SERVER_SUPPLEMENT':
-            raise ValueError('Missing validator binding outside verified supplement')
-        binding = _source_readjson(pathlib.Path(__file__).resolve().parents[1]/'SUPPLEMENT_RUNTIME_BINDINGS.json')
-        expected = binding['validator_hashes'][task]
-        if sha((RUNTIME/'src/tasks'/task.lower()/'validator.py').read_bytes())!=expected:
-            raise ValueError('Supplement runtime binding mismatch')
-        obj = dict(obj)
-        obj['validator_source_sha256'] = expected
-    return obj

@@ -4,6 +4,7 @@ Only public_messages() is called to create Inspect model inputs. Private truth
 and reference outputs are only accessed in scoring/replay, never in model input.
 """
 from __future__ import annotations
+from case_identity import load_identity
 import argparse
 from hashlib import sha256
 import importlib
@@ -61,7 +62,7 @@ def select_cases(task='all',topology='',scale='',limit_per_task=0):
 
 
 def public_messages(row):
-    folder=resolve_case(row['case_dir']);identity=readjson(folder/'identity.json')
+    folder=resolve_case(row['case_dir']);identity=load_identity(folder)
     messages=[]
     for role,name in [('system','system_prompt.txt'),('user','user_prompt.txt')]:
         rel='public/'+name;raw=(folder/rel).read_bytes()
@@ -137,20 +138,20 @@ def classify(row,content,allow_single_fence=True):
     task=row['task']
     if task not in TASKS:raise ValueError('Unexpected task '+task)
     source_task=TASKS[task]
-    folder=resolve_case(row['case_dir']);identity=readjson(folder/'identity.json')
+    folder=resolve_case(row['case_dir']);identity=load_identity(folder)
     for rel in ('private/root_case.json','private/private_truth.json','private/reference_output.json',
                 'private/source_reference_output.json','private/fixed_paths.json'):
         if sha((folder/rel).read_bytes())!=identity['files'][rel]['sha256']:
-            return {'category':'REVIEW_DATA','reason':'PRIVATE_FILE_HASH_MISMATCH','file':rel}
+            return {'category':'SCORING_ERROR','reason':'PRIVATE_FILE_HASH_MISMATCH','file':rel}
     vp=RUNTIME/'src/tasks'/source_task.lower()/'validator.py'
     if sha(vp.read_bytes())!=identity['validator_source_sha256']:
-        return {'category':'REVIEW_DATA','reason':'FROZEN_VALIDATOR_HASH_MISMATCH'}
+        return {'category':'SCORING_ERROR','reason':'FROZEN_VALIDATOR_HASH_MISMATCH'}
     root=readjson(folder/'private/root_case.json');truth=readjson(folder/'private/private_truth.json')
     fixed=readjson(folder/'private/fixed_paths.json')
     feasible=bool(truth['feasible' if source_task=='X2' else 'joint_feasible'])
     text,removed=normalize_fence(content) if allow_single_fence else (content,False)
     base={'truth_feasible':feasible,'single_outer_fence_removed':removed,
-          'interface_status':row['interface_status'],'grading_version':'O1_MINIMAL_FIXED_PATH_V2',
+          'grading_version':'O1_MINIMAL_FIXED_PATH_V2',
           'derived_task':task,'source_task':source_task}
     try:
         obj=json.loads(text,parse_constant=lambda x: (_ for _ in ()).throw(ValueError('nonfinite JSON')),
@@ -166,15 +167,15 @@ def classify(row,content,allow_single_fence=True):
     v=getattr(validator,'validate_'+source_task.lower()+'_output')(root,truth,expanded)
     errors=[str(e).lower() for e in v.get('errors',[])]
     if any('truth inconsisten' in e or 'below stored optimum' in e for e in errors):
-        return {**base,'category':'REVIEW_ORACLE','validator':v}
+        return {**base,'category':'SCORING_ERROR','reason':'REFERENCE_OPTIMUM_CONFLICT','validator':v}
     if not v['valid']:return {**base,'category':'INFEASIBLE','validator':v}
     if obj['decision']=='ACCEPT':
         primary_gap=v.get('metrics',{}).get('hop_gap' if source_task=='X2' else 'delta_tso_gap')
         if primary_gap!=0:
-            return {**base,'category':'REVIEW_DATA','reason':'FIXED_PATH_PRIMARY_GAP_NOT_ZERO','validator':v}
+            return {**base,'category':'SCORING_ERROR','reason':'FIXED_PATH_PRIMARY_GAP_NOT_ZERO','validator':v}
         frag_gap=v.get('metrics',{}).get('wufr_gap')
         if frag_gap is None:
-            return {**base,'category':'REVIEW_DATA','reason':'FRAGMENTATION_NOT_SCORED','validator':v}
+            return {**base,'category':'SCORING_ERROR','reason':'FRAGMENTATION_NOT_SCORED','validator':v}
         category='SUBOPTIMAL' if frag_gap>CLASSIFICATION_ABS_TOL else 'CORRECT'
     else:category='CORRECT'
     return {**base,'category':category,'correct_reject':obj['decision']=='REJECT',
