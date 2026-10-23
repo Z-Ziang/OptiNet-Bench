@@ -126,8 +126,8 @@ def _lexicographic_shortest_node_paths(source: int, adjacency: dict[int, list[in
 
     Adjacency is traversed in sorted order.  Standard BFS therefore discovers
     each node through its lexicographically first shortest path; retaining only
-    that first discovery is equivalent to the legacy pairwise BFS while
-    avoiding its exponential equal-depth path queue.
+    that first discovery yields the required path without enumerating all
+    equal-depth alternatives.
     """
     source = int(source)
     paths: dict[int, list[int]] = {source: [source]}

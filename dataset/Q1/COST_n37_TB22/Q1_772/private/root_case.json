@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_772",
+  "case_id": "Q1_0772",
   "directed_links": [
     {
       "destination_node_id": 7,
@@ -800,99 +800,7 @@
       "source_node_id": 35
     }
   ],
-  "generation": {
-    "candidate_number": 4,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "generator": "Q1_SCALED1000_SEEDED_SPECTRUM_PERTURBATION_V1",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "seed": "03a37d33efa45a4bce7dea400dfc911eb2c897c5214b748b808f49673429ad7f",
-    "source_case_id": "Q1_054",
-    "source_generation": {
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "request_origins": [
-        {
-          "od_pair": [
-            18,
-            9
-          ],
-          "source_x3_case_ids": [
-            "X3_COND_1b402b78b268726d2ef4c6e2"
-          ]
-        },
-        {
-          "od_pair": [
-            18,
-            24
-          ],
-          "source_x3_case_ids": [
-            "X3_COND_1b402b78b268726d2ef4c6e2",
-            "X3_COND_b25280cb5277df5214dabb4c"
-          ]
-        },
-        {
-          "od_pair": [
-            14,
-            31
-          ],
-          "source_x3_case_ids": [
-            "X3_COND_1bf9432dc45a365aa445ec22",
-            "X3_COND_a3d5f722ad97392320be0071"
-          ]
-        }
-      ],
-      "semantic_key": "e1d25516e420a704e05f97144b6dd0f6cfd98addbaab7d181f32409c9bcc76cb",
-      "source": "X3_485_20261016",
-      "source_km_overlay_sha256": "f37a79e17b8c8ae7f079c302de649a15a51bd53534defd95eecd450048275036",
-      "source_snapshot_hash": "d5d3cb5a2aece7e08eb160d92f7dca48e7561944d8eac5be9f5b241533d19b6a",
-      "source_x3_case_ids": [
-        "X3_COND_1b402b78b268726d2ef4c6e2",
-        "X3_COND_1bf9432dc45a365aa445ec22",
-        "X3_COND_a3d5f722ad97392320be0071",
-        "X3_COND_b25280cb5277df5214dabb4c"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "4c7313152c2b75e1e25861a685e649b5fc7044ed4d27ff1f09c8afbdd81a093c",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 31,
-        "slot": 81
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 72,
-        "slot": 18
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 7,
-        "slot": 282
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 70,
-        "slot": 80
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 33,
-        "slot": 138
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "seed": "03a37d33efa45a4bce7dea400dfc911eb2c897c5214b748b808f49673429ad7f", "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [18, 9]}, {"od_pair": [18, 24]}, {"od_pair": [14, 31]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 31, "slot": 81}, {"after": 0, "before": 1, "link_id": 72, "slot": 18}, {"after": 1, "before": 0, "link_id": 7, "slot": 282}, {"after": 0, "before": 1, "link_id": 70, "slot": 80}, {"after": 0, "before": 1, "link_id": 33, "slot": 138}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -37990,7 +37898,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -38023,6 +37931,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_22_COST"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_22_COST"
 }

@@ -1,14 +1,10 @@
 {
-  "schema_version": "GX1_TASK_CONTRACT_V3_0_ALGORITHM_LLM_ONLY",
+  "schema_version": "G2_TASK_CONTRACT_V1",
   "task_type": "G2",
-  "llm_case_fields": [
-    "case_id",
-    "prompt",
-    "answer"
+  "model_input_files": [
+    "public/system_prompt.txt",
+    "public/user_prompt.txt"
   ],
-  "actual_llm_request_fields": [
-    "case_id",
-    "messages"
-  ],
-  "answer_is_private_to_dut": true
+  "output_schema": "output_schema.json",
+  "reference_sent_to_model": false
 }

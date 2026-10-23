@@ -1,3 +1,3 @@
 """OptiNet-Bench: public inputs, frozen scientific grading, and Inspect orchestration."""
 
-__version__ = "2026.10.20-r3-en"
+__version__ = "1.0.0"

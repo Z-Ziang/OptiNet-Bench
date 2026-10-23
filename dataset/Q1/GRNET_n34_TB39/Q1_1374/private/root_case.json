@@ -548,145 +548,7 @@
       "source_node_id": 33
     }
   ],
-  "generation": {
-    "candidate_number": 5,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "desired_decision": "ACCEPT",
-    "generator": "Q1_SCALED2000_REVIEWED_DECISION_SNAPSHOT_V2",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "protected_witness_link_ids": [
-      14,
-      19,
-      21,
-      22,
-      23,
-      24,
-      26,
-      31,
-      34,
-      37,
-      38,
-      48,
-      52,
-      60,
-      61,
-      63,
-      69
-    ],
-    "seed": "dc21f8730972cf60e7f3d45e0aec34cd1007751ac16d35f05af672590ec7db13",
-    "source_beam128_grade": "SUBOPTIMAL_PRIMARY",
-    "source_beam16_grade": "SUBOPTIMAL_PRIMARY",
-    "source_case_id": "Q1_021",
-    "source_generation": {
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "request_origins": [
-        {
-          "od_pair": [
-            11,
-            6
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_c17d71b502e682db46682f97"
-          ]
-        },
-        {
-          "od_pair": [
-            5,
-            21
-          ],
-          "source_x3_case_ids": [
-            "X3_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X3_9bbb4425a2e5f2b4a7566ad7"
-          ]
-        },
-        {
-          "od_pair": [
-            13,
-            31
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_b12bd894d103b8e551bcee97"
-          ]
-        },
-        {
-          "od_pair": [
-            5,
-            10
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_dbd67720ff7978a99d8163a2"
-          ]
-        },
-        {
-          "od_pair": [
-            9,
-            25
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_d56790d39a16f09cc6ff60a2"
-          ]
-        }
-      ],
-      "semantic_key": "25d0f5da03fddd514d0fba5cd8675da6ea31cd020b4ad3e721dbcb54ee722913",
-      "source": "L5_8340_20261014",
-      "source_km_overlay_sha256": "4af76ef75d35eb5dc058653495a409ab9caafb60cffba58185f297bb78396125",
-      "source_snapshot_hash": "adf65e5c4da3b8fed2980a2ec5312870feec5ba79e56e056af3041fc61c86aba",
-      "source_x3_case_ids": [
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_c17d71b502e682db46682f97",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_d56790d39a16f09cc6ff60a2",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_HANDOFF_R33_STATIC_X3_dbd67720ff7978a99d8163a2",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_b12bd894d103b8e551bcee97",
-        "X3_STATIC_COMPAT_V2_20261008_184135_860418_R33_STATIC_X3_9bbb4425a2e5f2b4a7566ad7"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_oracle_decision": "ACCEPT",
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "60015da82081d4da225ef2518ba9dbd652f8ae210e8f21f80a09767eeb6357ae",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 5,
-        "slot": 318
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 2,
-        "slot": 213
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 51,
-        "slot": 34
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 57,
-        "slot": 213
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 42,
-        "slot": 29
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 36,
-        "slot": 116
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"desired_decision": "ACCEPT", "physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "protected_witness_link_ids": [14, 19, 21, 22, 23, 24, 26, 31, 34, 37, 38, 48, 52, 60, 61, 63, 69], "seed": "dc21f8730972cf60e7f3d45e0aec34cd1007751ac16d35f05af672590ec7db13", "input_beam128_grade": "SUBOPTIMAL_PRIMARY", "input_beam16_grade": "SUBOPTIMAL_PRIMARY", "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [11, 6]}, {"od_pair": [5, 21]}, {"od_pair": [13, 31]}, {"od_pair": [5, 10]}, {"od_pair": [9, 25]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "input_oracle_decision": "ACCEPT", "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 5, "slot": 318}, {"after": 0, "before": 1, "link_id": 2, "slot": 213}, {"after": 1, "before": 0, "link_id": 51, "slot": 34}, {"after": 0, "before": 1, "link_id": 57, "slot": 213}, {"after": 0, "before": 1, "link_id": 42, "slot": 29}, {"after": 0, "before": 1, "link_id": 36, "slot": 116}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -26081,7 +25943,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -26126,6 +25988,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_39_GRNET"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_39_GRNET"
 }

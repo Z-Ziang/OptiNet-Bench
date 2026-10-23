@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_766",
+  "case_id": "Q1_0766",
   "directed_links": [
     {
       "destination_node_id": 7,
@@ -1108,75 +1108,7 @@
       "source_node_id": 54
     }
   ],
-  "generation": {
-    "candidate_number": 2,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "generator": "Q1_SCALED1000_SEEDED_SPECTRUM_PERTURBATION_V1",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "seed": "54ec182ba28a69fe3ad1d2e361417a83f514fb654c4e1aee7455e9db571c4e5c",
-    "source_case_id": "Q1_127",
-    "source_generation": {
-      "algorithm_version": "pure60-hard-batch2-v3",
-      "all_request_rates_gbps": 200,
-      "candidate_number": 810,
-      "certification_status": "EXACT_CERTIFIED",
-      "generator": "Q1_PURE200G60_HARD_SOURCE_SNAPSHOT_SCENARIOS",
-      "physical_contract_reinstantiated_as": "LEGACY_V0.2",
-      "physical_topology_and_spectrum_unchanged": true,
-      "scientific_input_sha256": "f5da1c332f618dc0d7a4fabe8e2a48bfa3f7d7383a1008e38d26fc29674f5926",
-      "seed": 20261020,
-      "snapshot_reused": true,
-      "source_archive_sha256": "945060842f22cf59c423211c83f7af1ac797c65c85323a63e8aa7c97c67ae933",
-      "source_case_id": "Q1C_V5_REBAL_99D5BFC5DA8B0D20",
-      "source_generation_record": {
-        "base_snapshot_from_topology_only": "Q1C_120_N60_HELL_01",
-        "difficulty": "CANDIDATE_UNCERTIFIED",
-        "original_network_spectrum_preserved": false,
-        "physical_topology_km_identical_to_original": true,
-        "previous_synthetic_experiment": "Q1C_V5_SYNTH_C0CED2F4CFAF697D",
-        "rebalanced_occupied_block_length": 104,
-        "seed": 4230817090,
-        "source_root_sha256": "9d712deca228ec8e05d0f800e45d2277c6b127c235d77d24f8b68e84ef21589b",
-        "source_spectrum_intentionally_modified": true,
-        "spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT_NOT_HISTORICAL",
-        "v5_origin_case_id": "Q1C_120_N60_HELL_01",
-        "v5_origin_zip": "Q1C_120_FULL_ENGINEERING_CERTIFIED_20261016.zip"
-      },
-      "source_physical_contract": "MIXED_V0.3",
-      "source_release_case_id": "Q1_121",
-      "source_root_sha256": "cb0a66baf25765f0febe5fb114376ca77f305c2dc772c45179f717df87560048",
-      "source_snapshot_sha256": "684d28fb4349ce81f08ee753fd66cc8e42a996d743b39b1bca5e2fe97dce0b40",
-      "source_spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT_NOT_HISTORICAL",
-      "source_topology_id": "TB_REAL::TOP_21_CORONET",
-      "spectrum_origin": "REUSED_SYNTHETIC_REBALANCED_SNAPSHOT_FROM_CERTIFIED_SOURCE",
-      "synthetic_snapshot": true
-    },
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "f5da1c332f618dc0d7a4fabe8e2a48bfa3f7d7383a1008e38d26fc29674f5926",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 10,
-        "slot": 51
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 37,
-        "slot": 51
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 38,
-        "slot": 213
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "seed": "54ec182ba28a69fe3ad1d2e361417a83f514fb654c4e1aee7455e9db571c4e5c", "input_generation": {"all_request_rates_gbps": 200, "physical_model_family": "PURE_200G", "input_physical_state_preserved": true, "seed": 20261020, "snapshot_reused": true, "input_generation": {"input_spectrum_preserved": false, "input_link_lengths_preserved": true, "rebalanced_occupied_block_length": 104, "seed": 4230817090, "input_spectrum_modified": true, "spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT", "base_snapshot_topology_only": true}, "input_physical_model_family": "MIXED_RATES", "input_spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT", "spectrum_origin": "REUSED_CERTIFIED_SYNTHETIC_REBALANCED_SPECTRUM_STATE", "synthetic_snapshot": true}, "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 10, "slot": 51}, {"after": 0, "before": 1, "link_id": 37, "slot": 51}, {"after": 1, "before": 0, "link_id": 38, "slot": 213}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -52597,7 +52529,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -52636,6 +52568,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
+  "task_type": "Q1",
   "topology_id": "TB_REAL::TOP_21_CORONET"
 }

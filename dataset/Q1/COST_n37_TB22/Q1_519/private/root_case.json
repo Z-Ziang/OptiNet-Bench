@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_519",
+  "case_id": "Q1_0519",
   "directed_links": [
     {
       "destination_node_id": 7,
@@ -800,119 +800,7 @@
       "source_node_id": 35
     }
   ],
-  "generation": {
-    "algorithm_version": "q1-unified-v0.2",
-    "candidate_number": 3,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "difficulty_proxy_shared_route_overlap": 9,
-    "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS",
-    "generator": "Q1_UNIFIED_CANDIDATE_FACTORY",
-    "physical_topology_and_spectrum_unchanged": true,
-    "proof_status": "EXACT_CERTIFIED",
-    "scientific_input_sha256": "a67c4a34e7698cec9fd3969dab0660d3f558f262deb2f2fcf0a14587298483a3",
-    "seed": 20261018,
-    "snapshot_reused": true,
-    "source_archive_sha256": "33fd5b1b182338dd76eff6fad1d54599c6026ea2746a314189b32760cf3cf85d",
-    "source_case_id": "Q1C_MIXED_F231022EA8876F7C",
-    "source_generation_record": {
-      "derived_from_q1c_case_id": "Q1C_V3_CAND_4A55E40D2B695C8A",
-      "derived_source_class": "v3_59_certified_source",
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "mixed_model_version": "V0.3_EJOR2026_TABLE1_1FSU_ASSUMED_GUARD",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "original_snapshot_unchanged": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "rate_assignment": "DETERMINISTIC_STRATIFIED_CYCLING_100_200_300",
-      "request_origins": [
-        {
-          "od_pair": [
-            18,
-            9
-          ],
-          "source_x3_case_ids": [
-            "X3_COND_1b402b78b268726d2ef4c6e2"
-          ]
-        },
-        {
-          "od_pair": [
-            14,
-            31
-          ],
-          "source_x3_case_ids": [
-            "X3_COND_1bf9432dc45a365aa445ec22",
-            "X3_COND_a3d5f722ad97392320be0071"
-          ]
-        },
-        {
-          "od_pair": [
-            12,
-            31
-          ],
-          "source_x3_case_ids": [
-            "X3_COND_2c5a4049bb2a6932c8fead04",
-            "X3_COND_a3d5f722ad97392320be0071"
-          ]
-        },
-        {
-          "od_pair": [
-            0,
-            31
-          ],
-          "source_x3_case_ids": [
-            "X3_COND_2c5a4049bb2a6932c8fead04",
-            "X3_COND_ccee39e9cabb24b9286dea86"
-          ]
-        }
-      ],
-      "semantic_key": "4a55e40d2b695c8a9a5465990458e1c94a274b7758680100c153d23f248d7d1c",
-      "source": "X3_485_20261016",
-      "source_km_overlay_sha256": "f37a79e17b8c8ae7f079c302de649a15a51bd53534defd95eecd450048275036",
-      "source_snapshot_hash": "d5d3cb5a2aece7e08eb160d92f7dca48e7561944d8eac5be9f5b241533d19b6a",
-      "source_x3_case_ids": [
-        "X3_COND_1b402b78b268726d2ef4c6e2",
-        "X3_COND_1bf9432dc45a365aa445ec22",
-        "X3_COND_2c5a4049bb2a6932c8fead04",
-        "X3_COND_a3d5f722ad97392320be0071",
-        "X3_COND_ccee39e9cabb24b9286dea86"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_pair_selection_policy": "ACCEPTED_SOURCE_OD_RATE_PAIRS_OVERLAP_RANKED",
-    "source_request_case_ids": [
-      "Q1C_MIXED_0B7EBF404A693E95",
-      "Q1C_MIXED_5E06EC25420D5C19",
-      "Q1C_V6_1D6A9463A821015B6508"
-    ],
-    "source_request_evidence": [
-      {
-        "destination_node_id": 31,
-        "node_bin": "31-40",
-        "rate_gbps": 200,
-        "source_case_id": "Q1C_MIXED_0B7EBF404A693E95",
-        "source_node_id": 12
-      },
-      {
-        "destination_node_id": 31,
-        "node_bin": "31-40",
-        "rate_gbps": 300,
-        "source_case_id": "Q1C_V6_1D6A9463A821015B6508",
-        "source_node_id": 14
-      },
-      {
-        "destination_node_id": 31,
-        "node_bin": "31-40",
-        "rate_gbps": 100,
-        "source_case_id": "Q1C_MIXED_5E06EC25420D5C19",
-        "source_node_id": 0
-      }
-    ],
-    "source_root_sha256": "6239a8d61fdd1fa1702d2c0431dcb577a9ccab67689024069e1ba3468f76bb93",
-    "source_snapshot_sha256": "d5d3cb5a2aece7e08eb160d92f7dca48e7561944d8eac5be9f5b241533d19b6a",
-    "source_spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-    "source_topology_id": "top_TB_REAL%3A%3ATOP_22_COST",
-    "synthetic_snapshot": false
-  },
+  "generation": {"difficulty_proxy_shared_route_overlap": 9, "difficulty_strategy": "SHARED_UNWEIGHTED_SHORTEST_ROUTE_LINKS", "input_physical_state_preserved": true, "proof_status": "EXACT_CERTIFIED", "seed": 20261018, "snapshot_reused": true, "input_generation": {"rate_and_guard_model": "MIXED_RATES_EJOR2026_TABLE1_1FSU_ASSUMED_GUARD", "model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "input_spectrum_preserved": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "rate_assignment": "DETERMINISTIC_STRATIFIED_CYCLING_100_200_300", "request_origins": [{"od_pair": [18, 9]}, {"od_pair": [14, 31]}, {"od_pair": [12, 31]}, {"od_pair": [0, 31]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "request_pair_selection": "ACCEPTED_OD_RATE_PAIRS_OVERLAP_RANKED", "input_request_parameters": [{"destination_node_id": 31, "node_bin": "31-40", "rate_gbps": 200, "source_node_id": 12}, {"destination_node_id": 31, "node_bin": "31-40", "rate_gbps": 300, "source_node_id": 14}, {"destination_node_id": 31, "node_bin": "31-40", "rate_gbps": 100, "source_node_id": 0}], "input_spectrum_origin": "REUSED_SPECTRUM_STATE", "synthetic_snapshot": false},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -38010,7 +37898,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -38043,6 +37931,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_22_COST"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_22_COST"
 }

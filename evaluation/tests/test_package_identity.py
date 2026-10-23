@@ -22,7 +22,7 @@ class PackageIdentityTests(unittest.TestCase):
 
     def test_new_plans_use_current_schema(self):
         cli = importlib.import_module("optinet.cli")
-        row = {"task": "G1", "case_uid": "case", "case_dir": "dataset/G1/case",
+        row = {"task": "G1", "case_uid": "1111111111111111111111111111111111111111111111111111111111111111", "case_id": "G1_0001", "case_dir": "dataset/G1/case",
                "messages_sha256": "hash"}
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "plan.json"
@@ -34,11 +34,11 @@ class PackageIdentityTests(unittest.TestCase):
 
     def test_existing_plan_identity_is_still_checked(self):
         data = importlib.import_module("optinet.data")
-        row = {"task": "G1", "case_uid": "case", "case_dir": "dataset/G1/case",
+        row = {"task": "G1", "case_uid": "1111111111111111111111111111111111111111111111111111111111111111", "case_id": "G1_0001", "case_dir": "dataset/G1/case",
                "messages_sha256": "hash"}
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "plan.json"
-            for schema in ("OPTINET_NINE_TASKS_PLAN_V1", "OPTIRA_NINE_TASKS_PLAN_V1"):
+            for schema in ("OPTINET_NINE_TASKS_PLAN_V1",):
                 path.write_text(json.dumps({"schema": schema, "datasets": [], "cases": [row]}), encoding="utf-8")
                 with patch.object(data, "inventory", return_value=iter([row])):
                     self.assertEqual(data.plan_rows(path), [row])

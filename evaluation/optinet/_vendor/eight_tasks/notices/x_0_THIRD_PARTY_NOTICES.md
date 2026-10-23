@@ -1,15 +1,8 @@
-# Third-party components and provenance
+# Third-party software notices
 
-The X2/X3 Cases and pinned scientific scoring source were extracted from the four
-historical delivery archives identified by the source dataset metadata. Case
-identity, original members, SHA256 values and graph/spectrum hashes are retained
-in per-Case identity and provenance records. Personal model accounts are not included.
-
-Inspect AI 0.3.278 is the evaluation framework (upstream: https://github.com/UKGovernmentBEIS/inspect_ai).
-OpenAI Python SDK 3.29.0 and other pinned dependencies are third-party software;
-their upstream distributions retain their own licenses. This evaluation package
-does not bundle virtual environments, accounts or dependency wheels.
-
-The source dataset ZIPs did not establish a blanket public redistribution license
-for all project code and data. The project owner must confirm the applicable
-rights. This provenance notice is not a new license grant.
+Inspect AI is distributed under the MIT License by its upstream authors:
+https://github.com/UKGovernmentBEIS/inspect_ai
+The OpenAI Python SDK and other dependencies retain their respective licenses.
+See `evaluation/requirements.txt` for dependency versions.
+OptiNet-Bench licenses do not replace independent third-party terms or grant rights
+the project owner does not hold. No credentials or model accounts are included.

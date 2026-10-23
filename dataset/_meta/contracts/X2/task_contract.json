@@ -1,0 +1,18 @@
+{
+  "schema_version": "X2_TASK_CONTRACT_V1",
+  "task_type": "X2",
+  "model_input_files": [
+    "public/system_prompt.txt",
+    "public/user_prompt.txt"
+  ],
+  "output_schema": "output_schema.json",
+  "reference_sent_to_model": false,
+  "batch_semantics": null,
+  "objective": "MIN_HOP_THEN_MIN_WUFR",
+  "truth_admission": [
+    "EXACT_CERTIFIED",
+    "INFEASIBLE_CERTIFIED"
+  ],
+  "slot_count": 320,
+  "spectrum_encoding": "CLOSED_OCCUPIED_RANGES"
+}

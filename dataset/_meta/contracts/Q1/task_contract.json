@@ -2,8 +2,8 @@
   "task": "Q1",
   "description": "QoT-aware multi-request single-step RMSA; all-or-nothing admission",
   "families": {
-    "LEGACY_V0.2": 60,
-    "MIXED_V0.3": 140
+    "PURE_200G": 600,
+    "MIXED_RATES": 1400
   },
   "physics": "Frozen ASE-only/CD model; no NLI or incumbent QoT interaction; assumed guard=1",
   "objective": [
@@ -20,5 +20,9 @@
     "EXACT_CERTIFIED",
     "INFEASIBLE_CERTIFIED"
   ],
-  "public_schema_is_documentation": true
+  "public_schema_is_documentation": true,
+  "evaluation_subset_families": {
+    "PURE_200G": 60,
+    "MIXED_RATES": 140
+  }
 }

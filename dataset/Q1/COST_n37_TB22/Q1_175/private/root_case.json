@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_175",
+  "case_id": "Q1_0175",
   "directed_links": [
     {
       "destination_node_id": 7,
@@ -800,90 +800,7 @@
       "source_node_id": 35
     }
   ],
-  "generation": {
-    "V6_rate_reassignment": "RECOMPUTED_ORACLE_FROM_OLD_HARD_CANDIDATE",
-    "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-    "input_source_case_id": "Q1C_V3_CAND_4A55E40D2B695C8A",
-    "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-    "new_combined_requests": true,
-    "original_v4_candidate_id": "Q1C_MIXED_3D09E53AB347ECB4",
-    "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-    "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-    "request_origins": [
-      {
-        "od_pair": [
-          18,
-          9
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_1b402b78b268726d2ef4c6e2"
-        ]
-      },
-      {
-        "od_pair": [
-          14,
-          31
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_1bf9432dc45a365aa445ec22",
-          "X3_COND_a3d5f722ad97392320be0071"
-        ]
-      },
-      {
-        "od_pair": [
-          12,
-          31
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_2c5a4049bb2a6932c8fead04",
-          "X3_COND_a3d5f722ad97392320be0071"
-        ]
-      },
-      {
-        "od_pair": [
-          0,
-          31
-        ],
-        "source_x3_case_ids": [
-          "X3_COND_2c5a4049bb2a6932c8fead04",
-          "X3_COND_ccee39e9cabb24b9286dea86"
-        ]
-      }
-    ],
-    "semantic_key": "4a55e40d2b695c8a9a5465990458e1c94a274b7758680100c153d23f248d7d1c",
-    "source": "X3_485_20261016",
-    "source_km_overlay_sha256": "f37a79e17b8c8ae7f079c302de649a15a51bd53534defd95eecd450048275036",
-    "source_original_hard_baseline_evidence": {
-      "1": {
-        "final_beam_size": 1,
-        "grade": "SUBOPTIMAL_SECONDARY",
-        "primary": 81,
-        "secondary": 0.6875373624429924
-      },
-      "128": {
-        "final_beam_size": 128,
-        "grade": "CORRECT",
-        "primary": 81,
-        "secondary": 0.6845368815482342
-      },
-      "16": {
-        "final_beam_size": 16,
-        "grade": "SUBOPTIMAL_SECONDARY",
-        "primary": 81,
-        "secondary": 0.687452938536994
-      }
-    },
-    "source_snapshot_hash": "d5d3cb5a2aece7e08eb160d92f7dca48e7561944d8eac5be9f5b241533d19b6a",
-    "source_x3_case_ids": [
-      "X3_COND_1b402b78b268726d2ef4c6e2",
-      "X3_COND_1bf9432dc45a365aa445ec22",
-      "X3_COND_2c5a4049bb2a6932c8fead04",
-      "X3_COND_a3d5f722ad97392320be0071",
-      "X3_COND_ccee39e9cabb24b9286dea86"
-    ],
-    "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-    "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-  },
+  "generation": {"rate_reassignment": "ORACLE_RECOMPUTED_AFTER_RATE_ASSIGNMENT", "model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [18, 9]}, {"od_pair": [14, 31]}, {"od_pair": [12, 31]}, {"od_pair": [0, 31]}], "input_instance_baselines": {"1": {"final_beam_size": 1, "grade": "SUBOPTIMAL_SECONDARY", "primary": 81, "secondary": 0.6875373624429924}, "128": {"final_beam_size": 128, "grade": "CORRECT", "primary": 81, "secondary": 0.6845368815482342}, "16": {"final_beam_size": 16, "grade": "SUBOPTIMAL_SECONDARY", "primary": 81, "secondary": 0.687452938536994}}, "spectrum_origin": "REUSED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -37981,7 +37898,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -38020,6 +37937,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_22_COST"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_22_COST"
 }

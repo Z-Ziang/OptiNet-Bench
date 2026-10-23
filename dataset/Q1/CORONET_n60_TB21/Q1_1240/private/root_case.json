@@ -1108,136 +1108,7 @@
       "source_node_id": 54
     }
   ],
-  "generation": {
-    "candidate_number": 21,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "desired_decision": "ACCEPT",
-    "generator": "Q1_SCALED2000_REVIEWED_DECISION_SNAPSHOT_V2",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "protected_witness_link_ids": [
-      1,
-      2,
-      31,
-      33,
-      34,
-      50,
-      54,
-      81,
-      82,
-      127,
-      142,
-      154
-    ],
-    "seed": "c1c87292dd0f15fc5fda04795c0a1f12c568c1782b2ce2535693ae1919839e1a",
-    "source_beam128_grade": "WRONG_REJECT",
-    "source_beam16_grade": "WRONG_REJECT",
-    "source_case_id": "Q1_GEN_EC285378C9584328D183",
-    "source_generation": {
-      "candidate_number": 7,
-      "certification_status": "CERTIFIED_NEW_CASE",
-      "generator": "Q1_SCALED1000_SEEDED_SPECTRUM_PERTURBATION_V1",
-      "physical_contract_unchanged": "LEGACY_V0.2",
-      "proof_status": "EXACT_CERTIFIED",
-      "seed": "43775f462353b4dc6091fbc7aa3f7d6bf5d35f8b00ac863b48ba2c7f44b22325",
-      "source_case_id": "Q1_023",
-      "source_generation": {
-        "algorithm_version": "pure60-hard-batch2-v3",
-        "all_request_rates_gbps": 200,
-        "candidate_number": 735,
-        "certification_status": "EXACT_CERTIFIED",
-        "generator": "Q1_PURE200G60_HARD_SOURCE_SNAPSHOT_SCENARIOS",
-        "physical_contract_reinstantiated_as": "LEGACY_V0.2",
-        "physical_topology_and_spectrum_unchanged": true,
-        "scientific_input_sha256": "050b638dbc5c571b0fe73270395925ffcbf2f1b78c203230c69db28dbdd5ecb2",
-        "seed": 20261020,
-        "snapshot_reused": true,
-        "source_archive_sha256": "945060842f22cf59c423211c83f7af1ac797c65c85323a63e8aa7c97c67ae933",
-        "source_case_id": "Q1C_V6_31107C304C7E16ECCA81",
-        "source_generation_record": {
-          "V6_rate_reassignment": "SAME_ORIGINAL_LINKS_LENGTHS_SPECTRUM_AND_OD",
-          "base_snapshot_from_topology_only": "Q1C_120_N60_HELL_02",
-          "difficulty": "CANDIDATE_UNCERTIFIED",
-          "input_source_case_id": "Q1C_V5_REBAL_495FBAC9132BC16B",
-          "input_source_class": "CERTIFIED_130",
-          "original_network_spectrum_preserved": false,
-          "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-          "physical_topology_km_identical_to_original": true,
-          "previous_synthetic_experiment": "Q1C_V5_SYNTH_8E4709288F49527A",
-          "rate_assignment": [
-            300,
-            200,
-            100
-          ],
-          "rebalanced_occupied_block_length": 104,
-          "seed": 2899909870,
-          "source_root_sha256": "031731671265bb5e058a77a4e4195209666a1349ac3c503e36ada2e12c2a7f77",
-          "source_spectrum_intentionally_modified": true,
-          "spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT_NOT_HISTORICAL",
-          "v5_origin_case_id": "Q1C_120_N60_HELL_02",
-          "v5_origin_zip": "Q1C_120_FULL_ENGINEERING_CERTIFIED_20261016.zip",
-          "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-        },
-        "source_physical_contract": "MIXED_V0.3",
-        "source_release_case_id": "Q1_176",
-        "source_root_sha256": "4441d8f719c6e5db0420bb711c039e401b4ada5b4cd09ec480dc158be3f1ff80",
-        "source_snapshot_sha256": "3406115a88ad8339feecde196b979c99bc4636b949f41cb64f4ae693eef96969",
-        "source_spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT_NOT_HISTORICAL",
-        "source_topology_id": "TB_REAL::TOP_21_CORONET",
-        "spectrum_origin": "REUSED_SYNTHETIC_REBALANCED_SNAPSHOT_FROM_CERTIFIED_SOURCE",
-        "synthetic_snapshot": true
-      },
-      "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-      "source_semantic_sha256": "050b638dbc5c571b0fe73270395925ffcbf2f1b78c203230c69db28dbdd5ecb2",
-      "spectrum_edits": [
-        {
-          "after": 0,
-          "before": 1,
-          "link_id": 47,
-          "slot": 30
-        },
-        {
-          "after": 0,
-          "before": 1,
-          "link_id": 128,
-          "slot": 222
-        }
-      ],
-      "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-      "synthetic_snapshot": true
-    },
-    "source_oracle_decision": "ACCEPT",
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "ec285378c9584328d1834f40cf1388f1f41cb05c73821a60d3e5620f58204c97",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 111,
-        "slot": 244
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 92,
-        "slot": 293
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 4,
-        "slot": 100
-      },
-      {
-        "after": 1,
-        "before": 0,
-        "link_id": 144,
-        "slot": 216
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"desired_decision": "ACCEPT", "physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "protected_witness_link_ids": [1, 2, 31, 33, 34, 50, 54, 81, 82, 127, 142, 154], "seed": "c1c87292dd0f15fc5fda04795c0a1f12c568c1782b2ce2535693ae1919839e1a", "input_beam128_grade": "WRONG_REJECT", "input_beam16_grade": "WRONG_REJECT", "input_generation": {"physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "seed": "43775f462353b4dc6091fbc7aa3f7d6bf5d35f8b00ac863b48ba2c7f44b22325", "input_generation": {"all_request_rates_gbps": 200, "physical_model_family": "PURE_200G", "input_physical_state_preserved": true, "seed": 20261020, "snapshot_reused": true, "input_generation": {"rate_reassignment": "INPUT_LINKS_LENGTHS_SPECTRUM_AND_OD_PRESERVED", "input_spectrum_preserved": false, "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "input_link_lengths_preserved": true, "rate_assignment": [300, 200, 100], "rebalanced_occupied_block_length": 104, "seed": 2899909870, "input_spectrum_modified": true, "spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT", "base_snapshot_topology_only": true}, "input_physical_model_family": "MIXED_RATES", "input_spectrum_origin": "SYNTHETIC_REBALANCED_35_PERCENT", "spectrum_origin": "REUSED_CERTIFIED_SYNTHETIC_REBALANCED_SPECTRUM_STATE", "synthetic_snapshot": true}, "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 47, "slot": 30}, {"after": 0, "before": 1, "link_id": 128, "slot": 222}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true}, "input_oracle_decision": "ACCEPT", "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 111, "slot": 244}, {"after": 0, "before": 1, "link_id": 92, "slot": 293}, {"after": 1, "before": 0, "link_id": 4, "slot": 100}, {"after": 1, "before": 0, "link_id": 144, "slot": 216}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -52658,7 +52529,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -52697,6 +52568,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
+  "task_type": "Q1",
   "topology_id": "TB_REAL::TOP_21_CORONET"
 }

@@ -1,0 +1,50 @@
+{
+  "$comment": "Packaging format schema derived from frozen O1_MINIMAL_FIXED_PATH_V2. Request uniqueness, resource feasibility and optimality require the pinned scientific grader. No objective formula is supplied here.",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "else": {
+        "properties": {
+          "slot_start": {
+            "type": "null"
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "decision": {
+            "const": "ACCEPT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "slot_start": {
+            "type": "integer"
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "decision": {
+      "enum": [
+        "ACCEPT",
+        "REJECT"
+      ]
+    },
+    "slot_start": {
+      "maximum": 319,
+      "minimum": 0,
+      "type": [
+        "integer",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "decision",
+    "slot_start"
+  ],
+  "type": "object"
+}

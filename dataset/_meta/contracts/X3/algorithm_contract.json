@@ -1,0 +1,22 @@
+{
+  "contract_id": "X3_OPTIMIZATION_CONTRACT_V1",
+  "task_type": "X3",
+  "output_schema": "output_schema.json",
+  "slot_count": 320,
+  "path_mode": "FULL_TOPOLOGY",
+  "objective": "MIN_DELTA_TSO_THEN_MIN_WUFR",
+  "objective_order": [
+    "MIN_DELTA_TSO",
+    "MIN_WUFR"
+  ],
+  "metric_contract": {
+    "required_slots_probabilities": {
+      "2": 0.25,
+      "3": 0.25,
+      "5": 0.25,
+      "9": 0.25
+    },
+    "probability_semantics": "Probability distribution of required_slots for future requests under the workload configuration. required_slots includes guard slots. This distribution is used in the exact WUFR calculation; it is not itself the WUFR demand probability."
+  },
+  "reference_sent_to_model": false
+}

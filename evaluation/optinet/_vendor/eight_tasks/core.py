@@ -1,5 +1,6 @@
 """Portable data reader and adapters; never construct model inputs from private files."""
 from __future__ import annotations
+from case_identity import load_identity
 import hashlib, importlib, json, os
 from pathlib import Path
 
@@ -32,7 +33,7 @@ def inventory(root):
 
 def checked_file(root, row, relative):
     folder = inside(root,row['case_dir'])
-    identity = read_json(folder/'identity.json')
+    identity = load_identity(folder)
     if identity['case_uid'] != row['case_uid'] or identity['task'] != row['task']:
         raise ValueError('Case identity mismatch')
     data = inside(folder,relative).read_bytes()
@@ -49,7 +50,7 @@ def public_messages(root,row):
     return messages
 
 def reference(root,row):
-    name = 'evaluation_reference_output.json' if row['task'] in ('G1','G2','G3','X1') else 'reference_output.json'
+    name = 'reference_output.json'
     return json.loads(checked_file(root,row,'private/'+name))
 
 def adapter(root,task):
@@ -67,19 +68,13 @@ def score_answer(root,row,text):
     strict = mod.safe_classify(row,text,False)
     for result in (relaxed,strict):
         category = result.get('category','SCORING_ERROR')
-        result['source_interface_status'] = row.get('interface_status','UNKNOWN')
-        result['formal_eligible'] = (not row.get('data_review_required',False)
-                                    and 'REVIEW' not in row.get('interface_status','')
-                                    and not category.startswith('REVIEW') and category!='SCORING_ERROR')
-        result['binary_label'] = ('CORRECT' if category=='CORRECT' else 'INCORRECT') if row['task'] in ('G1','G2','G3') and not category.startswith('REVIEW') and category!='SCORING_ERROR' else None
+        result['binary_label'] = ('CORRECT' if category=='CORRECT' else 'INCORRECT') if row['task'] in ('G1','G2','G3') and category!='SCORING_ERROR' else None
         result['is_certified_correct_reject'] = bool(result.get('correct_reject',False))
-        if row.get('contract_dir','').endswith('/SERVER_SUPPLEMENT') and row['task'] in ('X2','X3'):
-            result['validator_identity_binding'] = 'SUPPLEMENT_RUNTIME_BINDINGS.json; in-memory metadata bridge; original case unchanged'
-    return {'relaxed':relaxed,'strict':strict,'scoring_adapter_version':'CLEAN_EIGHT_TASKS_PATH_ADAPTER_R1'}
+    return {'relaxed':relaxed,'strict':strict,'scoring_adapter_version':'OPTINET_EIGHT_TASKS_UNIFIED_POLICY_V1'}
 
 def plan_rows(root,plan_path):
     plan = read_json(plan_path)
-    if plan.get('schema')!='OPTIRSA_EIGHT_TASKS_PLAN_V1': raise ValueError('Wrong plan schema')
+    if plan.get('schema')!='OPTINET_EIGHT_TASKS_PLAN_V1': raise ValueError('Wrong plan schema')
     wanted = plan['cases']; wanted_uids={r['case_uid'] for r in wanted}
     by_uid={r['case_uid']:r for r in inventory(root) if r['case_uid'] in wanted_uids}
     rows=[]

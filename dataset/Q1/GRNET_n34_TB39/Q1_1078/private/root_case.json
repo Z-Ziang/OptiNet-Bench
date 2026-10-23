@@ -548,90 +548,7 @@
       "source_node_id": 33
     }
   ],
-  "generation": {
-    "candidate_number": 1,
-    "certification_status": "CERTIFIED_NEW_CASE",
-    "desired_decision": "ACCEPT",
-    "generator": "Q1_SCALED2000_REVIEWED_DECISION_SNAPSHOT_V2",
-    "physical_contract_unchanged": "LEGACY_V0.2",
-    "proof_status": "EXACT_CERTIFIED",
-    "protected_witness_link_ids": [
-      30,
-      35,
-      42,
-      44,
-      49,
-      50
-    ],
-    "seed": "a09d07f6a443de3b262a2d12206abaa0ccd3c6e3fc29ac6d31d8519c8c622151",
-    "source_beam128_grade": "CORRECT",
-    "source_beam16_grade": "SUBOPTIMAL_SECONDARY",
-    "source_case_id": "Q1_028",
-    "source_generation": {
-      "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-      "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-      "new_combined_requests": true,
-      "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-      "request_origins": [
-        {
-          "od_pair": [
-            14,
-            23
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_6439d94178f4be3038c0c2fc"
-          ]
-        },
-        {
-          "od_pair": [
-            10,
-            23
-          ],
-          "source_x3_case_ids": [
-            "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_9db6fcb65f109c1fb983fdf5"
-          ]
-        },
-        {
-          "od_pair": [
-            14,
-            11
-          ],
-          "source_x3_case_ids": [
-            "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_14f87295f2d993bf68f0d74b"
-          ]
-        }
-      ],
-      "semantic_key": "581be5b58a1fbad30e6e324ad3e5316f5ca9d7a2412283ca36db36909dd8c1e1",
-      "source": "L5_8340_20261014",
-      "source_km_overlay_sha256": "4af76ef75d35eb5dc058653495a409ab9caafb60cffba58185f297bb78396125",
-      "source_snapshot_hash": "adf65e5c4da3b8fed2980a2ec5312870feec5ba79e56e056af3041fc61c86aba",
-      "source_x3_case_ids": [
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_14f87295f2d993bf68f0d74b",
-        "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_6439d94178f4be3038c0c2fc",
-        "X3_STATIC_SCALE_V4_20261008_190955_202523_R33_STATIC_X3_9db6fcb65f109c1fb983fdf5"
-      ],
-      "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-    },
-    "source_oracle_decision": "ACCEPT",
-    "source_release_sha256": "fcbeb0ab7dc54c3b68f92bebe4cc8d580f987ae63dbc31b928eeba0b62d27ffc",
-    "source_semantic_sha256": "fbb5e14501866dd89a07b5199ad7c93260c1132da52ff021f28b338745fcd7d6",
-    "spectrum_edits": [
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 40,
-        "slot": 104
-      },
-      {
-        "after": 0,
-        "before": 1,
-        "link_id": 56,
-        "slot": 188
-      }
-    ],
-    "spectrum_origin": "SYNTHETIC_SEEDED_PERTURBATION_OF_REVIEWED_SNAPSHOT",
-    "synthetic_snapshot": true
-  },
+  "generation": {"desired_decision": "ACCEPT", "physical_model_family": "PURE_200G", "proof_status": "EXACT_CERTIFIED", "protected_witness_link_ids": [30, 35, 42, 44, 49, 50], "seed": "a09d07f6a443de3b262a2d12206abaa0ccd3c6e3fc29ac6d31d8519c8c622151", "input_beam128_grade": "CORRECT", "input_beam16_grade": "SUBOPTIMAL_SECONDARY", "input_generation": {"model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "request_origins": [{"od_pair": [14, 23]}, {"od_pair": [10, 23]}, {"od_pair": [14, 11]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"}, "input_oracle_decision": "ACCEPT", "spectrum_perturbations": [{"after": 0, "before": 1, "link_id": 40, "slot": 104}, {"after": 0, "before": 1, "link_id": 56, "slot": 188}], "spectrum_origin": "SYNTHETIC_SEEDED_SPECTRUM_PERTURBATION", "synthetic_snapshot": true},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -26026,7 +25943,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -26059,6 +25976,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_39_GRNET"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_39_GRNET"
 }

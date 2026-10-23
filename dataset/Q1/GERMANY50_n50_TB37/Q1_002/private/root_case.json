@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_002",
+  "case_id": "Q1_0002",
   "directed_links": [
     {
       "destination_node_id": 29,
@@ -1234,44 +1234,7 @@
       "source_node_id": 49
     }
   ],
-  "generation": {
-    "difficulty_claim": "TO_BE_MEASURED",
-    "original_graph_and_spectrum_hash": "588e314eb1ff68e599870defaee44ce596b31d7044a39c96521555b99a338129",
-    "physical_model": "UNCHANGED_Q1C_ASE_ONLY_CD",
-    "request_origins": [
-      {
-        "od_pair": [
-          33,
-          13
-        ],
-        "source_request_id": "req_966ce87ede099633c6c4661a",
-        "source_x3_case_id": "X3_COND_35df952a3fb408aa56cd186a"
-      },
-      {
-        "od_pair": [
-          13,
-          14
-        ],
-        "source_request_id": "req_ad3673f3369c328d21d20fe0",
-        "source_x3_case_id": "X3_COND_f616baef3843bdb6fb3ded09"
-      },
-      {
-        "od_pair": [
-          2,
-          25
-        ],
-        "source_request_id": "req_fb8af687e23aaf3dad6fd24e",
-        "source_x3_case_id": "X3_COND_f616baef3843bdb6fb3ded09"
-      }
-    ],
-    "source": "X3_SOURCE_100_CERTIFIED_20261016",
-    "source_snapshot_hash": "07aab1277f615def8025a7036c1defe7219918e4c2745b4abdee7ae7ed3138f5",
-    "source_x3_case_ids": [
-      "X3_COND_35df952a3fb408aa56cd186a",
-      "X3_COND_f616baef3843bdb6fb3ded09"
-    ],
-    "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT"
-  },
+  "generation": {"physical_model": "ASE_ONLY_PLUS_CD", "request_origins": [{"od_pair": [33, 13]}, {"od_pair": [13, 14]}, {"od_pair": [2, 25]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -58532,7 +58495,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.2_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_PURE_200G_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -58565,6 +58528,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_37_GERMANY50"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_37_GERMANY50"
 }

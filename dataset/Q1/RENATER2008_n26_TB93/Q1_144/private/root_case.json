@@ -1,5 +1,5 @@
 {
-  "case_id": "Q1_144",
+  "case_id": "Q1_0144",
   "directed_links": [
     {
       "destination_node_id": 1,
@@ -478,72 +478,7 @@
       "source_node_id": 25
     }
   ],
-  "generation": {
-    "V6_rate_reassignment": "SAME_ORIGINAL_LINKS_LENGTHS_SPECTRUM_AND_OD",
-    "difficulty": "CANDIDATE_NOT_YET_CERTIFIED",
-    "input_source_case_id": "Q1C_V3_CAND_C8DB7E0C1398EC01",
-    "input_source_class": "CERTIFIED_130",
-    "model": "UNMODIFIED_ASE_ONLY_PLUS_CD_Q1C",
-    "new_combined_requests": true,
-    "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY",
-    "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION",
-    "rate_assignment": [
-      300,
-      100,
-      100,
-      200
-    ],
-    "request_origins": [
-      {
-        "od_pair": [
-          10,
-          14
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_5cf70e0257229b6a9ea4e38f"
-        ]
-      },
-      {
-        "od_pair": [
-          8,
-          2
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_2511c8f8373c8f68b954fd33"
-        ]
-      },
-      {
-        "od_pair": [
-          15,
-          2
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_c13f2ce4753b1308aeabc64e"
-        ]
-      },
-      {
-        "od_pair": [
-          10,
-          0
-        ],
-        "source_x3_case_ids": [
-          "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ac04d91e46f3e89e1ad9877d"
-        ]
-      }
-    ],
-    "semantic_key": "c8db7e0c1398ec01b79391017f4511bfe478b193602d3b369f0b7febb9edc403",
-    "source": "L5_8340_20261014",
-    "source_km_overlay_sha256": "3852ab0be8d7d7448f0ae7c6986d1a435d04c4980212c16982840c989ec7add9",
-    "source_snapshot_hash": "74634f9ae85d64ce4230dafb91bbfa840e71f7afc829e69033b9414c21f2354c",
-    "source_x3_case_ids": [
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_2511c8f8373c8f68b954fd33",
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_5cf70e0257229b6a9ea4e38f",
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_ac04d91e46f3e89e1ad9877d",
-      "X3_SCHEDULING_RECOVERY_V5_20261008_223402_421810_R33_STATIC_X3_c13f2ce4753b1308aeabc64e"
-    ],
-    "spectrum_origin": "UNMODIFIED_X3_HISTORY_SNAPSHOT",
-    "validation_status": "EXACT_CERTIFIED_V6_REPLAYED"
-  },
+  "generation": {"rate_reassignment": "INPUT_LINKS_LENGTHS_SPECTRUM_AND_OD_PRESERVED", "model": "ASE_ONLY_PLUS_CD", "combined_requests": true, "physical_model": "EJOR_2026_TABLE1_ASSUMED_GUARD_ASE_ONLY", "physicalization": "REAL_KM_SOURCE_DECLARATION_WITHOUT_INDEPENDENT_FIELD_VALIDATION", "rate_assignment": [300, 100, 100, 200], "request_origins": [{"od_pair": [10, 14]}, {"od_pair": [8, 2]}, {"od_pair": [15, 2]}, {"od_pair": [10, 0]}], "spectrum_origin": "REUSED_SPECTRUM_STATE"},
   "link_spectrum_states": [
     {
       "link_id": 0,
@@ -22680,7 +22615,7 @@
     "fiber_loss_db_per_km": 0.2,
     "guard_slots": 1,
     "margin_db": 0.0,
-    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_V0.3_MIXED_EJOR_TABLE1_ASSUMED_GUARD",
+    "model_id": "ASE_ONLY_IDEAL_SPAN_COMPENSATION_MIXED_RATES_EJOR_TABLE1_ASSUMED_GUARD",
     "osnr_reference_hz": 12500000000.0,
     "signal_power_dbm": 0.0,
     "span_max_km": 80.0,
@@ -22719,6 +22654,6 @@
     "9": 0.25
   },
   "slot_count": 320,
-  "task_type": "Q1-C",
-  "topology_id": "top_TB_REAL%3A%3ATOP_93_RENATER2008"
+  "task_type": "Q1",
+  "topology_id": "TB_REAL::TOP_93_RENATER2008"
 }
